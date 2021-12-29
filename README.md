@@ -17,9 +17,11 @@ https://www.kystu.com
 
 若节点有`TLS`标记，说明该节点使用了`simple-obfs`混淆插件，混淆方式为`tls`
 
-**电脑端**插件`obfs-local`参数`obfs=tls`或`obfs=tls;obfs-host=www.apple.com`
+**此时，该节点需要设置插件和插件参数（没有TLS标记的不需要设置插件和参数）**
 
-**iPhone/iPad**Shadowrocket 设置`混淆-->名称-->tls`,`Host-->www.apple.com`
+电脑端插件`obfs-local`参数`obfs=tls`或`obfs=tls;obfs-host=www.apple.com`
+
+Shadowrocket 设置`混淆-->名称-->tls`然后`Host-->www.apple.com`
 
 ## VPS 推荐：
 
