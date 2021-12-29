@@ -15,7 +15,7 @@ https://www.kystu.com
 
 ## 注意事项：
 
-若节点有`TLS`标记，说明该节点使用了`simple-obfs`混淆插件，混淆方式为`tls`
+若节点有`TLS`标记，说明该节点使用`simple-obfs`混淆插件，混淆方式为`tls`
 
 电脑端插件设置为`obfs-local`插件参数设置为`obfs=tls`
 
@@ -23,7 +23,7 @@ Shadowrocket 设置混淆-->名称-->`tls`
 
 Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`
 
-安卓手机需要额外下载 [simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases) 插件设为`Simple obfuscation`配置`Obfuscation wrapper`设置`tls`
+安卓手机需要额外下载 [simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases) 插件设置为`Simple obfuscation`配置`Obfuscation wrapper`-->`tls`
 
 **没有TLS标记的节点，不需要设置插件和参数！**
 
