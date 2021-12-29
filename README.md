@@ -15,7 +15,7 @@ https://www.kystu.com
 
 ## 注意事项：
 
-若节点有`TLS`标记，说明该节点使用了`simple-obfs`的`tls`混淆插件
+若节点有`TLS`标记，说明该节点使用了`simple-obfs`混淆插件，混淆方式为`tls`
 
 此时电脑的插件设置为`obfs-local` 参数设置为`obfs=tls`
 
