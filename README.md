@@ -19,9 +19,12 @@ https://www.kystu.com
 
 电脑端插件设置为`obfs-local`插件参数设置为`obfs=tls`
 
-Shadowrocket 设置混淆-->名称-->`tls`然后设置`Host`-->`apple.com`
+Shadowrocket 设置混淆-->名称-->`tls`
 
 Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`
+
+安卓手机需要额外下载安装插件[simple-obfs-android
+](https://github.com/shadowsocks/simple-obfs-android/releases)
 
 **没有TLS标记的节点，不需要设置插件和参数！**
 
