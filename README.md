@@ -23,6 +23,8 @@ https://www.kystu.com
 
 Shadowrocket 设置`混淆-->名称-->tls`然后`Host-->www.apple.com`
 
+Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`或`obfs=tls;obfs-host=www.apple.com`
+
 ## VPS 推荐：
 
 * [Vultr](https://www.vultr.com/?ref=8245248)
