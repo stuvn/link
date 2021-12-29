@@ -17,7 +17,7 @@ https://www.kystu.com
 
 若节点有`TLS`标记，说明该节点使用`simple-obfs`混淆插件，混淆方式为`tls`
 
-电脑端插件设置为`obfs-local`插件参数设置为`obfs=tls`
+此时，电脑端插件设置为`obfs-local`插件参数设置为`obfs=tls`
 
 Shadowrocket 设置混淆-->名称-->`tls`
 
