@@ -23,7 +23,7 @@ Shadowrocket 设置混淆-->名称-->`tls`
 
 Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`
 
-安卓手机需要额外下载[simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases)
+安卓手机需要额外下载 [simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases) 然后插件设置为`Simple obfuscation`obfuscation wrapper
 
 **没有TLS标记的节点，不需要设置插件和参数！**
 
