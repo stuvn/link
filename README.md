@@ -17,7 +17,7 @@ https://www.kystu.com
 
 若节点有`TLS`标记，说明该节点使用了`simple-obfs`混淆插件，混淆方式为`tls`
 
-此时电脑的插件设置为`obfs-local` 参数设置为`obfs=tls`
+电脑端设置插件为`obfs-local`参数设置为`obfs=tls`或`obfs=tls;obfs-host=www.apple.com`
 
 ## VPS 推荐：
 
