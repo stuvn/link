@@ -15,9 +15,9 @@ https://www.kystu.com
 
 ## 注意事项：
 
-若节点有`TLS`标记，说明节点使用了`simple-obfs`的`tls`混淆插件
+若节点有**TLS**标记，说明节点使用了**simple-obfs**的**tls**混淆插件
 
-此时电脑的插件设置为`obfs-local`手机
+此时电脑的插件设置为`obfs-local`
 
 ## VPS 推荐：
 
