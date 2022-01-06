@@ -35,4 +35,4 @@ Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`
 
 * [Linode](https://www.linode.com/?r=e86fb9ef58cd6a51c8d2dab3485cea85e1af6e27)
 
-* [kdatacenter](https://www.linode.com/?r=e86fb9ef58cd6a51c8d2dab3485cea85e1af6e27)
+* [kdatacenter](https://www.kdatacenter.com)
