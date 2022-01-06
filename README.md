@@ -27,7 +27,7 @@ Potatso Lite 插件设置为`Simple Obfs`插件参数设置为`obfs=tls`
 
 **没有TLS标记的节点，不需要设置插件和参数！**
 
-## 美国VPS：
+## VPS推荐：
 
 * [Vultr](https://www.vultr.com/?ref=8245248)
 
