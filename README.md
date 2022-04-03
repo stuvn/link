@@ -15,7 +15,7 @@ https://www.kystu.com
 
 ## 注意事项：
 
-安卓手机需要额外下载 [simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases) 插件设置为`Simple obfuscation`配置`Obfuscation wrapper`-->`tls`
+安卓手机需要额外下载 [simple-obfs-android](https://github.com/shadowsocks/simple-obfs-android/releases) 
 
 ## VPS推荐：
 
