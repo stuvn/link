@@ -1,43 +1,33 @@
-
-!> 请先安装 [Firefox 浏览器](https://www.mozilla.org/zh-CN/firefox/) 本教程解决 Win/Mac/Linux 客户端正常，但系统代理被"锁死"的问题
+!> 本教程不适用于`Windows`系统的`Netch`客户端！
 
 ## SwitchyOmega
 
-* 点击安装 [SwitchyOmega 插件](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/)。打开浏览器设置-->扩展和主题-->Proxy SwitchyOmega-->首选项
+* 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/)，再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。[Chrome](https://www.google.cn/chrome/) 安装`SwitchyOmega`请看最后的`常见问题`
 
-![linux1](media/firefox/1.gif ':size=720')
+![SwitchyOmega](media/firefox/ff_1.jpg ':size=720')
 
-* ① 选择“proxy”情景模式 --> ② 设置代理服务器：`SOCKS5` `127.0.0.1` `1080` --> ③ 应用选项
+* 点击下载备份 <a href="media/firefox/1080.bak" target="_blank">1080.bak</a> 或 <a href="media/firefox/1086.bak" target="_blank">1086.bak</a> -->点击浏览器右上角`圆圈`-->`选项`-->`导入/导出`-->`从备份文件恢复`
 
-![linux2](media/firefox/2.gif ':size=720')
+![SwitchyOmega](media/firefox/ff_2.jpg ':size=720')
 
-* 需要用代理时，请选`"proxy"`模式，日常请使用`"系统代理"`模式。更多设置和Chrome教程请[参考文档](https://github.com/FelisCatus/SwitchyOmega/wiki)
+* 日常使用`PAC自动模式`就可以了，如果遇到打不开的网站，再切换到`绕过中国大陆地址`，慎用`全局模式`
 
-![linux3](media/firefox/3.gif ':size=720')
+![SwitchyOmega](media/firefox/ff_3.jpg ':size=720')
 
 !> 常见问题
 
-  ```shell
-按教程设置后连接不能用！
-```
-Firefox 插件不能独立的使用，`必须`配合电脑端的客户端才能工作！
+`[1]` 按教程设置后不能用？
 
-  ```shell
-上国内网站卡，流量消耗快！
-```
-本教程实现的是Firefox全局代理，不需代理时请换`系统代理`模式
+`SwitchyOmega`不能独立工作，必须配合`Windows/Linux/MacOS`系统的`Shadowsocks`客户端使用！
 
-  ```shell
-Firefox 能科学上网，其他浏览器不行！
-```
-本教程实现的是Firefox全局代理，其他浏览器默认使用"系统代理"
+`[2]` 谷歌 [Chrome](https://www.google.cn/chrome/) 浏览器，如何安装`SwitchyOmega`扩展？
 
-  ```shell
-如何离线安装 SwitchyOmega 插件
-```
+* 点击下载 <a href="media/firefox/omega.crx" target="_blank">SwitchyOmega</a>，打开`Chrome`设置-->`扩展程序`-->打开`开发者模式`-->扩展程序`拖放`入浏览器
 
-Firefox 插件：<a href="media/firefox/switchyomega.xpi" target="_blank">SwitchyOmega</a>
+![SwitchyOmega](media/firefox/ff_chrome.jpg ':size=720')
 
-Chrome 插件：<a href="media/firefox/switchyomega.crx" target="_blank">SwitchyOmega</a>
+**参考资料：** 
 
-如何安装？百度搜索关键字`离线安装SwitchyOmega`
+https://github.com/FelisCatus/SwitchyOmega/wiki
+
+https://github.com/entr0pia/SwitchyOmega-Whitelist

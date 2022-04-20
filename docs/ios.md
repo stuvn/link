@@ -1,56 +1,47 @@
-!> AppleID 分两个体系iCloud 和AppStore，不要用任何人的ID登陆iCloud（`危险`）
+!> 请不要开启`双重认证`，`也不要`把账号`占为私用`，因为这`不会成功！`
 
-## 更换美区 AppStoreID
+## 更换美区账号{docsify-ignore}
 
-* AppleID 分两个体系iCloud 和AppStore，`AppStoreID` 在设置-->Apple ID-->`媒体与购买项目`（iOS 13 显示为`iTunes Store与App Store`）
+* 打开`App Store`-->点`右上角头像`[下拉到底部]-->`退出`您的账号，登录`美区账号`[账号密码看图]
 
-* 退出您当前的`AppStoreID`（注意：不要退出iCloud），登陆美区`AppStoreID`（通常您购买SS节点的网站会提供，也可自行淘宝购买）
+![apple](media/apple/id_1.jpg ':size=360')
 
-![appleid](media/apple/id1.gif ':size=360')
+* 如登陆后有安全提示，点`其他选项`-->`不升级`，这样才不会弹出安全问题！[`不要`升级账户安全]
 
-* 登录新`AppStoreID`时会有身份提示，点`不是XXX？`登陆后会有安全提示，点最下面的`其他选项`-->`不升级`，这样才不会弹出问题
+![apple](media/apple/id_2.jpg ':size=360')
 
-![appleid](media/apple/id2.gif ':size=360')
+!> `不要`在手机的`设置`里登录`美区账号`。否则，您的设备可能会`变成砖头！`
 
-## Potatso Lite（土豆丝）
+!> 如提示`您的帐户已在 App Store 和 iTunes 中被禁用`，请删掉手机里已安装的`Shadowrocket`
 
-* 支持 iOS 13.x - 14.x 系统
+## Shadowrocket (小火箭)
 
-* 更换美区AppStoreID 后打开应用商店下载 `Potatso Lite`-->打开App`添加代理`-->通过`代理地址`自动导入
+* 支持 iOS 9.x - 15.x 系统
 
-![Potatso](media/apple/pt1.gif ':size=360')
+* [更换美区账号](ios?id=更换美区账号) 后在`App Store`下载 `Shadowrocket`[下载完后`请换回您的账号`]
 
-* 进入您购买SS节点的网站，复制节点的`二维码链接`-->粘贴到上面的`代理地址`（`重复操作`添加其他节点到App）
+* 登入您购买`SS节点`的网站，复制`二维码链接`[每个节点都对应一个`二维码链接`]
 
-![Potatso](media/apple/pt2.gif ':size=360')
+![Shadowrocket](media/apple/sr_1.jpg ':size=360')
 
-* 打开`设置`-->开启`智能路由`（省流量）；选择节点，点右下角的连接`按钮`-->提示VPN连接-->点`Allow`允许
+* 打开小火箭-->自动检测到`SS链接`-->点击`添加`[`重复操作`添加其他节点到App]
 
-![Potatso](media/apple/pt3.gif ':size=360')
+![Shadowrocket](media/apple/sr_2.jpg ':size=360')
 
+* `另种方法`添加节点：点击`SS节点`的二维码 [点两次]-->检测到`SS链接`-->`打开`
 
-## Shadowrocket（小火箭）
+![Shadowrocket](media/apple/sr_3.jpg ':size=360')
 
-* 支持 iOS 9.x - 14.x 系统
+* `选择节点`-->`连接/断开`首次使用会提示添加代理-->点击`Allow`允许VPN连接！
 
-* 更换美区AppStoreID 后打开应用商店下载 `Shadowrocket`-->完成后打开App
-
-* 进入您购买SS节点的网站，复制节点的`二维码链接`-->再次打开App会检测到复制的链接-->`添加`（`重复操作`添加其他节点到App）
-
-![Shadowrocket](media/apple/sr1.gif ':size=360')
-
-* 另一种添加节点的方法：点击节点的`二维码`（可能要点两次）-->App会检测到SS节点并提示`打开`（`重复操作`添加其他节点到App）
-
-![Shadowrocket](media/apple/sr2.gif ':size=360')
-
-* 选择节点，打开连接开关的`按钮`，首次使用会出现一个添加代理的提示-->点击"Allow"允许VPN连接
-
-![Shadowrocket](media/apple/sr3.gif ':size=360')
+![Shadowrocket](media/apple/sr_4.jpg ':size=360')
 
 !> 常见问题
 
-  ```shell
-  确认设置没问题，但还是不能用！
-```
+`[1]` 确认设置没问题，但还是不能用！
 
-切换 4G/wifi 网络进行尝试，不行再重启手机/路由器试一试
+切换 4G/wifi 网络进行尝试，不行再重启手机/路由器试一试！
+
+`[2]` 为什么没看到`Potatso Lite`的教程？
+
+因为`Potatso Lite`不支持 <a href="https://shadowsocks.org/en/wiki/SIP002-URI-Scheme.html" target="_blank">SIP002</a>，需手动设置插件。[点击这里](potatso-lite) 查看教程！

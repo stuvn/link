@@ -12,7 +12,7 @@
 <body>
   <div id="app">加载中</div>
   <script>
-    const host = 'stuvn.github.io';
+    const host = 'www.sop.pw';
     if(window.location.host === host && window.location.protocol !== 'https:') {
       window.location.protocol = 'https:';
     }
@@ -21,20 +21,27 @@
       coverpage: true,
       onlyCover: true,
       loadSidebar: true,
-      subMaxLevel: 2,
+      subMaxLevel: 3,
       name: 'Shadowsocks',
       themeColor: '#2196F3',
-      repo: 'https://www.baidu.com/',
+      copyCode: {
+          buttonText : '点击复制',
+          errorText  : '错误',
+          successText: '复制成功'
+      },
       search: {
-        maxAge: 86400000,
+        maxAge: 3600000,
         paths: 'auto', 
         placeholder: '搜索',
-        noData: '找不到结果',
-      },
+        noData: '找不到结果'
+      }
     };
   </script>
-  <script src="./docsify.min.js"></script>
+  <!-- Latest v2.x.x -->
   <script src="./search.js"></script>
+  <script src="./passwd.js"></script>
+  <script src="./docsify.min.js"></script>
   <script src="./zoom-image.js"></script>
+  <script src="./docsify-copy-code.min.js"></script>
 </body>
 </html>

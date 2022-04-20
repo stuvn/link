@@ -1,61 +1,61 @@
-
-!> Shadowsocks 和 SSTap，二选一即可！备用下载： [Shadowsocks](https://www.5nd.xyz/media/win/win.zip)  或   [SSTap](https://www.5nd.xyz/media/win/sstap.zip) 
+!> `Shadowsocks`和`Netch`二选一即可，如选`Shadowsocks`建议配合 [火狐扩展](firefox) 使用！
 
 ## Shadowsocks (小飞机)
 
-* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行win 文件夹里的小飞机。如提示.NET版本过低，下载 [.NET Framework ](https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe)
+* 支持 Windows 7/10 （要求 [.NET 4.6.2](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe) 以上版本）
 
-![win1](media/win/ss1.gif ':size=720')
+* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里的小飞机。如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
 
-* 进入您购买SS节点的网站，复制节点的`二维码链接`-->从剪贴板导入URL（`重复操作`添加其他节点到客户端）
+![win](media/win/ss_1.jpg ':size=720')
 
-![win2](media/win/ss2.gif ':size=720')
+* 登入您购买`SS节点`的网站，复制节点的`二维码链接`（每个节点都对应一个`二维码`和`二维码链接`）
 
-* 择服务器和系统代理模式-->`PAC模式`（平时用PAC模式就可以，仅在遇到无法打开的网站时才用`全局模式`）
+![win](media/win/ss_2.jpg ':size=720')
 
-![win3](media/win/ss3.gif ':size=720')
+* 导入服务器。任务栏上的小飞机-->鼠标右键-->服务器-->从剪贴板导入URL（`重复操作`添加其他节点）
 
-!> 常见问题
+![win](media/win/ss_3.jpg ':size=720')
 
-  ```shell
-  Shadowsocks 错误:端口已被占用！
-```
+* 选择服务器和系统代理模式-->`PAC模式`（平时代理请用`PAC模式`，遇到无法打开的网站请参考 [PAC 规则](pac) ）
 
-说明`重复`运行了客户端，请关掉客户端重启系统后再试！
-
-  ```shell
-  确认设置没问题，但还是不能用！
-```
-
-卸载`360、电脑管家、毒霸`等国产安全类软件，重启系统！
-
-  ```shell
-  卸载360、电脑管家后仍不能用！
-```
-请参考[Firefox 插件](firefox)教程，配合Firefox 插件使用！
-
-## SSTap (俗称小盾牌)
-
-* 点击下载 <a href="media/win/sstap.zip" target="_blank">SSTap</a> ，安装后运行客户端（安装过程如遇安全提示，点`"始终信任"`并安装软件）
-
-![sstap1](media/win/st1.gif ':size=600')
-
-* 进入您购买SS节点的网站，复制节点的`二维码链接`（每节点都唯一对应一个`二维码链接`）
-
-![sstap2](media/win/st2.gif ':size=600')
-
-* 将复制的`二维码链接`-->粘贴到第一步打开的对话框-->点"添加"（每行一个`二维码链接`）
-
-![sstap3](media/win/st3.gif ':size=600')
-
-* 一般来说，上国外网站Google、YouTube 等选3模式，需登陆国外游戏、软件等选6模式
-
-![sstap4](media/win/st4.gif ':size=600')
+![win](media/win/ss_4.jpg ':size=720')
 
 !> 常见问题
 
-  ```shell
-代理类软件都是相互冲突的！
+`[1]` Shadowsocks 错误:端口已被占用！
 
-若使用SSTap客户端，请删掉小飞机（删掉win文件夹）
-```
+说明`重复运行`客户端，请关掉客户端重启系统后再试！
+
+`[2]` 非预期***无法加载DLL "libsscrypto.dll"
+
+请下载安装 [Visual C++ 2015 (x86)](https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe) 如仍不能用，请将`win`文件夹移到某磁盘根目录下，比如`D:\win\`
+
+`[3]` 确认设置没问题，但还是不能用！
+
+卸载`360、电脑管家`等国产软件，重启系统！如仍不能用，请参考 [火狐扩展](firefox) 教程，配合`SwitchyOmega`使用！
+
+## Netch (上网/游戏通用) 
+
+* 支持Windows 7/10 （要求 [.NET 4.8](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe) 以上版本）
+
+* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> ，解压后运行`Netch`文件夹里的`Netch`。如提示`.NET`版本过低，请下载 [.NET 4.8 ](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe)
+
+![netch](media/win/nc_1.jpg ':size=720')
+
+* 登入您购买`SS节点`的网站，复制节点的`二维码链接`（每个节点都对应一个`二维码`和`二维码链接`）
+
+![netch](media/win/nc_2.jpg ':size=720')
+
+* 导入二维码链接。打开`Netch`-->服务器-->从剪贴板导入服务器（`重复操作`添加其他节点到客户端）
+
+![netch](media/win/nc_3.jpg ':size=720')
+
+* 只代理上网选`[4][网页代理]绕过***和中国大陆`，代理国外软件、游戏选`[3][TUN/TAP]绕过***和中国大陆`
+
+![netch](media/win/nc_4.jpg ':size=720')
+
+!> 常见问题
+
+`[1]` 代理类软件都是相互冲突的！
+
+若使用`Netch`客户端，请删掉小飞机（删掉`win`文件夹）

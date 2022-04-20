@@ -1,32 +1,41 @@
+!> `Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体参考 [火狐扩展](firefox)
 
-!> Shadowsocks-Qt5 必须配合Firefox 插件使用！备用下载：[Shadowsocks-Qt5](https://www.5nd.xyz/media/linux/Shadowsocks-Qt5.AppImage) 
+## Shadowsocks-libev 
 
-## Shadowsocks-Qt5
+`Ubuntu/Debian`-`安装命令`
 
-* 点击下载 <a href="media/linux/Shadowsocks-Qt5.AppImage" target="_blank">Shadowsocks-Qt5</a> ，右键文件-->属性-->权限-->`赋予文件可执行权限！`
+```
+sudo apt update && sudo apt install shadowsocks-libev simple-obfs -y
+```
 
-![linux1](media/linux/sq1.gif ':size=720')
+`ArchLinux/Manjaro`-`安装命令`
 
-* 进入您购买SS节点的网站，复制节点的`二维码链接`（每个节点都唯一对应一个二维码链接，`重复操作`）
+```
+sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
+```
 
-![linux2](media/linux/sq2.gif ':size=720')
+* 登入您购买`SS节点`的网站，点击`Linux命令`栏右边的`复制命令`[每个节点都对应一个`Linux命令`]
 
-* 操作菜单：连接-->添加-->URI，把`二维码链接`导入客户端！设置配置名称，并把本地端口改为`1080`
+![linux](media/linux/linux_1.jpg ':size=720')
 
-![linux3](media/linux/sq3.gif ':size=720')
+* 打开`终端`，把复制的`Linux命令`粘贴到`终端`执行 [保持前台运行，可`最小化`窗口，但`不能关闭`]
 
-* `选择节点`后连接，然后再配合Firefox 插件使用。具体请参考 [Firefox 插件](firefox) 教程
+![linux](media/linux/linux_2.jpg ':size=720')
 
-![linux4](media/linux/sq4.gif ':size=720')
+* 执行`Linux命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [火狐扩展](firefox)
+
+![linux](media/linux/linux_3.jpg ':size=720')
 
 !> 常见问题
 
-  ```shell
-按教程设置后连接不能用！
-```
-`必须`配合Firefox 插件使用，具体请参考[Firefox 插件](firefox)教程
+`[1]` 按教程设置后不能用！
 
-  ```shell
-上国内网站卡，流量消耗快！
-```
-本教程实现的是全局代理，`不需要`代理的时候请断开连接！
+本教程`必须`配合`SwitchyOmega`扩展使用，具体请参考 [火狐扩展](firefox)
+
+`[2]` 如何切换到不同的路线？
+
+关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`Linux命令`，再执行！
+
+`[3]` 如何设置开机`自动开启`代理？
+
+把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="https://www.sop.pw/media/linux/linux_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="https://www.sop.pw/media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>

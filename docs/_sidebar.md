@@ -3,12 +3,17 @@
 * 教程
   * [Windows](/win)
   * [MacOS](/mac)
-  * [iPhone/iPad](/ios)
+  * [iPhone](/ios)
   * [Android](/android)
-  * [Linux 系统](/linux)
-  * [路由器](/openwrt)
-  * [Firefox 插件](/firefox)
+  * [Linux](/linux)
+  * [路由器](/router)
 
 * 进阶
-  * [高级设置](/advanced)
-  * [问题排查](/test)
+  * [节点测试](/tcping)
+  * [火狐扩展](/firefox)
+  * [修改密码](/pwd)
+  * [PAC 规则](/pac)
+  * [微信代理](/sock5)
+  * [下载中心](/down)
+  * [其他问题](/other)
+  

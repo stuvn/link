@@ -1,26 +1,33 @@
-!> 为防止Android 杀后台，请设置后台运行！备用下载：[Shadowsocks](https://www.5nd.xyz/media/android/ss.apk)
+!> `Android`系统容易杀后台，安装后请设置`后台运行`权限！
 
-## Shadowsocks（小飞机）
+## SagerNet (已内置-obfs)
 
-* 点击下载 <a href="media/android/ss.apk" target="_blank">Shadowsocks</a> ，安装后请`务必`为App设置后台运行
+* 点击下载 <a href="media/android/sn.apk" target="_blank">SagerNet</a> ，安装后为App设置`后台运行`权限！
 
-![android1](media/android/ss1.gif ':size=320')
+* 登入您购买`SS节点`的网站，复制`二维码链接`[每个节点都对应一个`二维码链接`]
 
-* 进入您购买SS节点的网站，复制`二维码链接`-->从剪贴板导入
+![android](media/android/sn_1.jpg ':size=360')
 
-![android2](media/android/ss2.gif ':size=320')
+* 打开小飞机，添加节点。点右上角`+`-->从剪贴板导入 [`重复操作`添加其他节点]
 
-* 点击`节点`右边的✏图标-->设置节点的`路由模式`（`重复操作`）
+![android](media/android/sn_2.jpg ':size=360')
 
-![android3](media/android/ss3.gif ':size=320')
+* `另种方法`添加节点：点击`SS节点`的二维码 [点两次]-->检测到`SS链接`-->`打开`
 
-* 左滑`删掉`无效路线，`选择`添加的节点，点击小飞机连接VPN
+![android](media/android/sn_3.jpg ':size=360')
 
-![android4](media/android/ss4.gif ':size=320')
+* 点击左上角`≡`菜单图标，打开路由设置：开启绕过`中国域名规则`和`中国IP规则`
+
+![android](media/android/sn_4.jpg ':size=360')
 
 !> 常见问题
 
-```yaml
-后台无法运行
-```
-重新编辑节点，并设置App后台运行！
+`[1]` 提示`后台**启动失败`或`经常断线，重新设置后又能用！`
+
+因为程序的`后台服务`已被系统杀掉，请为App设置`后台运行`权限！
+
+如何设置？点击这里 [Don't kill my app](https://dontkillmyapp.com/) 然后找到您的`手机厂商`-->进入!
+
+`[2]` 为什么没看到`Android`系统原版的`Shadowsocks`教程？
+
+因为安卓版的`Shadowsocks`需配合`Simple-obfs`使用，[点击这里](android+obfs) 查看教程！
