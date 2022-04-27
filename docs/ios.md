@@ -1,14 +1,14 @@
-!> 请不要开启`双重认证`，`也不要`把账号`占为私用`，因为这`不会成功！`
+!> 不要开启`双重认证`，`也不要`把账号`占为私用`，因为这`不会成功！`
 
 ## 更换美区账号{docsify-ignore}
 
-* 打开`App Store`-->点`右上角头像`[下拉到底部]-->`退出`您的账号，登录`美区账号`[账号密码看图]
+* 打开`App Store`-->点`右上角头像`-->`下拉到底部`-->`退出登录`，再登录`美区账号`[<a href="javascript:getid();">点击查看账号</a>]
 
-![apple](media/apple/id_1.jpg ':size=360')
+<div style="color:Blue" id="jsonTip"></div>
 
-* 如登陆后有安全提示，点`其他选项`-->`不升级`，这样才不会弹出安全问题！[`不要`升级账户安全]
+* 如登陆后有安全提示，点`其他选项`-->`不升级`，这样才不会弹出安全问题！[`谁点"继续"是傻逼`]
 
-![apple](media/apple/id_2.jpg ':size=360')
+![apple](media/apple/id.jpg ':size=360')
 
 !> `不要`在手机的`设置`里登录`美区账号`。否则，您的设备可能会`变成砖头！`
 
@@ -44,4 +44,4 @@
 
 `[2]` 为什么没看到`Potatso Lite`的教程？
 
-因为`Potatso Lite`不支持 <a href="https://shadowsocks.org/en/wiki/SIP002-URI-Scheme.html" target="_blank">SIP002</a>，需手动设置插件。[点击这里](potatso-lite) 查看教程！
+因为`Potatso Lite`不支持 <a href="https://shadowsocks.org/en/wiki/SIP002-URI-Scheme.html" target="_blank">SIP002</a>，`可能需要`手动设置插件。[点击这里](potatso-lite) 查看教程！

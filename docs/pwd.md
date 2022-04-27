@@ -1,26 +1,10 @@
-!> 研究表明`纯数字`的`SS密码`已被证实不安全！具体请参考 <a href="https://www.usenix.org/system/files/sec21summer_len.pdf#page=13" target="_blank">相关论文</a>
-
-!> 改`SS密码`后，请删掉客户端里的路线，重新添加。`如何删除路线？`[点击这里](other?id=删除路线)
-
-## 改SS密码
-
-*  登入您购买`SS节点`的网站，如`账号`的`SS密码`不符合安全要求，请点击`续费`旁的`改SS密码`
-
-![windows](media/win/pwd_1.jpg ':size=640')
-
-*  把`SS密码`改成`数字`和`大小写字母`组合的`复杂密码`，修改后[删掉](other?id=删除路线)客户端里的路线，`重新添加`
-
-![windows](media/win/pwd_2.jpg ':size=640')
-
-!> 理论上`SS密码`越复杂越安全，点击下面的`生成`，然后点`复制`得到一个`随机`的`复杂密码`！
-
 <style type="text/css"> 
 .box{
 	background-color: white;
 }
 
 .box h2{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: left;
   font-size: 26px;
   color: #015a96;
@@ -32,7 +16,6 @@
   align-items: center;
   border: 0px solid;
 }
-
 
 input {
   padding: 20px;
@@ -72,6 +55,12 @@ input::placeholder{
 }
 </style> 
 
+## 改SS密码
+
+*  登入您购买`SS节点`的网站，如`账号`的`SS密码`不符合安全要求，请点击`续费`旁的`改SS密码`
+
+![windows](media/win/pwd.jpg ':size=640')
+
 <div class="box">
 <h2>随机密码生成器</h2>
 <input type="text" name="" placeholder=" 随机密码" id="password" readonly><br /><br />
@@ -82,3 +71,5 @@ input::placeholder{
  </tr>
 </table>
 </div>
+
+!> 改`SS密码`后，请删掉客户端里的路线，重新添加。`如何删除路线？`[点击这里](other?id=删除路线)
