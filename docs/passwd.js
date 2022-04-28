@@ -32,7 +32,8 @@ function getid() {
 			$jsontip.empty();                       	//将获取到的json格式数据遍历到div中
 
                         strHtml += "账号: " + data[0].id + "<br><br>";
-                        strHtml += "密码: " + data[0].pwd;  
+                        strHtml += "密码: " + data[0].pwd + "<br><br>";  
+			strHtml += "登录后在应用商店搜索下载 Shadowrocket"; 
 
 			$jsontip.html(strHtml);
 		}
