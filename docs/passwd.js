@@ -33,7 +33,7 @@ function getid() {
 
                         strHtml += "账号: " + data[0].id + "<br><br>";
                         strHtml += "密码: " + data[0].pwd + "<br><br>";  
-			strHtml += "登录后在应用商店搜索下载 Shadowrocket"; 
+			strHtml += '登录账号时，不要开启"双重认证"'; 
 
 			$jsontip.html(strHtml);
 		}
