@@ -1,6 +1,6 @@
 !> `Android`系统容易杀后台，安装后请设置`后台运行`权限！
 
-## SagerNet (黄色小飞机)
+## SagerNet (粉色小飞机)
 
 * 点击下载 <a href="media/android/sn.apk" target="_blank">SagerNet</a> ，安装后为App设置`后台运行`权限！
 
