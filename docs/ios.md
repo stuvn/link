@@ -6,7 +6,7 @@
 
 <div style="color:Blue" id="jsonTip"></div>
 
-* 如登陆后有安全提示，点`其他选项`-->`不升级`，这样才不会弹出安全问题！[`谁点"继续"是傻逼`]
+* 登陆时有安全提示，点`其他选项`-->`不升级`，否则会弹出安全问题！[登录后下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)]
 
 ![apple](media/apple/id.jpg ':size=360')
 
