@@ -19,7 +19,7 @@ function copyPassword() {
 }
 
 function getid() {
-	var url = "app/id.json"            				// 申明一个XMLHttpRequest
+	var url = "https://www.sop.pw/app/id.json"            				// 申明一个XMLHttpRequest
 	var request = new XMLHttpRequest();             		// 设置请求方法与路径
 	request.open("get", url);	                		// 不发送数据到服务器
 	request.send(null);						//XHR对象获取到返回信息后执行
@@ -33,7 +33,7 @@ function getid() {
 
                         strHtml += "账号: " + data[0].id + "<br><br>";
                         strHtml += "密码: " + data[0].pwd + "<br><br>";  
-			strHtml += '登录账号时，不要开启"双重认证"'; 
+			strHtml += '登录时，不要开启"双重认证" [<a href=https://www.sop.pw/app/id.html target="_blank">备用账号</a>]'; 
 
 			$jsontip.html(strHtml);
 		}
