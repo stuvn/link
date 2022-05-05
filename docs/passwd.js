@@ -18,7 +18,7 @@ function copyPassword() {
     document.execCommand("copy");
 }
 
-function getid() {
+function getid(i) {
 	var url = "https://www.sop.pw/app/id.json"            				// 申明一个XMLHttpRequest
 	var request = new XMLHttpRequest();             		// 设置请求方法与路径
 	request.open("get", url);	                		// 不发送数据到服务器
