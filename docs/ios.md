@@ -2,7 +2,7 @@
 
 ## 更换美区账号{docsify-ignore}
 
-* 打开`App Store`-->点`右上角头像`-->`下拉到底部`-->`退出登录`，再登录`美区账号`[<a href="javascript:getid();">点击查看账号</a>]
+* 打开`App Store`-->点`右上角头像`-->`下拉到底部`-->`退出登录`，再登录`美区账号`[<a href="javascript:getid(0);">点击查看账号</a>]
 
 <div style="color:Blue" id="jsonTip"></div>
 
