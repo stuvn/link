@@ -30,12 +30,22 @@ function getid() {
 			var $jsontip = $("#jsonTip");          		//存储数据的变量 
 			var strHtml = "";                       	//清空内容 
 			$jsontip.empty();                       	//将获取到的json格式数据遍历到div中
+			var arr = Object.keys(data);
+			console.log(arr.length);
 
-                        strHtml += "账号: " + data[0].id + "<br><br>";
-                        strHtml += "密码: " + data[0].pwd + "<br><br>";  
-			strHtml += '登录时，不要开启"双重认证" [<a href=https://www.sop.pw/app/id.html target="_blank">备用账号</a>]'; 
+                        if(i == 0) {	strHtml += "账号: " + data[i].id + "<br><br>";
+                        strHtml += "密码: " + data[i].pwd + "<br><br>"; 
+			strHtml += '登录时，不要开启"双重认证" [<a href="javascript:getid(1)">备用账号</a>]';	}
+
+			else {	strHtml += "账号: " + data[1].id + "<br><br>";
+				strHtml += "密码: " + data[1].pwd + "<br>";	
+				if(arr.length > 2) {	
+					strHtml += "<br><font color=darkred>账号: " + data[2].id + "<br><br>";
+					strHtml += "密码: " + data[2].pwd + "<br></font>";	}
+			}
 
 			$jsontip.html(strHtml);
+
 		}
 	}
 }
