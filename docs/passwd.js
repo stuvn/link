@@ -37,8 +37,8 @@ function getid(i) {
                         strHtml += "密码: " + data[i].pwd + "<br><br>"; 
 			strHtml += '登录时，不要开启"双重认证" [<a href="javascript:getid(1)">备用账号</a>]';	}
 
-			else {	strHtml += "账号: " + data[1].id + "<br><br>";
-				strHtml += "密码: " + data[1].pwd + "<br>";	
+			else {	strHtml += "<font color=darkred>账号: " + data[1].id + "<br><br>";
+				strHtml += "密码: " + data[1].pwd + "<br></font>";	
 				if(arr.length > 2) {	
 					strHtml += "<br><font color=darkred>账号: " + data[2].id + "<br><br>";
 					strHtml += "密码: " + data[2].pwd + "<br></font>";	}
