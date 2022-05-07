@@ -30,6 +30,8 @@
 
 客户端连接后，能打开 [Youtube.com](https://www.youtube.com) 或 [Google.com](https://www.google.com) 说明成功！
 
+然后打开 [IP Location](https://iplocation.com/) 检查`IP地址！`如连接失败，请 [测试端口](tcping)
+
 ## 用前须知 {docsify-ignore}
 
 `[1] 代理类软件是相互冲突的，请先卸载其他VPN软件 [如果有的话]`
