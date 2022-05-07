@@ -40,7 +40,7 @@ function getid(i) {
 			else {	strHtml += "<font color=darkred>账号: " + data[1].id + "<br><br>";
 				strHtml += "密码: " + data[1].pwd + "<br></font>";	
 				if(arr.length > 2) {	
-					strHtml += "<br><font color=darkred>账号: " + data[2].id + "<br><br>";
+					strHtml += "<br><font color=red>账号: " + data[2].id + "<br><br>";
 					strHtml += "密码: " + data[2].pwd + "<br></font>";	}
 			}
 
