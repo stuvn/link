@@ -17,6 +17,10 @@ https://www.kystu.com
 
 温馨提示：半年高端套餐含 + 欧洲CN2-GIA路线
 
+## 教程网址：
+
+https://stuvn.github.io/link
+
 ## VPS推荐：
 
 * [Vultr](https://www.vultr.com/?ref=8245248)
