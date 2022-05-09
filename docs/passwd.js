@@ -42,10 +42,10 @@ function getid(i) {
 				if(arr.length > 2) {	
 					strHtml += "<br><font color=red>账号: " + data[2].id + "<br><br>";
 					strHtml += "密码: " + data[2].pwd + "<br></font>";	}
+			      strHtml += '<br><font color=darkred>登录时，不要开启"双重认证"</font> [<a href="javascript:getid(0)">主用账号</a>]';
 			}
 
 			$jsontip.html(strHtml);
-
 		}
 	}
 }
