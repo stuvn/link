@@ -32,7 +32,7 @@ input {
 <form action="" method="post">
 <div  class="box">
 账号: <input type='text' name='id' value="<?php echo $data[0]["id"];?>" disabled><br /><br />
-密码: <input type='text' name='pwd'><br /><br />
+密码: <input type='text' name='passwd'><br /><br />
 </div>
 <input type="submit" value="提交">
 </form>
@@ -42,10 +42,10 @@ input {
 
 <?php
 
-if(strlen($_POST["pwd"])<8){
+if(strlen($_POST["passwd"])<8){
 	echo "<font color=red>密码不能为空/长度不能小于8</fonf>";die();
 } else {
-	$data[0]["pwd"] = $_POST["pwd"];
+	$data[0]["pwd"] = $_POST["passwd"];
 	$json_string = json_encode($data);
 	file_put_contents("id.json",$json_string);
 	echo "密码修改成功！";
