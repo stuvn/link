@@ -45,7 +45,7 @@ input {
 if(strlen($_POST["passwd"])<8){
 	echo "<font color=red>密码不能为空/长度不能小于8</fonf>";die();
 } else {
-	$data[0]["pwd"] = $_POST["passwd"];
+	$data[0]["passwd"] = $_POST["passwd"];
 	$json_string = json_encode($data);
 	file_put_contents("id.json",$json_string);
 	echo "密码修改成功！";
