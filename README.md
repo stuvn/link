@@ -27,6 +27,8 @@ https://stuvn.github.io/link
 
 * [Linode](https://www.linode.com/?r=e86fb9ef58cd6a51c8d2dab3485cea85e1af6e27)
 
-## 韩国VPS：
+## 高端VPS：
 
-* [kdatacenter](https://www.kdatacenter.com)
+* [DMIT](https://www.dmit.io/aff.php?aff=3149)
+
+* [kdatacenter](https://www.kdatacenter.com/myportal/?affid=832)
