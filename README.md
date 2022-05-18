@@ -31,4 +31,6 @@ https://stuvn.github.io/link
 
 * [DMIT](https://www.dmit.io/aff.php?aff=3149)
 
-* [kdatacenter](https://www.kdatacenter.com/myportal/?affid=832)
+* [Kdatacenter](https://www.kdatacenter.com/myportal/?affid=832)
+
+* [GigsGigsCloud](https://clientarea.gigsgigscloud.com/?affid=3589)
