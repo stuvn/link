@@ -1,6 +1,6 @@
 ## Clash for Windows
 
-* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/stuvn/shadowsocks-manager/releases/download/0.19.21/clash_cn.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/stuvn/link/releases/download/0.19.21/clash_cn.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
 
 ![win](media/win/cfw_1@cn.jpg ':size=720')
 

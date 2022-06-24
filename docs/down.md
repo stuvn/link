@@ -2,7 +2,7 @@
 
 ## Windows
 
-* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> <a href="https://github.com/stuvn/shadowsocks-manager/releases/download/0.19.21/clash_cn.exe" target="_blank">备用</a> [🐱小猫咪]
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> <a href="https://github.com/stuvn/link/releases/download/0.19.21/clash_cn.exe" target="_blank">备用</a> [🐱小猫咪]
 
 * 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> [小飞机]
 
