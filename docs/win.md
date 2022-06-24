@@ -1,4 +1,18 @@
-!> `Shadowsocks`和`Netch`二选一即可，如选`Shadowsocks`建议配合 [火狐扩展](firefox) 使用！
+## Clash for Windows
+
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/stuvn/shadowsocks-manager/releases/download/0.19.21/clash_cn.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+
+![win](media/win/cfw_1@cn.jpg ':size=720')
+
+* 登入您购买`SS节点`的网站-->点击`订阅链接`-->`clash`-->`导入App`，打开`Clash`-->`配置`-->选择`订阅文件`
+
+![win](media/win/cfw_2@cn.jpg ':size=720')
+
+* 打开`Clash`代理设置-->选择`规则`模式-->根据情况手动`选择节点`[不建议选`自动选优`，因为会`自动跳IP`]
+
+![win](media/win/cfw_3@cn.jpg ':size=720')
+
+!> `代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
 
 ## Shadowsocks (小飞机)
 
@@ -56,6 +70,10 @@
 
 !> 常见问题
 
-`[1]` 代理类软件都是相互冲突的！
+`[1]` 代理类软件都是`相互冲突`的！
 
-若使用`Netch`客户端，请删掉小飞机（删掉`win`文件夹）
+若使用`Netch`客户端，请退出小飞机（删掉`win`文件夹）
+
+`[2]` `Netch`无法配合`火狐扩展`使用！
+
+`Netch`可实现`TUN/TAP`层代理，不需要配合`火狐扩展`使用！

@@ -1,0 +1,34 @@
+{
+    "token": "5306168288:AAEY7ve31-ewt7XmHK3xggAcXKBWi3PXC3E",
+    "chat_id": "523716531",
+    "apple_id": [
+        {
+            "id": "us@sop.pw",
+            "passwd": "sq!l1L0-e",
+            "dob": "05/24/1988",
+            "qa": {
+                "\u4f60\u7684\u7b2c\u4e00\u4e2a\u5ba0\u7269\u53eb\u4ec0\u4e48\u540d\u5b57\uff1f": "flower",
+                "\u4f60\u62e5\u6709\u7684\u7b2c\u4e00\u8f86\u8f66\u662f\u4ec0\u4e48\u578b\u53f7\uff1f": "elantra",
+                "\u4f60\u7684\u7236\u6bcd\u662f\u5728\u54ea\u91cc\u8ba4\u8bc6\u7684\uff1f": "china"
+            },
+            "last_reset_time": 1656061142,
+            "reset_pwd_interval": 60,
+            "status": 1,
+            "api_host": ""
+        },
+        {
+            "id": "hk@sop.pw",
+            "passwd": "yBRG_p-*1",
+            "dob": "05/24/1988",
+            "qa": {
+                "\u4f60\u7684\u7b2c\u4e00\u4e2a\u5ba0\u7269\u53eb\u4ec0\u4e48\u540d\u5b57\uff1f": "flower",
+                "\u4f60\u62e5\u6709\u7684\u7b2c\u4e00\u8f86\u8f66\u662f\u4ec0\u4e48\u578b\u53f7\uff1f": "elantra",
+                "\u4f60\u7684\u7236\u6bcd\u662f\u5728\u54ea\u91cc\u8ba4\u8bc6\u7684\uff1f": "china"
+            },
+            "last_reset_time": 1656061182,
+            "reset_pwd_interval": 60,
+            "status": 1,
+            "api_host": ""
+        }
+    ]
+}

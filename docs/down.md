@@ -2,23 +2,29 @@
 
 ## Windows
 
-* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> [ 小飞机 ]
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> <a href="https://github.com/stuvn/shadowsocks-manager/releases/download/0.19.21/clash_cn.exe" target="_blank">备用</a> [🐱小猫咪]
 
-* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> [ 上网/游戏通用 ]
+* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> [小飞机]
+
+* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> [上网/游戏通用]
 
 ## MacOS
 
 * 点击下载 <a href="media/mac/ShadowsocksX-NG.zip" target="_blank">ShadowsocksX-NG</a>
 
+* 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX</a> 或 <a href="media/mac/ClashX-Pro.dmg" target="_blank">ClashX Pro</a> [增强版]
+
+## Linux
+
+* 点击下载 <a href="media/linux/clash.zip" target="_blank">Clash</a> [🐱小猫咪]
+
 ## Android
 
-* 点击下载 <a href="media/android/ss.apk" target="_blank">Shadowsocks</a>`+`<a href="media/android/obfs.apk" target="_blank">Simple-obfs</a>
+* 点击下载 <a href="media/android/sb.apk" target="_blank">Surfboard</a> [冲浪板]
 
-* 点击下载 <a href="media/android/sn.apk" target="_blank">SagerNet</a> [ 内置 Simple-obfs ]
+* 点击下载 <a href="media/android/cfa.apk" target="_blank">Clash For Android</a>
 
 * 线上商店  <a href="https://apkpure.com/cn" target="_blank">https://apkpure.com</a>
-
-!> 安卓版`Shadowsocks`需同时安装`Simple-obfs`
 
 **第三方软件**
 

@@ -67,7 +67,7 @@ input::placeholder{
 <table>
  <tr style="border: none;">
    <th style="border: none;"><div id="button" class="btn1" onclick="genPassword()">生成</div></th>
-   <th style="border: none;"><div id="button" class="btn2" onclick="copyPassword()">复制</div></th>
+   <th style="border: none;"><div id="button" class="btn2" onclick="copyPassword('password')">复制</div></th>
  </tr>
 </table>
 </div>

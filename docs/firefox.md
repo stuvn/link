@@ -2,7 +2,7 @@
 
 ## SwitchyOmega
 
-* 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/)，再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。[Chrome](https://www.google.cn/chrome/) 安装`SwitchyOmega`请看最后的`常见问题`
+* 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/)，再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。或先安装 [Edge](https://www.microsoft.com/zh-cn/edge)，再点击安装 [SwitchyOmega](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN) 扩展。
 
 ![SwitchyOmega](media/firefox/ff_1.jpg ':size=720')
 

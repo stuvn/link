@@ -1,99 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-	<meta name="description" content="Shadowrocket" />
-	<meta name="keywords" content="Shadowrocket" />
-	<title>Shadowrocket</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/my.css" />
+    <meta charset="utf-8">
+    <title>Apple ID</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        .demo-carousel {
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        .apple-item {
+            display: flex;
+        }
+
+        .apple-title {
+            min-width: 60px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="wrap">
-        <div class="main">
-			<div class="topbread" style="margin-bottom: 20px;">
-		    	<div class="container">
-                  <h1 class="text-center">Shadowrocket</h1>
-		    	</div>
-			</div>
-			<div style="margin-top: 70px; margin-bottom: 20px;">
-		        <div style="text-align:center;">
-		  			<div class="polaroid">
-                        <div class="logo">
-                            <img src="assets/images/icon.jpg" class="img-circle" width="120" height="120" />
+    <div class="content" style="margin:0 auto;max-width: 960px;">
+        <div class="layui-tab layui-tab-brief" lay-filter="demo">
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <div class="layui-carousel" id="test1">
+                        <div carousel-item>
+                            <div>
+                                <p class="layui-bg-green demo-carousel">请不要登录 iCloud</p>
+                            </div>
+                            <div>
+                                <p class="layui-bg-red demo-carousel">请不要绑定手机号</p>
+                            </div>
                         </div>
                     </div>
-		            <div class="info" id="ul">
-		                <p>Version: 2.6.6 / Size: 30.0 MB</p>
-					</div>
-		            <div style="padding-top:20px;">
-                        <div class="id" id="id" style="display: none;text-align: left;">
-							<div style="text-align:left;">
-								<p>正在安装中，按 HOME 键返回桌面查看进度。</p>
-        					    <p>首次进行安装请使用提供的账号登录。</p>
-							</div>
-							<table class="table table-bordered">
-                                 <tbody>
-                                     <tr>
-                                         <td>账号</td>
-                                         <td><span id="account"></span></td>
-		                                 <td><a id="copy-id" data-clipboard-target="#account">复制</a></td>
-                                     </tr>
-                                     <tr>
-                                         <td>密码</td>
-                                         <td><span id="password"></td>
-                                         <td><a id="copy-pw" data-clipboard-target="#password">复制</a></td>
-                                     </tr>
-                                 </tbody>
-                             </table>
-							 <p><a id="refresh">刷新</a><p>
-                      	</div>
-		                <span id="checkinfo">
-		                    <a href="itms-services://?action=download-manifest&url=https://www.sop.pw/app/ssr.plist" class="btn btn-success btn-lg btn-circle" id="uaApp">在线安装</a><br /><br />
-		                    <div class="uatip" id="uaTip">
-								<span class="uatip-icon"></span>
-								<p class="uatip-txt">点击右上角<br/>选择在Safari中打开</p>
-							</div>
-		                </span>
-		            </div>
-		        </div>
-                <br/>
-			</div>
-		  
-			<!-- div class="col-md-8 col-md-offset-2" -->
-		        <!-- hr class="devider devider-dotted" -->
-		    <!-- /div -->
-	        <!-- div class="col-md-8 col-md-offset-2" -->
-	            <!-- div class="text-center">2018-11-14 ID被锁定 已更换密码</div -->
-	        <!-- /div -->
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-bg-gray">
+            <div class="layui-row layui-col-space15" id="list">
+                
+            </div>
         </div>
     </div>
-	<div class="footer">
-        <div class="text-center">
-             ©&nbsp;2018 <a href="https://www.baidu.com/" target="blank">百度</a>
-        </div>
-	</div>
-<script type="text/javascript" src="assets/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"></script>
-<script type="text/javascript" src="assets/js/my.js"></script>
-<script>
-	var url = "id.json"            					// 申明一个XMLHttpRequest
-	var request = new XMLHttpRequest();             		// 设置请求方法与路径
-	request.open("get", url);	                		// 不发送数据到服务器
-	request.send(null);						//XHR对象获取到返回信息后执行
-	request.onload = function () {                  		// 返回状态为200，即为数据获取成功
-		if (request.status == 200) {
-			var data = JSON.parse(request.responseText);
-			console.log(data);                    		//获取jsonTip的div
-                        var username = data[0].id;
-                        var password = data[0].pwd;  
-    			document.getElementById("account").innerHTML=username;  
-    			document.getElementById("password").innerHTML=password;       				
-		}
-	}
-</script>
+    <script src="./layui/jquery.min.js"></script>
+    <script src="./layui/clipboard.min.js"></script>
+    <script src="./layui/layui.js" charset="utf-8"></script>
+    <script>
+        $.getJSON("./id.json", function(data) {
+            let html = ''
+            for (const i in data) {
+                let item = data[i];
+                html += `
+                        <div class="layui-col-md6">
+                            <div class="layui-panel">
+                                <div style="padding: 50px 30px;line-height: 50px;">
+                                    <div class="apple-item">
+                                        <div class="apple-title">账号`+ (parseInt(i) + 1) + `：</div>
+                                        <div><button type="button" data-clipboard-text="`+ item['id'] + `"  class="copy-btn layui-btn">点击复制，请不要绑定手机号</button></div>
+                                    </div>
+                                    <div class="apple-item">
+                                        <div class="apple-title">密码`+ (parseInt(i) + 1) + `：</div>
+                                        <div><button type="button" data-clipboard-text="`+ item['passwd'] + `" class="copy-btn layui-btn layui-btn-danger">点击复制，不要开启双重认证</button></div>
+                                    </div>                                    
+                                    <div class="apple-item">
+                                        <div class="apple-title">状态`+ (parseInt(i) + 1) + `：</div>
+                                        <div> `+ (item['status'] ? '<span class="layui-badge layui-bg-green">正常</span>' : '<span class="layui-badge layui-bg-black">维护中</span>') + `</div>
+                                    </div>
+                                    <div class="apple-item">
+                                        <div class="apple-title">更新于：</div>
+                                        <div>`+ item['last_reset_time'] + `</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+            }
+            $('#list').append(html);
+        })
+        
+        var clipboard = new ClipboardJS('.copy-btn');
+        clipboard.on('success', function (e) {
+            e.trigger.innerText = e.trigger.innerText.replace('点我', '已');
+            e.trigger.classList.add('layui-btn-disabled');
+            e.trigger.classList.remove('copy-btn');
+            layer.msg('复制成功！', {
+                time: 3000
+            });
+        });
+        clipboard.on('error', function (e) {
+            layer.msg('复制失败！', {
+                time: 3000
+            });
+        });
+
+        layui.use(['dropdown', 'util', 'layer'], function () {
+            var element = layui.element;
+            var layer = layui.layer
+                , carousel = layui.carousel //轮播
+            //执行一个轮播实例
+            carousel.render({
+                elem: '#test1'
+                , width: '100%' //设置容器宽度
+                , height: 200
+                , arrow: 'none' //不显示箭头
+                , anim: 'fade' //切换动画方式
+            });
+            //监听折叠
+            element.on('collapse(test)', function (data) {
+                layer.msg('展开状态：' + data.show);
+            });
+        });
+    </script>
+
+    <script src="./id.json"></script>
 </body>
+
 </html>

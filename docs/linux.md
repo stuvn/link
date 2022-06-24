@@ -1,4 +1,39 @@
-!> `Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体参考 [火狐扩展](firefox)
+## Clash (🐱小蓝猫) 
+
+* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开`Clash`的常规设置-->打开`开机启动！`
+
+```
+wget https://www.sop.pw/bash/clash.sh && bash clash.sh
+``` 
+
+![Clash](media/linux/cfw_1.jpg ':size=720')
+
+* 登入您购买`SS节点`的网站-->进入账号页-->点击`续费链接`右侧的`订阅链接`-->选择`clash`-->`复制链接`
+
+![Clash](media/linux/cfw_2.jpg ':size=720')
+
+* 打开`clash`的代理设置-->选择`规则`模式-->再`选择节点`！[`首次安装`的新用户，`需重启系统`才能使用]
+
+![Clash](media/linux/cfw_3.jpg ':size=720')
+
+!> 常见问题
+
+`[1]` 若取消`开机启动`，如何`手动`启动`Clash`？
+
+打开`终端`，执行下面的命令。[`终端窗口可最小化，但不能关闭`]
+
+```
+~/clash/cfw
+```
+
+`[2]` 退出`clash`后或不用`clash`后无法正常上网？
+
+打开`终端`，执行下面的命令，`解除代理`绑定！[`需重启系统才能生效`]
+
+```
+sed -i "s/^export http.*//g" ~/.profile
+
+```
 
 ## Shadowsocks-libev 
 
@@ -13,7 +48,6 @@ sudo apt update && sudo apt install shadowsocks-libev simple-obfs -y
 ```
 sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 ```
-
 * 登入您购买`SS节点`的网站，点击`Linux命令`栏右边的`复制命令`[每个节点都对应一个`Linux命令`]
 
 ![linux](media/linux/linux_1.jpg ':size=720')
@@ -28,14 +62,14 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 !> 常见问题
 
-`[1]` 按教程设置后不能用！
+`[1]` 必须配合`SwitchyOmega`吗？
 
-本教程`必须`配合`SwitchyOmega`扩展使用，具体请参考 [火狐扩展](firefox)
+是的，`Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体请参考 [火狐扩展](firefox)
 
-`[2]` 如何切换到不同的路线？
+`[2]` 如何切换至不同的`路线/节点`？
 
-关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`Linux命令`，再执行！
+关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`Linux命令`，重新执行！
 
-`[3]` 如何设置开机`自动开启`代理？
+`[3]` 如何设置开机后`自动开启`代理？
 
-把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="https://www.sop.pw/media/linux/linux_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="https://www.sop.pw/media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
+把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="https://www.sop.pw/media/linux/ubuntu_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="https://www.sop.pw/media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
