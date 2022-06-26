@@ -3,7 +3,7 @@
 * 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开`Clash`的常规设置-->打开`开机启动！`
 
 ```
-wget 'https://stuvn.github.io/link/media/linux/linux.zip' && unzip clash.zip && \
+wget 'https://stuvn.github.io/link/media/linux/clash.zip' && unzip clash.zip && \
 chmod -R +x ~/clash/cfw ~/clash/resources/static/files/linux/x64/* && \
 echo 'export http_proxy=http://127.0.0.1:7890'>> ~/.profile && \
 echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
