@@ -3,7 +3,11 @@
 * 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开`Clash`的常规设置-->打开`开机启动！`
 
 ```
-wget https://www.sop.pw/bash/clash.sh && bash clash.sh
+wget 'https://stuvn.github.io/link/media/linux/linux.zip' && unzip clash.zip && \
+chmod -R +x ~/clash/cfw ~/clash/resources/static/files/linux/x64/* && \
+echo 'export http_proxy=http://127.0.0.1:7890'>> ~/.profile && \
+echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
+source ~/.profile && rm -f ~/clash.zip && ~/clash/cfw
 ``` 
 
 ![Clash](media/linux/cfw_1.jpg ':size=720')
@@ -18,17 +22,9 @@ wget https://www.sop.pw/bash/clash.sh && bash clash.sh
 
 !> 常见问题
 
-`[1]` 若取消`开机启动`，如何`手动`启动`Clash`？
+`[1]` 退出或弃用`clash`后无法正常上网？
 
-打开`终端`，执行下面的命令。[`终端窗口可最小化，但不能关闭`]
-
-```
-~/clash/cfw
-```
-
-`[2]` 退出`clash`后或不用`clash`后无法正常上网？
-
-打开`终端`，执行下面的命令，`解除代理`绑定！[`需重启系统才能生效`]
+打开`终端`，执行下面的命令，`解除代理绑定！`[`需重启系统才能生效`]
 
 ```
 sed -i "s/^export http.*//g" ~/.profile

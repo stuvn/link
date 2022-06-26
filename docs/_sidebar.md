@@ -2,7 +2,7 @@
 
 * 教程
   * [Windows](/win)
-  * [MacOS](/mac)
+  * [macOS](/mac)
   * [iPhone](/ios)
   * [Android](/android)
   * [Linux](/linux)
