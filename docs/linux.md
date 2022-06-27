@@ -32,6 +32,16 @@ sed -i "s/^export http.*//g" ~/.profile
 
 ```
 
+`[2]` 如果想重新用``Clash`，怎么重新绑定代理？
+
+打开`终端`，执行下面的命令，`重新绑定代理！`[`需重启系统才能生效`]
+
+```
+echo 'export http_proxy=http://127.0.0.1:7890'>> ~/.profile && \
+echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
+~/clash/cfw
+```
+
 ## Shadowsocks-libev 
 
 `Ubuntu/Debian`-`安装命令`
