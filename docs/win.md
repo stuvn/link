@@ -1,18 +1,22 @@
 ## Clash for Windows
 
-* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/stuvn/link/releases/download/0.19.21/clash_cn.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/ender-zhao/Clash-for-Windows_Chinese/releases/download/CFW-V0.19.21_CN/Clash.for.Windows.Setup.0.19.21.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
 
-![win](media/win/cfw_1@cn.jpg ':size=720')
+![win](media/win/cfw_1.jpg ':size=720')
 
-* 登入您购买`SS节点`的网站-->点击`订阅链接`-->`clash`-->`导入App`，打开`Clash`-->`配置`-->选择`订阅文件`
+* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->选择`clash`-->`复制链接`
 
-![win](media/win/cfw_2@cn.jpg ':size=720')
+![win](media/win/cfw_2.jpg ':size=720')
+
+* 打开`Clash`-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
+
+![win](media/win/cfw_3.jpg ':size=720')
 
 * 打开`Clash`代理设置-->选择`规则`模式-->根据情况手动`选择节点`[不建议选`自动选优`，因为会`自动跳IP`]
 
-![win](media/win/cfw_3@cn.jpg ':size=720')
+![win](media/win/cfw_4.jpg ':size=720')
 
-!> `代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
+!> 首次安装`可能需要重启`才能用，`代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
 
 ## Shadowsocks (小飞机)
 
