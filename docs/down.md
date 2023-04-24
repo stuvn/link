@@ -2,7 +2,7 @@
 
 ## Windows
 
-* 点击下载 <a href="media/win/clash_cn.exe" target="_blank">Clash</a> <a href="media/win/clash.exe" target="_blank">备用</a> [🐱小蓝猫]
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用</a> [🐱小蓝猫]
 
 * 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> [小飞机]
 
@@ -20,7 +20,7 @@
 
 ## Android
 
-* 点击下载 <a href="media/android/sb.apk" target="_blank">Surfboard</a> [冲浪板]
+* 点击下载 <a href="media/android/sfb.apk" target="_blank">Surfboard</a> [冲浪板]
 
 * 点击下载 <a href="media/android/cfa.apk" target="_blank">Clash For Android</a>
 

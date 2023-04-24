@@ -4,7 +4,7 @@
 
 * 支持 Android 6+
 
-* 点击下载 <a href="media/android/sb.apk" target="_blank">Surfboard</a> ，安装后为App设置`后台运行`权限！
+* 点击下载 <a href="media/android/sfb.apk" target="_blank">Surfboard</a> ，安装后为App设置`后台运行`权限！
 
 ### 快速订阅
 
@@ -28,19 +28,19 @@
 
 一、登入您购买`SS节点`的网站，复制`二维码链接`[每个节点都对应一个`二维码链接`]
 
-![android](media/android/sb_1.jpg ':size=360')
+![android](media/android/sfb_1.jpg ':size=360')
 
 二、打开`冲浪板`，添加节点。点击`📁`-->`从URL导入`[`重复操作`添加其他节点到App]
 
-![android](media/android/sb_2.jpg ':size=360')
+![android](media/android/sfb_2.jpg ':size=360')
 
 三、`另种方法`添加节点：点击`SS节点`的二维码 [点两次]-->检测到`SS链接`-->`打开`
 
-![android](media/android/sb_3.jpg ':size=360')
+![android](media/android/sfb_3.jpg ':size=360')
 
 四、点击`冲浪板`左下角的`仪表盘`图标，再点击`右侧`的`▶`按钮-->`连接/断开`节点
 
-![android](media/android/sb_4.jpg ':size=360')
+![android](media/android/sfb_4.jpg ':size=360')
 
 ## Clash For Android 
 
