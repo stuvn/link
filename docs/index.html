@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>我靠，点印！</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./vue.css">
+  <link rel="shortcut icon" href="./favicon.png">
+</head>
+<body>
+  <div id="app">加载中</div>
+  <script>
+    const host = 'www.sop.pw';
+    if(window.location.host === host && window.location.protocol !== 'https:') {
+      window.location.protocol = 'https:';
+    }
+    window.$docsify = {
+      homepage: 'home.md',
+      coverpage: true,
+      onlyCover: true,
+      loadSidebar: true,
+      subMaxLevel: 3,
+      name: 'Shadowsocks',
+      themeColor: '#2196F3',
+      copyCode: {
+          buttonText : '点击复制',
+          errorText  : '错误',
+          successText: '复制成功'
+      },
+      search: {
+        maxAge: 3600000,
+        paths: 'auto', 
+        placeholder: '搜索',
+        noData: '找不到结果'
+      }
+    };
+  </script>
+  <!-- Latest v2.x.x -->
+  <script src="./search.js"></script>
+  <script src="./passwd.js"></script>
+  <script src="./docsify.min.js"></script>
+  <script src="./zoom-image.js"></script>
+  <script src="./docsify-copy-code.min.js"></script>
+  <script src="./jquery.min.js"></script>
+</body>
+</html>
