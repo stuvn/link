@@ -10,9 +10,9 @@
 
 ## MacOS
 
-* 点击下载 <a href="media/mac/ShadowsocksX-NG.zip" target="_blank">ShadowsocksX-NG</a>
+* 点击下载 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>
 
-* 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX</a> 或 <a href="media/mac/ClashX-Pro.dmg" target="_blank">ClashX Pro</a> [增强版]
+* 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX</a> 或 <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public" target="_blank">ClashX Pro</a> [增强版]
 
 ## Linux
 
