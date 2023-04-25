@@ -3,11 +3,11 @@
 * 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开`Clash`的常规设置-->打开`开机启动！`
 
 ```
-wget 'https://www.sop.pw/media/linux/clash.zip' && unzip clash.zip && \
+wget 'https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz' && unzip clash.tar.gz && \
 chmod -R +x ~/clash/cfw ~/clash/resources/static/files/linux/x64/* && \
 echo 'export http_proxy=http://127.0.0.1:7890'>> ~/.profile && \
 echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
-source ~/.profile && rm -f ~/clash.zip && ~/clash/cfw
+source ~/.profile && rm -f ~/clash.tar.gz && ~/clash/cfw
 ``` 
 
 ![Clash](media/linux/cfw_1.jpg ':size=720')
