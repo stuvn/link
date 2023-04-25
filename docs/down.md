@@ -16,7 +16,7 @@
 
 ## Linux
 
-* 点击下载 <a href="media/linux/clash.zip" target="_blank">Clash</a> [🐱小蓝猫]
+* 点击下载 <a href="https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz" target="_blank">Clash</a> [🐱小蓝猫]
 
 ## Android
 
