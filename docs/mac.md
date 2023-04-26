@@ -28,7 +28,7 @@
 
 * 支持 macOS 10.12+ 系统
 
-* 点击下载 <a href="media/mac/ShadowsocksX-NG.zip" target="_blank">ShadowsocksX-NG</a>，然后`拖拽`到`应用程序`栏，最后从`启动台`打开`ShadowsocksX-NG`
+* 点击下载 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，然后`拖拽`到`应用程序`栏，最后从`启动台`打开`ShadowsocksX-NG`
 
 ![ShadowsocksX-NG](media/mac/sx_1.gif ':size=720')
 
