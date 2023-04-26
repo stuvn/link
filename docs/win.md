@@ -2,7 +2,7 @@
 
 * 支持 Windows 10+
 
-* 点击下载 <a href="media/win/clash_cn.exe" target="_blank">Clash</a> 或 <a href="media/win/clash.exe" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
 
 ![win](media/win/cfw_1.jpg ':size=720')
 
