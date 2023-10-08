@@ -1,11 +1,11 @@
 
-## S2☁️云加速
+## 达克加速器
 
-https://www.s2yun.com
+https://dewker.com
 
-## 仙贝🐚加速器
+## 贝壳加速器
 
-https://www.xybal.com
+https://bewker.com
 
 ## 套餐说明：
 
