@@ -32,7 +32,7 @@
 
 ## 用前须知 {docsify-ignore}
 
-`[1] 代理类软件是相互冲突的，请先卸载其他VPN软件 [如果有的话]`
+`[1] 代理类软件是相互冲突的，请先卸载其他VPN软件(如果有的话)，然后重启系统`
 
 `[2] 百度、360 等国产浏览器可能会记录翻墙，推荐` <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a>
 
