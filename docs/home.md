@@ -20,15 +20,15 @@
 
 ## 如何使用 {docsify-ignore}
 
-[1] 下载兼容`SS`协议的客户端，包括但不限于`v2rayN`、`Clash`、`Shadowsocks(X-NG)`
+[1] 下载兼容`SS`协议客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
 
-[2] 然后通过`订阅链接`把`SS`节点导入到`v2rayN`、`Clash`（机场一般会提供`订阅链接`）
+[2] 然后通过`订阅链接`把`SS`节点导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
 
 [3] 或通过`ss://链接`把`SS`节点导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
 
 ## 连接测试 {docsify-ignore}
 
-连接后，能打开 [Google.com](https://www.google.com) 说明成功！然后打开 [ip111.cn](http://ip111.cn/) 检查`IP地址！如打开失败，请点 [测试端口](tcping)
+连接后，打开 [ip111.cn](http://ip111.cn/) 检查`IP地址，能打开 [Google.com](https://www.google.com/ncr) 说明成功！如打开失败，请点 [测试端口](tcping)
 
 ## 用前须知 {docsify-ignore}
 
@@ -36,7 +36,7 @@
 
 `[2] 百度、360 等国产浏览器可能会记录翻墙，推荐` <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a>
 
-`[3] 了解为什么要卸载掉电脑上的 360、电脑管家、金山毒霸等软件` <a href="media/win/sec.jpg" target="_blank">点这里</a>
+`[3] 了解为什么要卸载掉电脑上的 360、电脑管家、金山毒霸等软件` <a href="media/win/sec.jpg" target="_blank">点这里</a> 查看原因！
 
 ## 免责声明 {docsify-ignore}
 
