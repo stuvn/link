@@ -34,7 +34,7 @@
 
 `[1] 代理类软件是相互冲突的，请先卸载其他VPN软件(如果有的话)，然后重启系统`
 
-`[2] 百度、360 等国产浏览器可能会记录翻墙，推荐` <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a>
+`[2] 百度、360 等国产浏览器可能会记录翻墙，推荐用` <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a>
 
 `[3] 了解为什么要卸载掉电脑上的 360、电脑管家、金山毒霸等软件` <a href="media/win/sec.jpg" target="_blank">点这里</a> 查看原因！
 
@@ -42,4 +42,4 @@
 
 * 请遵循`使用者所在国家`或者`服务器所在国家`的`法律法规`，并对自己的`任何行爲`进行`负责`
 
-* 网络代理属于`私密`服务，请`不要`将账户和他人共享，`别人`用来做`违法`事情的话，可能会`牵连`到您
+* 网络代理属于`私密`服务，请`不要`将账户和他人共享，`别人用来做违法事情`的话，可能会`牵连`到您
