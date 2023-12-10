@@ -26,7 +26,7 @@
 
 ## 连接测试 {docsify-ignore}
 
-连接后打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [google.com](https://www.google.com/ncr) 则成功！如失败请点 [测试端口](tcping)
+连接后打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [Google.com](https://www.google.com/ncr) 则成功！如失败请点 [测试端口](tcping)
 
 ## 用前须知 {docsify-ignore}
 
