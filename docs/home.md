@@ -18,15 +18,15 @@
 
 ## 如何使用 {docsify-ignore}
 
-[1] 下载兼容`SS`协议客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
+[1] 下载兼容`SS`协议的客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
 
-[2] 然后通过`订阅链接`把`SS`节点导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
+[2] 然后通过`订阅链接`把`SS`服务器导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
 
-[3] 或通过`ss://链接`把`SS`节点导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
+[3] 或通过`ss://链接`把`SS`服务器导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
 
 ## 连接测试 {docsify-ignore}
 
-连接后打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [Google.com](https://www.google.com/ncr) 则成功！如失败请点 [测试端口](tcping)
+连接后，打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [Google.com](https://www.google.com/ncr) 则成功！如失败请点 [测试端口](tcping)
 
 ## 用前须知 {docsify-ignore}
 
@@ -40,4 +40,4 @@
 
 * 请遵循`使用者所在国家`或者`服务器所在国家`的`法律法规`，并对自己行为`负责`
 
-* 务必记住：`请不要`将账户和他人共享，`别人用来做违法事情`可能会`牵连`到您
+* 务必牢记：`请不要`将账户和他人共享，`别人用来做违法事情`可能会`牵连`到您
