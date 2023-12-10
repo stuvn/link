@@ -6,8 +6,6 @@
 
 * 点击下载 <a href="media/android/sfb.apk" target="_blank">Surfboard</a> ，安装后为App设置`后台运行`权限！
 
-### 订阅节点
-
 一、登入您购买`SS节点`网站，`订阅链接`-->`surfboard`-->`导入App`
 
 ![android](media/android/sfb_1.jpg ':size=360')
@@ -25,8 +23,6 @@
 * 支持 Android 6+
 
 * 点击下载 <a href="media/android/cfa.apk" target="_blank">Clash</a> ，安装后为App设置`后台运行`权限！
-
-### 订阅节点
 
 一、登入您购买`SS节点`网站，`订阅链接`-->`clash`-->`导入App`
 
