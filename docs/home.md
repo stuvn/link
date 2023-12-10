@@ -14,21 +14,19 @@
 
 # 简介
 
-`Shadowsocks` 是一种新型网络代理，比传统VPN更安全稳定
-
-`Shadowsocks` 是一套网络技术和相关工具的总称，简称`SS`
+`Shadowsocks` 是一种新型网络代理，是一套网络技术和相关工具的总称，简称`SS`
 
 ## 如何使用 {docsify-ignore}
 
-[1] 下载兼容`SS`协议客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
+**[1]** 下载兼容`SS`协议客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
 
-[2] 然后通过`订阅链接`把`SS`节点导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
+**[2]** 然后通过`订阅链接`把`SS`节点导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
 
-[3] 或通过`ss://链接`把`SS`节点导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
+**[3]** 或通过`ss://链接`把`SS`节点导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
 
 ## 连接测试 {docsify-ignore}
 
-连接后，打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [Google.com](https://www.google.com/ncr) 说明成功！如失败，请点 [测试端口](tcping)
+连接后，打开 [ip111.cn](http://ip111.cn/) 检查`IP`地址，能打开 [Google.com](https://www.google.com/ncr) 则成功！如失败请点 [测试端口](tcping)
 
 ## 用前须知 {docsify-ignore}
 
