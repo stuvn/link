@@ -20,6 +20,36 @@
 
 !> 首次安装`可能需要重启`才能用，`代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
 
+## v2rayN (上网/游戏通用) 
+
+* 支持Windows 7+ （要求 [.NET 4.8](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe) 以上版本）
+
+* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> ，解压后运行`Netch`文件夹里的`Netch`。如提示`.NET`版本过低，请下载 [.NET 4.8 ](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe)
+
+![netch](media/win/nc_1.jpg ':size=720')
+
+* 登入您购买`SS节点`的网站，复制节点的`二维码链接`（每个节点都对应一个`二维码`和`二维码链接`）
+
+![netch](media/win/nc_2.jpg ':size=720')
+
+* 导入二维码链接。打开`Netch`-->服务器-->从剪贴板导入服务器（`重复操作`添加其他节点到客户端）
+
+![netch](media/win/nc_3.jpg ':size=720')
+
+* 只代理上网选`[4][网页代理]绕过***和中国大陆`，代理国外软件、游戏选`[3][TUN/TAP]绕过***和中国大陆`
+
+![netch](media/win/nc_4.jpg ':size=720')
+
+!> 常见问题
+
+`[1]` 代理类软件都是`相互冲突`的！
+
+若使用`Netch`客户端，请退出小飞机（删掉`win`文件夹）
+
+`[2]` `Netch`无法配合`火狐扩展`使用！
+
+`Netch`可实现`TUN/TAP`层代理，不需要配合`火狐扩展`使用！
+
 ## Shadowsocks (小飞机)
 
 * 支持 Windows 7+ （要求 [.NET 4.6.2](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe) 以上版本）
@@ -53,33 +83,3 @@
 `[3]` 确认设置没问题，但还是不能用！
 
 卸载`360、电脑管家`等国产软件，重启系统！如仍不能用，请参考 [火狐扩展](firefox) 教程，配合`SwitchyOmega`使用！
-
-## Netch (上网/游戏通用) 
-
-* 支持Windows 7+ （要求 [.NET 4.8](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe) 以上版本）
-
-* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> ，解压后运行`Netch`文件夹里的`Netch`。如提示`.NET`版本过低，请下载 [.NET 4.8 ](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe)
-
-![netch](media/win/nc_1.jpg ':size=720')
-
-* 登入您购买`SS节点`的网站，复制节点的`二维码链接`（每个节点都对应一个`二维码`和`二维码链接`）
-
-![netch](media/win/nc_2.jpg ':size=720')
-
-* 导入二维码链接。打开`Netch`-->服务器-->从剪贴板导入服务器（`重复操作`添加其他节点到客户端）
-
-![netch](media/win/nc_3.jpg ':size=720')
-
-* 只代理上网选`[4][网页代理]绕过***和中国大陆`，代理国外软件、游戏选`[3][TUN/TAP]绕过***和中国大陆`
-
-![netch](media/win/nc_4.jpg ':size=720')
-
-!> 常见问题
-
-`[1]` 代理类软件都是`相互冲突`的！
-
-若使用`Netch`客户端，请退出小飞机（删掉`win`文件夹）
-
-`[2]` `Netch`无法配合`火狐扩展`使用！
-
-`Netch`可实现`TUN/TAP`层代理，不需要配合`火狐扩展`使用！
