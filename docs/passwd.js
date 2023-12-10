@@ -29,7 +29,7 @@ function copyText(ele) {
 }
 
 function getid(i) {
-	var url = "https://www.wkao.in/api/share.php?share_link=appleid";// 申明一个XMLHttpRequest
+	var url = "https://www.wkao.in/shareapi/appleid";		// 申明一个XMLHttpRequest
 	var request = new XMLHttpRequest();             		 // 设置请求方法与路径
 	request.open("get", url);	                		 // 不发送数据到服务器
 	request.send(null);						 // XHR对象获取到返回信息后执行
