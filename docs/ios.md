@@ -22,17 +22,13 @@
 
 * 如提示`帐户已在 App Store 被禁用`，请先删掉手机里的旧版`Shadowrocket`
 
-### 快速订阅
-
-**此法一次添加所有节点**
-
 一、登入您购买`SS节点`的网站，`订阅链接`-->`Shadowrocket`-->`导入App`
 
-![apple](media/apple/srsub_1.jpg ':size=360')
+![apple](media/apple/sr_1.jpg ':size=360')
 
 二、打开`小火箭`-->`选择节点`-->`连接/断开`[`如提示VPN权限，请点允许`]
 
-![apple](media/apple/srsub_2.jpg ':size=360')
+![apple](media/apple/sr_2.jpg ':size=360')
 
 如无法导入，请复制订阅连接-->打开`小火箭`-->右上角`+`-->类型`Subscribe`-->`URL`-->`保存`
 
