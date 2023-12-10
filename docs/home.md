@@ -32,9 +32,9 @@
 
 `[1] 代理类软件是相互冲突的，请先卸载其他VPN软件(如果有的话)，然后重启系统`
 
-`[2] 百度、360 等国产浏览器可能会记录翻墙，推荐用 <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a>` 
+`[2] 百度、360 等国产浏览器可能会记录翻墙，推荐用` <a href="https://www.microsoft.com/zh-cn/edge" target="_blank">Edge</a> 或 <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">Firefox</a> 或 <a href="https://www.google.cn/chrome/" target="_blank">Chrome</a> 
 
-`[3] 了解为什么要卸载掉电脑上的 360、电脑管家、金山毒霸等软件 <a href="media/win/sec.jpg" target="_blank">点这里</a> 查看原因！`
+`[3] 了解为什么要卸载掉电脑上的 360、电脑管家、金山毒霸等软件` <a href="media/win/sec.jpg" target="_blank">点这里</a> 查看原因！
 
 ## 免责声明 {docsify-ignore}
 
