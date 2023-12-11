@@ -38,7 +38,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 ![ShadowsocksX-NG](media/mac/sx_1.jpg ':size=720')
 
-* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器 URL`[`重复操作`添加`其他节点`到客户端]
+* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器 URL`[`一次可同时导入多条SS节点`]
 
 ![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
 
