@@ -30,7 +30,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 * 支持 macOS 10.12+ 系统
 
-* 下载安装 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，打开系统设置 -->`隐私与安全性` -->`已阻止使用"…"`-->`仍要打开`
+* 下载安装 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，打开系统设置 -->`隐私与安全性` -->`已阻止使用"Sha…"`-->`仍要打开`
 
 ![ShadowsocksX-NG](media/mac/sec.jpg ':size=720')
 
