@@ -1,4 +1,4 @@
-## ClashX (🐱小蓝猫)
+## ClashX
 
 * 支持 macOS 10.6+ 系统
 
