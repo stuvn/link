@@ -10,7 +10,7 @@
 
 * 进阶
   * [服务器测试](/tcping)
-  * [浏览器扩展](/firefox)
+  * [浏览器扩展](/switchyomega)
   * [删除节点](/delete)
   * [微信代理](/sock5)
   * [PAC 规则](/pac)
