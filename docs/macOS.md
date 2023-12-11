@@ -20,7 +20,7 @@
 
 `VPN软件`都是`相互冲突`的，请`卸载`其他`VPN软件`并重启`macOS`
 
-`[2]` 无法联网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令`(需要输入macOS密码)`
+`[2]` `无法联网` 卸载客户端也不行？打开`终端`执行以下命令`(需输入macOS密码,然后重启)`
 
 ```
 sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.*" -delete && rm -r ~/.config
