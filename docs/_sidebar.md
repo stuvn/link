@@ -9,9 +9,9 @@
   * [路由器](/Router)
 
 * 进阶
-  * [节点测试](/tcping)
-  * [火狐扩展](/firefox)
-  * [PAC 规则](/pac)
-  * [微信代理](/sock5)
+  * [服务器测试](/tcping)
+  * [浏览器扩展](/firefox)
   * [删除节点](/delete)
+  * [微信代理](/sock5)
+  * [PAC 规则](/pac)
   
