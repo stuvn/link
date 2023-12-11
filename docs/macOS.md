@@ -34,11 +34,11 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 ![ShadowsocksX-NG](media/mac/sec.jpg ':size=720')
 
-* 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`📶第三方App订阅地址(及ss://链接)`(`复制ss://链接`)
+* 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
 ![ShadowsocksX-NG](media/mac/sx_1.jpg ':size=720')
 
-* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器URL` (`复制多条ss://链接,可导入多条SS节点`)
+* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器URL` (`复制多条ss://链接,可导入多个节点`)
 
 ![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
 
