@@ -38,7 +38,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 ![ShadowsocksX-NG](media/mac/sx_1.jpg ':size=720')
 
-* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器 URL` (`复制多条ss://链接,可导入多条SS节点`)
+* 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器URL` (`复制多条ss://链接,可导入多条SS节点`)
 
 ![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
 
@@ -48,10 +48,6 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 !> 常见问题
 
-`[1]` 设置没有错误，但是连不上外网！
+`[1]` `无法翻墙`或打不开`某些`网站？
 
-请换个 [浏览器](down) 试一试！或配合`SwitchyOmega`使用，参考 [火狐扩展](firefox)
-
-`[2]` 可以上`Google、Youtube、Twitter`等常用网站，但是打不开`某些`网站？
-
-请添加`PAC用户自定规则`，参考 [PAC 规则](pac)。或配合`SwitchyOmega`使用，参考 [火狐扩展](firefox)。
+配合`SwitchyOmega`使用，参考 [浏览器扩展](SwitchyOmega)
