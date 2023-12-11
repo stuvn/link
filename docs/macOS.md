@@ -4,15 +4,15 @@
 
 * 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX Pro</a> 下载后双击运行`ClashX.dmg`，按照提示安装！[`如提示权限，请输入macOS密码`]
 
-![ClashX](media/mac/cx_1.jpg ':size=720')
+![ClashX](media/mac/clx_1.jpg ':size=720')
 
 * 登入您购买`SS`服务的机场网站-->点击`一键订阅`-->`导入到ClashX`
 
-![ClashX](media/mac/cx_2.jpg ':size=720')
+![ClashX](media/mac/clx_2.jpg ':size=720')
 
-* 点击右上角的`ClashX`，将`出站模式`设置为`规则`-->根据实际需要`选择节点`-->然后勾选`设置为系统代理`
+* 点击右上角`ClashX`，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后勾选`设置为系统代理`
 
-![ClashX](media/mac/cx_3.jpg ':size=720')
+![ClashX](media/mac/clx_3.jpg ':size=720')
 
 * 如订阅失败，请复制上面`订阅链接`-->点击`ClashX`-->`配置`-->`托管配置`-->`管理`，按提示`添加订阅` 
 

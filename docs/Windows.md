@@ -22,33 +22,28 @@
 
 ## v2rayN (上网/游戏通用) 
 
-* 支持Windows 7+ （要求 [.NET 4.8](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe) 以上版本）
+* 支持Windows 7+ （要求 [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.19-windows-x64-installer) 以上版本）
 
-* 点击下载 <a href="media/win/netch.zip" target="_blank">Netch</a> ，解压后运行`Netch`文件夹里的`Netch`。如提示`.NET`版本过低，请下载 [.NET 4.8 ](https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe)
+* 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
-![netch](media/win/nc_1.jpg ':size=720')
+![netch](media/win/v2n_1.jpg ':size=720')
 
 * 登入您购买`SS节点`的网站，复制节点的`二维码链接`（每个节点都对应一个`二维码`和`二维码链接`）
 
-![netch](media/win/nc_2.jpg ':size=720')
+![netch](media/win/v2n_2.jpg ':size=720')
 
-* 导入二维码链接。打开`Netch`-->服务器-->从剪贴板导入服务器（`重复操作`添加其他节点到客户端）
-
-![netch](media/win/nc_3.jpg ':size=720')
-
-* 只代理上网选`[4][网页代理]绕过***和中国大陆`，代理国外软件、游戏选`[3][TUN/TAP]绕过***和中国大陆`
-
-![netch](media/win/nc_4.jpg ':size=720')
 
 !> 常见问题
 
-`[1]` 代理类软件都是`相互冲突`的！
+`[1]` 如何`更新订阅？`
 
-若使用`Netch`客户端，请退出小飞机（删掉`win`文件夹）
+打开 -->`订阅分组` -->`更新全部订阅`(不通过代理)
 
-`[2]` `Netch`无法配合`火狐扩展`使用！
+`[2]` 按教程设置后仍连不上？
 
-`Netch`可实现`TUN/TAP`层代理，不需要配合`火狐扩展`使用！
+打开 -->系统代理: `清除系统代理` -->`重启服务` -->系统代理: `自动配置系统代理`
+
+**⚠️ 不要同时安装其他VPN软件，并卸载`360`、`电脑管家`等国产软件（以前能用不代表它没有监控你）[参考资料](https://github.com/2dust/v2rayN/wiki/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E5%92%8C%E8%B7%AF%E7%94%B1)**
 
 ## Shadowsocks (小飞机)
 

@@ -1,12 +1,12 @@
 * [首页](/home)
 
 * 教程
-  * [Windows](/win)
-  * [macOS](/mac)
-  * [iPhone](/ios)
-  * [Android](/android)
-  * [Linux](/linux)
-  * [路由器](/router)
+  * [Windows](/Windows)
+  * [macOS](/macOS)
+  * [iPhone](/iPhone)
+  * [Android](/Android)
+  * [Linux](/Linux)
+  * [路由器](/Router)
 
 * 进阶
   * [节点测试](/tcping)
