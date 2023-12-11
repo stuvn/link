@@ -42,11 +42,11 @@
 
 ![Potatso](media/apple/pt_1.jpg ':size=360')
 
-二、打开土豆丝-->`添加代理`-->通过`代理地址`-->粘贴导入！[`重复操作`添加其他节点]
+二、打开土豆丝-->`添加代理`-->通过`代理地址`-->粘贴导入！(`复制多条ss://链接,可导入多个节点`)
 
 ![Potatso](media/apple/pt_2.jpg ':size=360')
 
-三、插件`Simple Obfs`参数`obfs=tls`或`obfs=http`[按插件选项设`tls`或`http`]
+三、插件`Simple Obfs`参数 `obfs=http`(`每个节点都要单独设置插件参数`)
 
 ![Potatso](media/apple/pt_obfs.jpg ':size=360')
 
