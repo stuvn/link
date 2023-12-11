@@ -18,11 +18,11 @@
 
 ## 如何使用 {docsify-ignore}
 
-[1] 下载兼容`SS`协议的客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
+[1] 下载兼容`SS`协议客户端，包括但不限于`v2rayN`、`ClashX`、`Shadowsocks(X-NG)`
 
-[2] 然后通过`订阅链接`把`SS`服务器导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
+[2] 然后通过`订阅链接`把`SS`节点导入`v2rayN`、`ClashX`（机场一般会提供`订阅链接`）
 
-[3] 或通过`ss://链接`把`SS`服务器导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
+[3] 或通过`ss://链接`把`SS`节点导入`Shadowsocks(X-NG)`（机场一般会提供`ss://链接`）
 
 ## 连接测试 {docsify-ignore}
 
