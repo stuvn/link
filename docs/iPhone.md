@@ -24,11 +24,11 @@
 
 一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Shadowrocket`
 
-![apple](media/apple/sr_1.jpg ':size=360')
+![apple](media/apple/srk_1.jpg ':size=360')
 
 二、打开`小火箭`-->`选择节点`-->`连接/断开`[`如提示VPN权限，请点允许`]
 
-![apple](media/apple/sr_2.jpg ':size=360')
+![apple](media/apple/srk_2.jpg ':size=360')
 
 如无法导入，请复制`订阅连接`-->打开`小火箭`-->右上角`+`-->类型`Subscribe`-->`URL`-->`保存`
 
