@@ -20,12 +20,12 @@
 
 `[1]` 按教程设置后却不能用？
 
-`代理软件`都是`相互冲突`的，请`卸载`电脑上的其他`代理软件` 
+`VPN软件`都是`相互冲突`的，请`卸载`其他`VPN软件`并重启`macOS`
 
-`[2]` 无法联网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令`(需要输入系统密码)`
+`[2]` 无法联网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令`(需要输入macOS密码)`
 
 ```
-sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.plist" -delete
+rm -r ~/.config && sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.plist" -delete
 ```
 
 ## ShadowsocksX-NG
