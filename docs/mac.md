@@ -2,7 +2,7 @@
 
 * 支持 macOS 10.6+ 系统
 
-* 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX</a> 或 <a href="https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public" target="_blank">ClashX Pro</a> 下载后双击运行`ClashX.dmg`，按照提示完成安装！[`如提示权限，请授权`]
+* 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX Pro</a> 下载后双击运行`ClashX.dmg`，按照提示安装！[`如提示权限，请输入macOS密码`]
 
 ![ClashX](media/mac/cx_1.jpg ':size=720')
 
