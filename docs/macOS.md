@@ -36,18 +36,18 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 * 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
-![ShadowsocksX-NG](media/mac/sx_1.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/ssx_1.jpg ':size=720')
 
 * 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器URL` (`复制多条ss://链接,可导入多个节点`)
 
-![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/ssx_2.jpg ':size=720')
 
 * 根据需求`选择节点`-->`开启代理`[默认已开启]-->选择`代理模式`-->推荐用`PAC自动模式`[默认模式]
 
-![ShadowsocksX-NG](media/mac/sx_3.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/ssx_3.jpg ':size=720')
 
 !> 常见问题
 
-`[1]` `无法翻墙`或打不开`某些`网站？
+`[1]` `无法翻墙`或打不开`少部分`特定网站？
 
 配合`SwitchyOmega`使用，参考 [浏览器扩展](SwitchyOmega)
