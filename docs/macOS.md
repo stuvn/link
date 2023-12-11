@@ -23,7 +23,7 @@
 `[2]` 无法联网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令`(需要输入macOS密码)`
 
 ```
-rm -r ~/.config && sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.plist" -delete
+sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.*" -delete && rm -r ~/.config
 ```
 
 ## ShadowsocksX-NG
