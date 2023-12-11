@@ -30,8 +30,6 @@
 
 ![apple](media/apple/srk_2.jpg ':size=360')
 
-如无法导入，请复制`订阅连接`-->打开`小火箭`-->右上角`+`-->类型`Subscribe`-->`URL`-->`保存`
-
 ## Potatso（小土豆）
 
 * 支持 iOS 15+ 系统
