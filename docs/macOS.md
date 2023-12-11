@@ -34,17 +34,17 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 ![ShadowsocksX-NG](media/mac/sec.jpg ':size=720')
 
-* 登入您购买`SS节点`的网站，复制节点的`二维码链接`[每个节点都对应一个`二维码`和`二维码链接`]
+* 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`📶 第三方App订阅地址(及ss://链接)`(`复制链接`)
 
-![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/sx_1.jpg ':size=720')
 
 * 导入节点。点击右上角状态栏的`小飞机`-->`导入服务器 URL`[`重复操作`添加`其他节点`到客户端]
 
-![ShadowsocksX-NG](media/mac/sx_3.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/sx_2.jpg ':size=720')
 
 * 根据需求`选择节点`-->`开启代理`[默认已开启]-->选择`代理模式`-->推荐用`PAC自动模式`[默认模式]
 
-![ShadowsocksX-NG](media/mac/sx_4.jpg ':size=720')
+![ShadowsocksX-NG](media/mac/sx_3.jpg ':size=720')
 
 !> 常见问题
 
