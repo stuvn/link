@@ -10,7 +10,7 @@
 
 ![ClashX](media/mac/clx_2.jpg ':size=720')
 
-* 点击右上角`ClashX`，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->最后开启`设置为系统代理`
+* 点击右上角`ClashX`，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后开启`设置为系统代理`
 
 ![ClashX](media/mac/clx_3.jpg ':size=720')
 
@@ -30,7 +30,7 @@ rm -r ~/.config && sudo find /Library/Preferences/SystemConfiguration/ -type f !
 
 * 支持 macOS 10.12+ 系统
 
-* 点击下载 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，然后`拖拽`到`应用程序`栏，最后从`启动台`打开`ShadowsocksX-NG`
+* 点击下载 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，下载后双击运行`ShadowsocksX-NG.dmg`，按照提示安装！[`如提示权限，请输入macOS密码`]
 
 ![ShadowsocksX-NG](media/mac/sx_1.gif ':size=720')
 
