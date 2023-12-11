@@ -22,7 +22,7 @@
 
 * 如提示`帐户已在 App Store 被禁用`，请先删掉手机里的旧版`Shadowrocket`
 
-一、登入您购买`SS节点`的网站，`订阅链接`-->`Shadowrocket`-->`导入App`
+一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Shadowrocket`
 
 ![apple](media/apple/sr_1.jpg ':size=360')
 
