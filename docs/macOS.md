@@ -48,6 +48,6 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 !> 常见问题
 
-`[1]` `无法翻墙`或打不开`少部分`特定网站？
+`[1]` `无法翻墙`或打不开`部分特定`网站？
 
-配合`SwitchyOmega`使用，参考 [浏览器扩展](SwitchyOmega)
+配合`SwitchyOmega`使用，具体请参考 [浏览器扩展](SwitchyOmega)
