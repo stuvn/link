@@ -9,7 +9,7 @@
   * [路由器](/Router)
 
 * 进阶
-  * [服务器测试](/tcping)
+  * [节点tcp测试](/tcping)
   * [浏览器扩展](/switchyomega)
   * [删除节点](/delete)
   * [微信代理](/sock5)
