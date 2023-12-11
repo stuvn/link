@@ -22,7 +22,7 @@
 
 `代理软件`都是`相互冲突`的，请`卸载`电脑上的其他`代理软件` 
 
-`[2]` 突然不能上网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令(需要输入系统密码)
+`[2]` 无法联网，卸载客户端后重启也不行？打开`macOS`终端执行以下命令`(需要输入系统密码)`
 
 ```
 sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.plist" -delete
