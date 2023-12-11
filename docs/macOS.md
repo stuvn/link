@@ -32,7 +32,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 * 点击下载 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，下载后双击运行`ShadowsocksX-NG.dmg`，按照提示安装！[`如提示权限，请输入macOS密码`]
 
-![ShadowsocksX-NG](media/mac/sx_1.gif ':size=720')
+![ShadowsocksX-NG](media/mac/sec.jpg ':size=720')
 
 * 登入您购买`SS节点`的网站，复制节点的`二维码链接`[每个节点都对应一个`二维码`和`二维码链接`]
 
