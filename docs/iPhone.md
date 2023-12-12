@@ -26,7 +26,7 @@
 
 ![Potatso](media/apple/pt_2.jpg ':size=360')
 
-三、App右侧`管理`-->插件`Simple Obfs`参数`obfs=http`(`每个节点都要单独设置参数`)
+三、App右侧`管理`-->节点右侧`›`-->插件`Simple Obfs`参数`obfs=http`(`每个节点都要单独设置参数`)
 
 ![Potatso](media/apple/pt_obfs.jpg ':size=360')
 
