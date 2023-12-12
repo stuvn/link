@@ -66,7 +66,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 ![linux](media/linux/linux_2.jpg ':size=720')
 
-* 执行`Linux命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [火狐扩展](firefox)
+* 执行`Linux命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
 
 ![linux](media/linux/linux_3.jpg ':size=720')
 
@@ -74,7 +74,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 `[1]` 必须配合`SwitchyOmega`吗？
 
-是的，`Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体请参考 [火狐扩展](firefox)
+是的，`Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体请参考 [浏览器扩展](switchyomega)
 
 `[2]` 如何切换至不同的`路线/节点`？
 
@@ -82,4 +82,4 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 `[3]` 如何设置开机后`自动开启`代理？
 
-把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="https://www.sop.pw/media/linux/ubuntu_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="https://www.sop.pw/media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
+把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="./media/linux/ubuntu_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="./media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
