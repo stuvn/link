@@ -4,7 +4,7 @@
 
 * `仅适用`于`Windows`的`Shadowsocks`、`macOS`的`ShadowsocksX-NG`和`Linux`的`Shadowsocks-libev`
 
-* 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/)，再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。或者先安装 [Edge](https://www.microsoft.com/zh-cn/edge)，再点击安装 [SwitchyOmega](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN) 扩展
+* 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/)，再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。或先安装 [Edge](https://www.microsoft.com/zh-cn/edge)，再点击安装 [SwitchyOmega](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN) 扩展
 
 ![SwitchyOmega](media/firefox/ff_1.jpg ':size=720')
 
@@ -20,7 +20,7 @@
 
 `[1]` 按教程设置后不能用？
 
-`SwitchyOmega`不能独立工作，必须配合`Windows/Linux/MacOS`系统的`Shadowsocks`客户端使用！
+`SwitchyOmega`不能独立工作，`必须`配合`Shadowsocks(X-NG)`或`Shadowsocks-libev`使用！
 
 `[2]` 谷歌 [Chrome](https://www.google.cn/chrome/) 浏览器，如何安装`SwitchyOmega`扩展？
 
