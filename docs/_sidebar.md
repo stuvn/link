@@ -13,5 +13,5 @@
   * [浏览器扩展](/switchyomega)
   * [删除节点](/delete)
   * [微信代理](/sock5)
-  * [PAC 规则](/pac)
+  * [PAC规则](/pac)
   
