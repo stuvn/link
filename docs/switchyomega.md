@@ -1,8 +1,6 @@
 ## SwitchyOmega
 
-* `不适用`于`Netch`、`Clash`和`ClashX/Pro `
-
-* `仅适用`于`Windows`的`Shadowsocks`、`macOS`的`ShadowsocksX-NG`和`Linux`的`Shadowsocks-libev`
+* **仅适用于**`Shadowsocks(X-NG)`或`Shadowsocks-libev`
 
 * 请先安装 [Firefox](https://www.mozilla.org/zh-CN/firefox/) 再点击安装 [SwitchyOmega](https://addons.mozilla.org/zh-CN/firefox/addon/switchyomega/) 扩展。或先安装 [Edge](https://www.microsoft.com/zh-cn/edge) 再点击安装 [SwitchyOmega](https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc?hl=zh-CN) 扩展
 
