@@ -12,4 +12,4 @@
 
 !> `Windows`同样适用，打开`win`文件夹，编辑`user-rule.txt`，添加相同规则！[更多规则](https://www.jianshu.com/p/c68b6fb7ccd7)
 
-!> 如觉得`PAC自定规则`太麻烦，或不能满足需求！请配合`SwitchyOmega`使用，参考 [火狐扩展](firefox)
+!> 如觉`PAC自定规则`太麻烦，或不能满足需求！请配合`SwitchyOmega`使用，参考 [浏览器扩展](switchyomega)
