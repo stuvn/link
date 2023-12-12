@@ -26,6 +26,8 @@
 
 ![SwitchyOmega](media/firefox/ff_chrome.jpg ':size=720')
 
+**如不用`Shadowsocks(X-NG)`或`Shadowsocks-libev`的话，务必删除`SwitchyOmega`扩展** 
+
 **参考资料：** 
 
 https://github.com/FelisCatus/SwitchyOmega/wiki
