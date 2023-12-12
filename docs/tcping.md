@@ -3,7 +3,7 @@
 
 ## 端口TCP测试
 
-* 打开[cp.ping.pe](https://tcp.ping.pe/pan.baidu.com:80) 在表单栏输入`地址:端口`然后点击`Go`
+* 打开 [tcp.ping.pe](https://tcp.ping.pe/pan.baidu.com:80) 在表单栏输入`地址:端口`然后点击`Go`
 
 `[1]` 全部绿色
 
