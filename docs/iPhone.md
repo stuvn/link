@@ -28,7 +28,7 @@
 
 三、App右侧`管理`-->节点右侧`›`-->插件`Simple Obfs`参数`obfs=http`(`每个节点都要单独设置参数`)
 
-![Potatso](media/apple/pt_obfs.jpg ':size=360')
+![Potatso](media/apple/obfs.jpg ':size=360')
 
 四、`设置`-->开启`智能路由`；返回`主页`-->选择节点-->点右下角`▸`按钮-->`连接/断开`
 
