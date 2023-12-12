@@ -67,14 +67,14 @@
 
 !> 常见问题
 
-`[1]` Shadowsocks 错误:端口已被占用！
+`[1]` `Shadowsocks`错误:端口已被占用！
 
 说明`重复运行`客户端，请关掉客户端重启系统后再试！
 
-`[2]` 非预期***无法加载DLL "libsscrypto.dll"
+`[2]` 非预期***无法加载DLL`"libsscrypto.dll"`
 
 请下载安装 [Visual C++ 2015 (x86)](https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe) 如仍不能用，请将`win`文件夹移到某磁盘根目录下，比如`D:\win\`
 
 `[3]` 确认设置没问题，但还是不能用！
 
-卸载`360、电脑管家`等国产软件，重启系统！如仍不能用，请参考 [火狐扩展](firefox) 教程，配合`SwitchyOmega`使用！
+卸载`360、电脑管家`等国产软件，重启系统！如仍不能用请参考 [浏览器扩展](switchyomega) 教程，配合`SwitchyOmega`使用！
