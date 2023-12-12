@@ -1,26 +1,8 @@
-## 更换美区账号{docsify-ignore}
+## Shadowrocket
 
-* 打开`App Store`-->`右上角头像`-->`下拉到底部`-->`退出登录`，再登录`美区账号`[图下方]
+* 俗称`小火箭`(支持`iOS 12+`)
 
-* 登陆时如有安全提示-->`其他选项`-->`不升级`
-
-![apple](media/apple/id.jpg ':size=360')
-
-[<a href="javascript:getid(0);">点击查看美区账号</a>] &nbsp;&nbsp;&nbsp;&nbsp;[<a href="javascript:getid(1);">点击查看备用账号</a>]
-
-<div style="color:Blue" id="jsonTip"></div>
-
-!> 下载完App后，请退出`美区账号`，以避免各种`潜在的安全问题！`
-
-!> `不要`在手机的`设置`里登录`美区账号`。否则，可能会`变成砖头！`
-
-## Shadowrocket(小火箭)
-
-* 支持 iOS 12+ 系统
-
-* [更换美区账号](ios?id=更换美区账号) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
-
-* 如提示`帐户已在 App Store 被禁用`，请先删掉手机里的旧版`Shadowrocket`
+* [更换美区账号](https://app.hosthui.com) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
 一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Shadowrocket`
 
@@ -30,13 +12,11 @@
 
 ![apple](media/apple/srk_2.jpg ':size=360')
 
-## Potatso(小土豆)
+## Potatso
 
-* 支持 iOS 15+ 系统
+* 俗称`小土豆`(支持`iOS 15+`)
 
-* [更换美区账号](ios?id=更换美区账号) 后点击下载 [Potatso](https://apps.apple.com/us/app/potatso/id1239860606)
-
-* 如提示`帐户已在 App Store 被禁用`，请先删掉手机里的旧版`Potatso`
+* [更换美区账号](https://app.hosthui.com) 后点击下载 [Potatso](https://apps.apple.com/us/app/potatso/id1239860606)
 
 一、登入您购买`SS`服务的`机场网站`-->左上角`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
@@ -46,7 +26,7 @@
 
 ![Potatso](media/apple/pt_2.jpg ':size=360')
 
-三、插件`Simple Obfs`参数 `obfs=http`(`每个节点都要单独设置插件参数`)
+三、App右侧`管理`-->插件`Simple Obfs`参数`obfs=http`(`每个节点都要单独设置参数`)
 
 ![Potatso](media/apple/pt_obfs.jpg ':size=360')
 
