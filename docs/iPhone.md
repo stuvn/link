@@ -1,6 +1,6 @@
 ## Shadowrocket
 
-* 俗称`小火箭`(支持`iOS 12+`)
+* 俗称`小火箭`(`支持iOS 12+`)
 
 * [更换美区账号](https://app.hosthui.com) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
@@ -14,7 +14,7 @@
 
 ## Potatso
 
-* 俗称`小土豆`(支持`iOS 15+`)
+* 俗称`小土豆`(`支持iOS 15+`)
 
 * [更换美区账号](https://app.hosthui.com) 后点击下载 [Potatso](https://apps.apple.com/us/app/potatso/id1239860606)
 
