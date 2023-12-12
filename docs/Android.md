@@ -10,11 +10,11 @@
 
 ![android](media/android/sfb_1.jpg ':size=360')
 
-二、打开`Surfboard`-->点击代理选项`⊙`-->根据实际需要手动`选择XX节点！`
+二、打开`Surfboard`-->点击代理选项`⊙`-->根据实际需要手动`选择XX节点`
 
 ![android](media/android/sfb_2.jpg ':size=360')
 
-三、点开`仪表盘`-->右下角` ▶`-->`连接/断开` [如提示VPN权限，`请允许`]
+三、点开`仪表盘`-->右下角`▶`-->`连接/断开` [如提示VPN权限，`请允许`]
 
 ![android](media/android/sfb_3.jpg ':size=360')
 
@@ -28,7 +28,7 @@
 
 ![android](media/android/cfa_1.jpg ':size=360')
 
-二、输入订阅名称：`XX 加速器`-->点击右上角`◳`-->`保存订阅！`
+二、输入订阅名称：`XX加速器`-->点击右上角`◳`-->`保存订阅！`
 
 ![android](media/android/cfa_2.jpg ':size=360')
 
