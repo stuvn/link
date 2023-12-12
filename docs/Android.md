@@ -14,7 +14,7 @@
 
 ![android](media/android/sfb_2.jpg ':size=360')
 
-三、点开`仪表盘`-->`右下角 ▶`-->`连接/断开` [如提示VPN权限，`请允许`]
+三、点开`仪表盘`-->右下角` ▶`-->`连接/断开` [如提示VPN权限，`请允许`]
 
 ![android](media/android/sfb_3.jpg ':size=360')
 
