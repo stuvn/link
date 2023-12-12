@@ -14,7 +14,7 @@
 
 ![android](media/android/sfb_2.jpg ':size=360')
 
-三、点开`仪表盘`-->`再点▶`-->`连接/断开` [如提示VPN权限，`请允许`]
+三、点开`仪表盘`-->`右下角 ▶`-->`连接/断开` [如提示VPN权限，`请允许`]
 
 ![android](media/android/sfb_3.jpg ':size=360')
 
@@ -22,7 +22,7 @@
 
 * 俗称`小蓝猫`(`支持Android 6+`)
 
-* 点击下载 <a href="media/android/cfa.apk" target="_blank">Clash</a> ，安装后为App设置`后台运行`权限！
+* 点击下载 <a href="media/android/cfa.apk" target="_blank">Clash For Android</a> ，安装后为App设置`后台运行`权限！
 
 一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Clash For Android`
 
