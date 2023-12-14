@@ -66,9 +66,9 @@
 
 * 俗称`小蓝猫`(支持`Windows 10+`)
 
-* <a href="media/win/clash.exe" target="_blank">点击下载</a> 运行<img src="./clash.png" />安装，登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Clash`
+* <a href="media/win/clash.exe" target="_blank">点击下载</a> 运行<img src="./clash.png" />安装，登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->`复制订阅地址`
 
-![win](media/win/cfw_0.jpg ':size=720')
+![win](media/win/sub.jpg ':size=720')
 
 * 打开<img src="./clash.png" />`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择`配置(订阅)`
 
