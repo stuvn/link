@@ -34,19 +34,19 @@
 
 * 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里的 <img src="./shadowsocks.png" /> 如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
 
-![win](media/win/ssw_1.jpg ':size=720')
+![shadowsocks](media/win/ssw_1.jpg ':size=720')
 
 * 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
-![win](media/win/ssw_2.jpg ':size=720')
+![shadowsocks](media/win/ssw_2.jpg ':size=720')
 
 * 导入节点。右下角任务栏上的 <img src="./shadowsocks.png" />-->`鼠标右键`-->`服务器`-->`从剪贴板导入URL`(`可复制多条ss://链接导入`)
 
-![win](media/win/ssw_3.jpg ':size=720')
+![shadowsocks](media/win/ssw_3.jpg ':size=720')
 
 * 选择`服务器`-->选择`系统代理模式`-->`PAC模式`(推荐用`PAC模式`，遇到无法打开的网站请参考 [浏览器扩展](switchyomega))
 
-![win](media/win/ssw_4.jpg ':size=720')
+![shadowsocks](media/win/ssw_4.jpg ':size=720')
 
 !> 常见问题
 
@@ -66,7 +66,9 @@
 
 * 俗称`小蓝猫`(支持`Windows 10+`)
 
-* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+* 点击下载 <a href="media/win/clash.exe" target="_blank"><img src="./clash.png" /></a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+
+* 登入您购买SS服务的机场网站-->点击一键订阅-->导入到ClashX
 
 ![win](media/win/cfw_1.jpg ':size=720')
 
