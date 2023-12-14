@@ -57,7 +57,7 @@
 
 ![win](media/win/ss_2.jpg ':size=720')
 
-* 导入节点。右下角任务栏上的<img scr="https://stuvn.github.io/link/favicon.png" width=16>`小飞机`-->鼠标`右键`-->`服务器`-->`从剪贴板导入URL`(`可复制多条ss://链接导入`)
+* 导入节点。右下角任务栏上的<img scr="./shadowsocks.png" width=16>-->`鼠标右键`-->`服务器`-->`从剪贴板导入URL`(`可复制多条ss://链接导入`)
 
 ![win](media/win/ss_3.jpg ':size=720')
 
