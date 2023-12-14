@@ -2,7 +2,7 @@
 
 ## Clash for Windows
 
-* 支持 Windows 10+
+* 支持`Windows 10+`
 
 * 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
 
@@ -24,7 +24,7 @@
 
 ## v2rayN (上网/游戏通用) 
 
-* 支持Windows 7+ （要求 [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.19-windows-x64-installer) 以上版本）
+* 支持`Windows 7+`(要求 [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.19-windows-x64-installer) 以上版本)
 
 * 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
@@ -38,15 +38,15 @@
 
 `[1]` 如何`更新订阅？`
 
-打开 -->`订阅分组` -->`更新全部订阅`(不通过代理)
+打开 <img src="./v2rayN.png" />-->`订阅分组`-->`更新全部订阅`(不通过代理)
 
 `[2]` 按教程设置后仍连不上？
 
-打开 -->系统代理: `清除系统代理` -->`重启服务` -->系统代理: `自动配置系统代理`
+打开 <img src="./v2rayN.png" />-->系统代理:`清除系统代理`-->`重启服务`-->系统代理:`自动配置系统代理`
 
 ## Shadowsocks (小飞机)
 
-* 支持 Windows 7+ （要求 [.NET 4.6.2](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net462-web-installer) 或 [.NET 4.8.1](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net481-web-installer)）
+* 支持`Windows 7+` (要求 [.NET 4.6.2](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net462-web-installer) 或 [.NET 4.8.1](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net481-web-installer))
 
 * 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里的 <img src="./shadowsocks.png" /> 如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
 
