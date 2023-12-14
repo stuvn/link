@@ -66,7 +66,7 @@
 
 * 俗称`小蓝猫`(支持`Windows 10+`)
 
-* <a href="media/win/clash.exe" target="_blank">点击下载</a> 运行<img src="./clash.png" />安装，登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->`复制订阅地址`
+* <a href="media/win/clash.exe" target="_blank">点击下载</a> 运行<img src="./clash.png" />安装，登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->点击`复制订阅地址`
 
 ![win](media/win/sub.jpg ':size=720')
 
@@ -78,7 +78,7 @@
 
 ![win](media/win/cfw_2.jpg ':size=720')
 
-* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(不建议`自动选择`，因为`会自动跳IP`)
+* 打开<img src="./clash.png" />`主页`-->点击`系统代理`实现`连接/断开`VPN-->如需代理`电报/游戏`请打开`TUN模式`
 
 ![win](media/win/cfw_3.jpg ':size=720')
 
