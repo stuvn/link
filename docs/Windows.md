@@ -78,7 +78,7 @@
 
 ![win](media/win/cfw_2.jpg ':size=720')
 
-* 打开<img src="./clash.png" />`主页`-->点击`系统代理`实现`连接/断开`VPN-->如需代理`Telegram/游戏`等软件请开`TUN模式`
+* 打开<img src="./clash.png" />`主页`-->点击`系统代理`实现`连接/断开`VPN-->如需代理`Telegram/游戏`等请开`TUN模式`
 
 ![win](media/win/cfw_3.jpg ':size=720')
 
