@@ -1,6 +1,6 @@
 ## ClashX Pro
 
-* 支持 macOS 10.6+ 系统
+* 支持`macOS 10.6+`系统
 
 * 点击下载 <a href="media/mac/ClashX.dmg" target="_blank">ClashX Pro</a> 下载后双击运行`ClashX.dmg`，按照提示安装！[`如提示权限，请输入macOS密码`]
 
@@ -28,7 +28,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 ## ShadowsocksX-NG
 
-* 支持 macOS 10.12+ 系统
+* 支持`macOS 10.12+`系统
 
 * 下载安装 <a href="media/mac/ShadowsocksX-NG.dmg" target="_blank">ShadowsocksX-NG</a>，打开系统设置 -->`隐私与安全性` -->`已阻止使用"Sha…"`-->`仍要打开`
 
