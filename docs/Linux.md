@@ -1,6 +1,6 @@
 ## Clash for Windows
 
-* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />`常规`-->`开机启动！`
+* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />`主页`-->`开机启动！`
 
 ```
 wget 'https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz' && tar zxvf clash.tar.gz && \
@@ -20,7 +20,7 @@ source ~/.profile && rm -f ~/clash.tar.gz && ~/clash/cfw
 
 ![Clash](media/linux/cfw_1.jpg ':size=720')
 
-* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(不建议`自动选择`，因为`会自动跳IP`)
+* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(首次安装使用，可能需要`重启系统`)
 
 ![Clash](media/linux/cfw_2.jpg ':size=720')
 
