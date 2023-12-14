@@ -57,11 +57,11 @@
 
 ![win](media/win/ss_2.jpg ':size=720')
 
-* 导入节点。右下角任务栏上的<img scr="./shadowsocks.png" width=16>-->`鼠标右键`-->`服务器`-->`从剪贴板导入URL`(`可复制多条ss://链接导入`)
+* 导入节点。右下角任务栏上的<img src="./shadowsocks.png" />-->`鼠标右键`-->`服务器`-->`从剪贴板导入URL`(`可复制多条ss://链接导入`)
 
 ![win](media/win/ss_3.jpg ':size=720')
 
-* 选择服务器-->选择系统代理模式-->`PAC模式`（推荐用`PAC模式`，遇到无法打开的网站请参考 [浏览器扩展](switchyomega) ）
+* 选择`服务器`-->选择`系统代理模式`-->`PAC模式`(推荐用`PAC模式`，遇到无法打开的网站请参考 [浏览器扩展](switchyomega))
 
 ![win](media/win/ss_4.jpg ':size=720')
 
