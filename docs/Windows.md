@@ -61,7 +61,7 @@
 
 ![win](media/win/ss_3.jpg ':size=720')
 
-* 选择服务器和系统代理模式-->`PAC模式`（平时代理请用`PAC模式`，遇到无法打开的网站请参考 [PAC 规则](pac) ）
+* 选择服务器-->选择系统代理模式-->`PAC模式`（推荐用`PAC模式`，遇到无法打开的网站请参考 [浏览器扩展](switchyomega) ）
 
 ![win](media/win/ss_4.jpg ':size=720')
 
