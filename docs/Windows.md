@@ -6,6 +6,8 @@
 
 * 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
+* 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制V2rayN订阅`
+
 ![v2rayN](media/win/v2n_1.jpg ':size=720')
 
 * 打开 <img src="./v2rayN.png" />-->`订阅分组`(订阅分组设置) -->`添加` -->别名:`XX加速器`-->Url:粘贴复制的`v2rayN订阅地址`
