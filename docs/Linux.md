@@ -10,19 +10,19 @@ echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
 source ~/.profile && rm -f ~/clash.tar.gz && ~/clash/cfw
 ``` 
 
-![Clash](media/linux/cfw_1.jpg ':size=720')
+![Clash](media/linux/cfw_3.jpg ':size=720')
 
-* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->`复制链接`
+* 登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->点击`复制订阅地址`
 
-![Clash](media/linux/cfw_2.jpg ':size=720')
+![Clash](media/linux/sub.jpg ':size=720')
 
 * 打开<img src="./clash.png" />`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择`配置(订阅)`
 
-![Clash](media/linux/cfw_3.jpg ':size=720')
+![Clash](media/linux/cfw_1.jpg ':size=720')
 
-* 打开<img src="./clash.png" />的代理设置-->选择`规则`模式-->再`选择节点`！[`首次安装`的新用户，`需重启系统`才能使用]
+* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(不建议`自动选择`，因为`会自动跳IP`)
 
-![Clash](media/linux/cfw_4.jpg ':size=720')
+![Clash](media/linux/cfw_2.jpg ':size=720')
 
 !> 常见问题
 
