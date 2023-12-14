@@ -1,6 +1,6 @@
 ## Clash for Windows
 
-* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />的常规设置-->打开`开机启动！`
+* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />`常规`-->`开机启动！`
 
 ```
 wget 'https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz' && tar zxvf clash.tar.gz && \
