@@ -6,13 +6,15 @@
 
 * 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
+![v2rayN](media/win/v2n_1.jpg ':size=720')
+
 * 打开 <img src="./v2rayN.png" />-->`订阅分组`(订阅分组设置) -->`添加` -->别名:`XX加速器`-->Url:粘贴复制的`v2rayN订阅地址`
 
-![netch](media/win/v2n_2.jpg ':size=720')
+![v2rayN](media/win/v2n_2.jpg ':size=720')
 
 * 打开 <img src="./v2rayN.png" />-->`订阅分组`-->`更新全部订阅`-->选择节点`设为活动服务器`-->系统代理设为:`自动配置系统代理`
 
-![netch](media/win/v2n_3.jpg ':size=720')
+![v2rayN](media/win/v2n_3.jpg ':size=720')
 
 !> [常见问题](https://github.com/2dust/v2rayN/wiki/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E5%92%8C%E8%B7%AF%E7%94%B1)
 
