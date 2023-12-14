@@ -47,7 +47,7 @@
 
 ## Shadowsocks (小飞机)
 
-* 支持 Windows 7+ （要求 [.NET 4.6.2](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe) 以上版本）
+* 支持 Windows 7+ （要求 [.NET 4.6.2](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net462-web-installer) 或 [.NET 4.8.1](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net481-web-installer)）
 
 * 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里的小飞机。如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
 
