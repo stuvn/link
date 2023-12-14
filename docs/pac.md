@@ -6,7 +6,7 @@
 
 ![mac](media/mac/pac_1.jpg ':size=640')
 
-* 例如，打不开`x.abc.com`网站，则添加一行`||*.abc.com`[把第一个`.`前的`x`替换为`*`]
+* 例如，打不开`x.abc.com`网站，则添加一行`||*.abc.com`[把第一个`.`前的`字符`替换为`*`]
 
 ![mac](media/mac/pac_2.jpg ':size=640')
 
