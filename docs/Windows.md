@@ -69,11 +69,11 @@
 
 `[1]` `Shadowsocks`错误:端口已被占用！
 
-说明`重复运行`客户端，请关掉客户端重启系统后再试！
+说明`重复运行`客户端，请`退出客户端`重启系统后再试！
 
 `[2]` 非预期***无法加载DLL`"libsscrypto.dll"`
 
-请下载安装 [Visual C++ 2015 (x86)](https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe) 如仍不能用，请将`win`文件夹移到某磁盘根目录下，比如`D:\win\`
+请安装 [Visual C++ 2015 (x86)](https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x86.exe) 如仍不能用，请将`win`文件夹移到某磁盘根目录下，比如`D:\win\`
 
 `[3]` 确认设置没问题，但还是不能用！
 
