@@ -16,7 +16,7 @@ source ~/.profile && rm -f ~/clash.tar.gz && ~/clash/cfw
 
 ![Clash](media/linux/cfw_2.jpg ':size=720')
 
-* 打开<img src="./clash.png" />-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
+* 打开<img src="./clash.png" />`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择`配置(订阅)`
 
 ![Clash](media/linux/cfw_3.jpg ':size=720')
 
