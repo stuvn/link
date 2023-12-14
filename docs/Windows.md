@@ -66,9 +66,7 @@
 
 * 俗称`小蓝猫`(支持`Windows 10+`)
 
-* 点击下载 <a href="media/win/clash.exe" target="_blank"><img src="./clash.png" /></a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
-
-* 登入您购买SS服务的机场网站-->点击一键订阅-->导入到ClashX
+* 点击下载 <a href="media/win/clash.exe" target="_blank"><img src="./clash.png" /></a> 运行`clash.exe`安装，登入您购买SS服务的机场网站-->点击一键订阅-->导入到ClashX
 
 ![win](media/win/cfw_1.jpg ':size=720')
 
