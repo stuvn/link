@@ -1,38 +1,18 @@
 !> ⚠️ 不要安装多个VPN软件，并卸载`360`、`电脑管家`等国产软件(`以前能用不代表它没有监控你`)
 
-## Clash for Windows
-
-* 支持`Windows 10+`
-
-* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
-
-![win](media/win/cfw_1.jpg ':size=720')
-
-* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->选择`clash`-->`复制链接`
-
-![win](media/win/cfw_2.jpg ':size=720')
-
-* 打开`Clash`-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
-
-![win](media/win/cfw_3.jpg ':size=720')
-
-* 打开`Clash`代理设置-->选择`规则`模式-->根据情况手动`选择节点`[不建议选`自动选优`，因为会`自动跳IP`]
-
-![win](media/win/cfw_4.jpg ':size=720')
-
-!> 首次安装`可能需要重启`才能用，`代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
-
 ## v2rayN (上网/游戏通用) 
 
 * 支持`Windows 7+`(要求 [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.19-windows-x64-installer) 以上版本)
 
 * 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
-![netch](media/win/v2n_1.jpg ':size=720')
+*  -->打开 -->订阅分组(订阅分组设置) -->添加 -->别名: 虎头加速器 -->Url: 订阅地址
+
+![netch](media/win/v2n_2.jpg ':size=720')
 
 * 打开 <img src="./v2rayN.png" />-->`订阅分组`-->`更新全部订阅`-->选择节点`设为活动服务器`-->系统代理设为:`自动配置系统代理`
 
-![netch](media/win/v2n_2.jpg ':size=720')
+![netch](media/win/v2n_3.jpg ':size=720')
 
 !> [常见问题](https://github.com/2dust/v2rayN/wiki/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E5%92%8C%E8%B7%AF%E7%94%B1)
 
@@ -77,3 +57,25 @@
 `[3]` 确认设置没问题，但还是不能用！
 
 卸载`360、电脑管家`等国产软件，重启系统！如仍不能用请参考 [浏览器扩展](switchyomega) 教程，配合`SwitchyOmega`使用！
+
+## Clash for Windows
+
+* 支持`Windows 10+`
+
+* 点击下载 <a href="media/win/clash.exe" target="_blank">Clash</a> 或 <a href="https://github.com/Fndroid/clash_for_windows_pkg" target="_blank">备用下载</a> 运行`clash.exe`安装，打开`Clash`-->`常规`-->开启`系统代理/开机启动[建议]`
+
+![win](media/win/cfw_1.jpg ':size=720')
+
+* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->选择`clash`-->`复制链接`
+
+![win](media/win/cfw_2.jpg ':size=720')
+
+* 打开`Clash`-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
+
+![win](media/win/cfw_3.jpg ':size=720')
+
+* 打开`Clash`代理设置-->选择`规则`模式-->根据情况手动`选择节点`[不建议选`自动选优`，因为会`自动跳IP`]
+
+![win](media/win/cfw_4.jpg ':size=720')
+
+!> 首次安装`可能需要重启`才能用，`代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
