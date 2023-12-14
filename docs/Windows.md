@@ -68,14 +68,18 @@
 
 * <a href="media/win/clash.exe" target="_blank">点击下载</a> 运行<img src="./clash.png" />安装，登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Clash`
 
+![win](media/win/cfw_0.jpg ':size=720')
+
+* 打开<img src="./clash.png" />`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择`配置(订阅)`
+
 ![win](media/win/cfw_1.jpg ':size=720')
 
-* 打开`Clash`-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
-
-![win](media/win/cfw_3.jpg ':size=720')
-
-* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况手动`选择节点`[不建议`自动选择`，因为会`跳IP`]
+* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(不建议`自动选择`，因为`会自动跳IP`)
 
 ![win](media/win/cfw_2.jpg ':size=720')
+
+* 打开<img src="./clash.png" />`代理`-->选择`规则`模式-->根据情况`手动选择节点`(不建议`自动选择`，因为`会自动跳IP`)
+
+![win](media/win/cfw_3.jpg ':size=720')
 
 !> 首次安装`可能需要重启`才能用，`代理软件`通常是`相互冲突`的，请`卸载`其他的`代理软件！`
