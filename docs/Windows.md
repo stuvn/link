@@ -6,7 +6,7 @@
 
 * 点击下载 <a href="media/win/v2rayN.zip" target="_blank">v2rayN.zip</a> ，解压后运行`v2rayN`文件夹里的`v2rayN.exe`
 
-*  -->打开 -->订阅分组(订阅分组设置) -->添加 -->别名: 虎头加速器 -->Url: 订阅地址
+* 打开 <img src="./v2rayN.png" />-->`订阅分组`(订阅分组设置) -->`添加` -->别名:`XX加速器`-->Url:粘贴复制的`v2rayN订阅地址`
 
 ![netch](media/win/v2n_2.jpg ':size=720')
 
