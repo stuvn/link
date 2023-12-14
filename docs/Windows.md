@@ -1,3 +1,5 @@
+!> ⚠️ 不要安装多个VPN软件，并卸载`360`、`电脑管家`等国产软件(`以前能用不代表它没有监控你`)
+
 ## Clash for Windows
 
 * 支持 Windows 10+
@@ -32,8 +34,7 @@
 
 ![netch](media/win/v2n_2.jpg ':size=720')
 
-
-!> 常见问题
+!> [常见问题](https://github.com/2dust/v2rayN/wiki/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E5%92%8C%E8%B7%AF%E7%94%B1)
 
 `[1]` 如何`更新订阅？`
 
@@ -43,13 +44,11 @@
 
 打开 -->系统代理: `清除系统代理` -->`重启服务` -->系统代理: `自动配置系统代理`
 
-**⚠️ 不要同时安装其他VPN软件，并卸载`360`、`电脑管家`等国产软件（以前能用不代表它没有监控你）[参考资料](https://github.com/2dust/v2rayN/wiki/%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E5%92%8C%E8%B7%AF%E7%94%B1)**
-
 ## Shadowsocks (小飞机)
 
 * 支持 Windows 7+ （要求 [.NET 4.6.2](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net462-web-installer) 或 [.NET 4.8.1](https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net481-web-installer)）
 
-* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里 <img src="./shadowsocks.png" />。如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
+* 点击下载 <a href="media/win/win.zip" target="_blank">Shadowsocks</a> ，解压后运行`win`文件夹里的 <img src="./shadowsocks.png" /> 如提示`.NET`版本过低，请下载 [.NET 4.6.2 ](https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp462-kb3151800-x86-x64-allos-enu.exe)
 
 ![win](media/win/ssw_1.jpg ':size=720')
 
