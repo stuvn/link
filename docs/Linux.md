@@ -1,6 +1,6 @@
 ## Clash for Windows
 
-* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开`Clash`的常规设置-->打开`开机启动！`
+* 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />的常规设置-->打开`开机启动！`
 
 ```
 wget 'https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz' && tar zxvf clash.tar.gz && \
@@ -12,15 +12,15 @@ source ~/.profile && rm -f ~/clash.tar.gz && ~/clash/cfw
 
 ![Clash](media/linux/cfw_1.jpg ':size=720')
 
-* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->选`clash`-->`复制链接`
+* 登入您购买`SS节点`的网站-->进入`账号页面`-->点击`续费链接`右侧的`订阅链接`-->`复制链接`
 
 ![Clash](media/linux/cfw_2.jpg ':size=720')
 
-* 打开`Clash`-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
+* 打开<img src="./clash.png" />-->`配置`-->把复制的`订阅链接`粘贴到顶部的`从URL下载`-->然后点`下载`-->选择添加的`订阅`
 
 ![Clash](media/linux/cfw_3.jpg ':size=720')
 
-* 打开`clash`的代理设置-->选择`规则`模式-->再`选择节点`！[`首次安装`的新用户，`需重启系统`才能使用]
+* 打开<img src="./clash.png" />的代理设置-->选择`规则`模式-->再`选择节点`！[`首次安装`的新用户，`需重启系统`才能使用]
 
 ![Clash](media/linux/cfw_4.jpg ':size=720')
 
