@@ -6,8 +6,8 @@
 </head>
 <body>
 <div class="bca mo"> 
-<img src="media/android/android.png" /> <a href="./#/android.md"> 教程</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="media/apple/apple.png" /> <a href="./#/ios.md"> 教程</a>&nbsp;&nbsp;&nbsp;&nbsp;<font color=DarkRed>菜单@左下角</font><br/><br/>
+<img src="media/android/android.png" /> <a href="./#/Android.md"> 教程</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="media/apple/apple.png" /> <a href="./#/iPhone.md"> 教程</a>&nbsp;&nbsp;&nbsp;&nbsp;<font color=DarkRed>菜单@左下角</font><br/><br/>
 </div>
 </body>
 </html>
