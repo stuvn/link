@@ -227,7 +227,7 @@ sed -i 's/bind-address/#bind-address/g' /etc/mysql/mysql.conf.d/mysqld.cnf
 
 apt install socat && curl -L get.acme.sh | bash -
 
-systemctl stop nginx && /root/.acme.sh/acme.sh --issue --standalone -d www.${domain}
+systemctl stop nginx && /root/.acme.sh/acme.sh --issue --standalone -d ${domain}
 
 systemctl start nginx
 
