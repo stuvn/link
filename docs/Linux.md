@@ -47,22 +47,29 @@ echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
 
 ## Shadowsocks-libev 
 
-`Ubuntu/Debian`-`安装命令`
+`Ubuntu/Debian`-安装`Shadowsocks-libev`
 
 ```
 sudo apt update && sudo apt install shadowsocks-libev simple-obfs -y
 ```
 
-`ArchLinux/Manjaro`-`安装命令`
+`ArchLinux/Manjaro`-安装`Shadowsocks-libev`
 
 ```
 sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 ```
+
 * 登入您购买`SS节点`的网站，点击`Linux命令`栏右边的`复制命令`[每个节点都对应一个`Linux命令`]
 
 ![linux](media/linux/linux_1.jpg ':size=720')
 
-* 打开`终端`，把复制的`Linux命令`粘贴到`终端`执行 [保持前台运行，可`最小化`窗口，但`不能关闭`]
+* 把复制的`Linux命令`粘贴到`终端`执行 [保持前台运行，可`最小化`窗口，但`不能关闭`]
+
+* 打开`终端`，安装`ss://链接`解释和执行脚本 (保持前台运行，可`最小化`窗口，但`不能关闭`)
+
+```
+wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh && bash ss.sh
+```
 
 ![linux](media/linux/linux_2.jpg ':size=720')
 
