@@ -2,7 +2,7 @@
 
 * 俗称`小火箭`(`支持iOS 12+`)
 
-* [更换美区账号](https://app.hosthui.com) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
+* [更换美区账号](https://app.derk.top) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
 一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Shadowrocket`
 
@@ -12,11 +12,23 @@
 
 ![apple](media/apple/srk_2.jpg ':size=360')
 
+!> 常见问题
+
+[1] 如何更新订阅？
+
+打开`Shadowrocket`-->`数据`-->`删除本地节点`(重新订阅)
+
+[2] 为何设置正确，但还是不能用？
+
+切换`4G/wifi`网络尝试，不行再`重启手机`/`路由器`试试！
+
+⚠️ 如提示`帐户已在 App Store 被禁用`请先删掉手机里的旧版
+
 ## Potatso
 
 * 俗称`小土豆`(`支持iOS 15+`)
 
-* [更换美区账号](https://app.hosthui.com) 后点击下载 [Potatso](https://apps.apple.com/us/app/potatso/id1239860606)
+* [更换美区账号](https://app.derk.top) 后点击下载 [Potatso](https://apps.apple.com/us/app/potatso/id1239860606)
 
 一、登入您购买`SS`服务的`机场网站`-->左上角`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
@@ -38,4 +50,6 @@
 
 `[1]` 确认设置没问题，但还是不能用！
 
-  切换`4G/wifi`网络进行尝试，不行再`重启手机`/`路由器`试一试！
+切换`4G/wifi`网络尝试，不行再`重启手机`/`路由器`试试！
+
+⚠️ 如提示`帐户已在 App Store 被禁用`请先删掉手机里的旧版
