@@ -145,7 +145,7 @@ install_XrayR() {
     chmod +x XrayR
     mkdir /etc/XrayR/ -p
     rm /etc/systemd/system/XrayR.service -f
-    file="https://raw.githubusercontent.com/itonky/tools-box/master/XrayR.service"
+    file="https://raw.githubusercontent.com/stuvn/link/master/XrayR.service"
     wget -q -N --no-check-certificate -O /etc/systemd/system/XrayR.service ${file}
     systemctl daemon-reload
     systemctl stop XrayR
@@ -171,7 +171,7 @@ install_XrayR() {
         cp rulelist /etc/XrayR/
     fi
 
-    curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/itonky/tools-box/master/XrayR.sh
+    curl -o /usr/bin/XrayR -Ls https://raw.githubusercontent.com/stuvn/link/master/XrayR.sh
     chmod +x /usr/bin/XrayR
     ln -s /usr/bin/XrayR /usr/bin/xrayr # 小写兼容
     chmod +x /usr/bin/xrayr
@@ -188,7 +188,7 @@ if [ $type == 'Shadowsocks' ]; then
 else
     echo -e "${green}配置: trojan 节点${cclear} \n"
     rm /etc/nginx/nginx.conf -f
-    wget -q -N --no-check-certificate -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/itonky/tools-box/master/nginx.conf
+    wget -q -N --no-check-certificate -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/stuvn/link/master/nginx.conf
     sed -i 's/ListenIP: 0.0.0.0/ListenIP: 127.0.0.1/' /etc/XrayR/config.yml
     sed -i 's/EnableProxyProtocol: false/EnableProxyProtocol: true/' /etc/XrayR/config.yml
     sed -i 's/EnableFallback: false/EnableFallback: true/' /etc/XrayR/config.yml
