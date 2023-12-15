@@ -63,7 +63,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 ![linux](media/linux/libev_1.jpg ':size=720')
 
-* 打开`终端`，安装解释和执行脚本，执行后按提示粘贴`ss://链接` (保持前台运行，可`最小化`窗口，但`不能关闭`)
+* 打开`终端`，安装解释和连接脚本，执行后按提示粘贴`ss://链接` (保持前台运行，可`最小化`窗口，但`不能关闭`)
 
 ```
 # 下载脚本，只需首次安装即可
