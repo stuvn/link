@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # 1. 提示用户输入ss://协议的链接
@@ -25,5 +24,5 @@ echo "端口: $server_port"
 obfs_opts="obfs=http;obfs-host=www.apple.com"
 ss_local_command="ss-local -s $server_address -p $server_port -l 1080 -k $password -m $encryption_method --plugin obfs-local --plugin-opts $obfs_opts"
 echo "连接命令: $ss_local_command"
-echo "执行中..."
+echo "正在连接: $server_address ..."
 $ss_local_command
