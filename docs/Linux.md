@@ -63,7 +63,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 ![linux](media/linux/libev_1.jpg ':size=720')
 
-* 打开`终端`，安装解释和连接脚本，执行后按提示粘贴`ss://链接` (保持前台运行，可`最小化`窗口，但`不能关闭`)
+* 打开`终端`，安装解释脚本，执行后按提示粘贴`ss://链接` (保持前台运行，可`最小化`窗口，但`不能关闭`)
 
 ```
 # 下载脚本，只需首次安装即可
@@ -74,7 +74,7 @@ bash ss.sh
 
 ![linux](media/linux/libev_2.jpg ':size=720')
 
-* 执行`脚本命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
+* 执行`解释脚本`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
 
 ![linux](media/linux/libev_3.jpg ':size=720')
 
@@ -84,9 +84,9 @@ bash ss.sh
 
 是的，`Shadowsocks-libev`必须配合`SwitchyOmega`使用，具体请参考 [浏览器扩展](switchyomega)
 
-`[2]` 如何切换至不同的`路线/节点`？
+`[2]` 如何切换至不同的`国家/节点`？
 
-关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`ss://链接`，重新`bash ss.sh`
+关闭`终端`窗口后重新打开，然后复制新的`SS节点`对应的`ss://链接`，重新`bash ss.sh`
 
 `[3]` 如何设置开机后`自动开启`代理？
 
