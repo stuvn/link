@@ -176,7 +176,7 @@ sleep 1
 apt-get update
 apt-get install ca-certificates
 sleep 1
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - 
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - 
 sleep 1
 apt-get install -y nodejs 
 cd ~ && wget https://codeload.github.com/gyteng/shadowsocks-manager-tiny/zip/refs/heads/master && unzip master
