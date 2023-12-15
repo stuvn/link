@@ -59,11 +59,9 @@ sudo apt update && sudo apt install shadowsocks-libev simple-obfs -y
 sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 ```
 
-* 登入您购买`SS节点`的网站，点击`Linux命令`栏右边的`复制命令`[每个节点都对应一个`Linux命令`]
+* 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
 ![linux](media/linux/linux_1.jpg ':size=720')
-
-* 把复制的`Linux命令`粘贴到`终端`执行 [保持前台运行，可`最小化`窗口，但`不能关闭`]
 
 * 打开`终端`，安装`ss://链接`解释和执行脚本 (保持前台运行，可`最小化`窗口，但`不能关闭`)
 
