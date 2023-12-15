@@ -113,7 +113,7 @@ if [ -f /var/lib/dpkg/lock ]; then
 fi
 
 echo "installing ssmgr ..."
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - 
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - 
 
 if [ -f /var/lib/dpkg/lock ]; then
   rm -f /var/lib/dpkg/lock
@@ -171,7 +171,7 @@ plugins:
     use: true
     host: '127.0.0.1'
     port: '8080'
-    site: 'https://www.${domain}'
+    site: 'https://${domain}'
     icon: 'icon.png'
     skin: 'fs_sample'
     language: 'zh-CN'
@@ -321,20 +321,31 @@ fi
 cat > /etc/nginx/conf.d/ss.conf<<-EOF
 server {
   listen         80;
-  server_name    www.${domain} ${domain};
-  rewrite        ^   https://\$server_name\$request_uri? permanent;
+  server_name    ${domain} www.${domain};
+  return   301   https://${domain}\$request_uri;
+}
+
+server {
+  listen       443 ssl http2;
+  server_name  www.${domain};
+
+  ssl_certificate /root/.acme.sh/www.${domain}_ecc/fullchain.cer;
+  ssl_certificate_key /root/.acme.sh/www.${domain}_ecc/www.${domain}.key;
+        
+  return  301  https://${domain}\$request_uri;
 }
 
 server {  
   listen                 443 ssl http2;
-  server_name            www.${domain};
+  server_name            ${domain};
 
   ##
   # SSL Settings
   ##
 
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+  ssl_protocols TLSv1.2 TLSv1.3;
   ssl_prefer_server_ciphers on;
+  
   ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
   ssl_ecdh_curve secp384r1; # Requires nginx >= 1.1.0
   ssl_session_cache shared:SSL:10m;
@@ -349,8 +360,8 @@ server {
                 
   fastcgi_intercept_errors on;
 
-  ssl_certificate        /root/.acme.sh/www.${domain}_ecc/fullchain.cer;
-  ssl_certificate_key    /root/.acme.sh/www.${domain}_ecc/www.${domain}.key;
+  ssl_certificate        /root/.acme.sh/${domain}_ecc/fullchain.cer;
+  ssl_certificate_key    /root/.acme.sh/${domain}_ecc/${domain}.key;
 
   location / {
       if (\$request_filename ~* ^.*?\.(dmg|exe|zip|gz|doc|pdf)$) {
@@ -376,8 +387,11 @@ apt-get install socat && curl -L get.acme.sh | bash -
 
 systemctl stop nginx 
 
-/root/.acme.sh/acme.sh --set-default-ca  --server  letsencrypt
+/root/.acme.sh/acme.sh --set-default-ca  --server  zerossl
+/root/.acme.sh/acme.sh  --register-account  -m hi@${domain} --server zerossl
 
+/root/.acme.sh/acme.sh --issue --standalone -d ${domain}
+sleep 10
 /root/.acme.sh/acme.sh --issue --standalone -d www.${domain}
 
 systemctl start nginx
