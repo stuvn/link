@@ -169,18 +169,28 @@ fi
 cat > /etc/nginx/conf.d/v2b.conf<<-EOF
 server {
     listen       80;
-    server_name  www.${domain} ${domain};
-    rewrite ^ https://\$server_name\$request_uri? permanent;
+    server_name  ${domain} www.${domain};
+    return 301 https://${domain}\$request_uri;
 }
 
 server {
     listen       443 ssl http2;
     server_name  www.${domain};
-    root   /home/wwwroot/public;
-    index  index.php index.html;
 
     ssl_certificate /root/.acme.sh/www.${domain}_ecc/fullchain.cer;
     ssl_certificate_key /root/.acme.sh/www.${domain}_ecc/www.${domain}.key;
+        
+    return 301 https://${domain}\$request_uri;
+}
+
+server {
+    listen       443 ssl http2;
+    server_name  ${domain};
+    root   /home/wwwroot/public;
+    index  index.php index.html;
+
+    ssl_certificate /root/.acme.sh/${domain}_ecc/fullchain.cer;
+    ssl_certificate_key /root/.acme.sh/${domain}_ecc/${domain}.key;
 
     #charset koi8-r; 
     #access_log  /var/log/nginx/host.access.log  main;
