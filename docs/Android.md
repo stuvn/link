@@ -18,6 +18,10 @@
 
 ![android](media/android/sfb_3.jpg ':size=360')
 
+[1] 如何`更新订阅？`
+
+打开`Surfboard`-->`配置`📁 -->`检查更新`
+
 ## Clash For Android 
 
 * 俗称`小蓝猫`(`支持Android 6+`)
