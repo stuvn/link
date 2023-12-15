@@ -141,7 +141,7 @@ install_XrayR() {
     wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/XrayR-project/XrayR/releases/download/v0.9.0/XrayR-linux-64.zip
     sleep 5
     if [ ! -f "XrayR-linux-64.zip" ]; then
-        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://raw.githubusercontent.com/stuvn/link/master/XrayR-linux-64.zip
+        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/stuvn/link/releases/download/v0.20.21/XrayR-linux-64.zip
     fi
     unzip XrayR-linux.zip
     rm XrayR-linux.zip -f
@@ -280,7 +280,6 @@ if [ $( ps -fe | grep AliYunDunUpdate | grep -v grep | wc -l ) == 1 ]; then
   echo ""
 fi
 
-
 sed -i 's/http:\/\/nginx\.com\//\.\/log\.txt/' /var/www/html/index.nginx-debian.html
 
 systemctl reload sshd
@@ -300,6 +299,6 @@ echo -e "${green}OS Ver: $os ${cclear}\n${red}Type: $type ${cclear}\n${green}sec
 history -c && history -w
 echo -e "{red}`date`${cclear}\n"
 systemctl restart XrayR
+nginx -t
 systemctl restart nginx
-systemctl status nginx
-systemctl status XrayR
+curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
