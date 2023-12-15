@@ -41,7 +41,7 @@ rm -f /home/wwwroot/public/images/linux/clash.tar.gz
 
 echo "downloading linux apps"
 
-wget https://github.com/itonky/tools-box/releases/download/2023/clash.tar.gz
+wget https://github.com/stuvn/link/releases/download/v0.20.21/clash.tar.gz
 
 echo "download finish ..."
 
