@@ -247,7 +247,7 @@ systemctl stop nginx
 
 /root/.acme.sh/acme.sh --set-default-ca  --server  letsencrypt
 
-/root/.acme.sh/acme.sh --issue --standalone -d www.${domain}
+/root/.acme.sh/acme.sh --issue --standalone -d ${domain}
 
 systemctl start nginx
 
@@ -257,7 +257,7 @@ systemctl restart supervisor
 
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade 
 
-wget https://raw.githubusercontent.com/itonky/tools-box/master/down.sh
+wget https://raw.githubusercontent.com/stuvn/link/master/down.sh
 chmod +x down.sh
 
 echo > /var/log/wtmp
