@@ -118,7 +118,7 @@ if ! grep '^exit 0' /etc/rc.local;then
   echo '/usr/local/bin/supervisord -c /etc/supervisord.conf'>>/etc/rc.local
 fi
 
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - 
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash - 
 
 apt-get install -y nodejs 
 
@@ -175,8 +175,9 @@ fi
 
 echo "installing nginx ..."
 
-apt-get install nginx -y && cd /etc/nginx/conf.d/ && wget --no-check-certificate 'https://www.filekey.xyz/shell/www.conf'
-cd /usr/share/nginx/html && rm -rf * && wget --no-check-certificate 'https://www.filekey.xyz/shell/index.html'
+apt-get install nginx -y && cd /etc/nginx/conf.d/ && wget --no-check-certificate 'https://raw.githubusercontent.com/stuvn/link/master/www.conf'
+cd /usr/share/nginx/html && rm -rf * && wget --no-check-certificate 'https://raw.githubusercontent.com/stuvn/link/master/404.html'
+cp 404.html index.html
 sed -i 's/include \/etc\/nginx\/sites-enabled\/\*;/#include \/etc\/nginx\/sites-enabled\/\*;/g' /etc/nginx/nginx.conf
 
 systemctl restart nginx
