@@ -255,8 +255,8 @@ apt-get install socat && curl -L get.acme.sh | bash -
 
 systemctl stop nginx 
 
-/root/.acme.sh/acme.sh --set-default-ca  --server  letsencrypt
-
+/root/.acme.sh/acme.sh --set-default-ca  --server  zerossl
+/root/.acme.sh/acme.sh  --register-account  -m hi@berk.top --server zerossl
 /root/.acme.sh/acme.sh --issue --standalone -d ${domain}
 
 systemctl start nginx
