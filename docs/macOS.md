@@ -10,17 +10,21 @@
 
 ![ClashX](media/mac/clx_2.jpg ':size=720')
 
-* 点击右上角`ClashX`，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后开启`设置为系统代理`
+* 点击右上角 <img src="./clasx.png" />，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后开启`设置为系统代理`
 
 ![ClashX](media/mac/clx_3.jpg ':size=720')
 
 !> 常见问题
 
-`[1]` 按教程设置后却不能用？
+`[1]` 如何`更新订阅？`
+
+点击右上角 <img src="./clasx.png" />-->关掉`设置为系统代理`-->`配置`(选择订阅)-->`托管配置`-->`更新`
+
+`[2]` 按教程设置后却不能用？
 
 `VPN软件`都是`相互冲突`的，请`卸载`其他`VPN软件`并重启`macOS`
 
-`[2]` `无法联网` 卸载客户端也不行？打开`终端`执行以下命令`(需输入macOS密码,然后重启)`
+`[3]` `无法联网` 卸载客户端也不行？打开`终端`执行以下命令`(需输入macOS密码,然后重启)`
 
 ```
 sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.Boot.*" -delete && rm -r ~/.config
@@ -48,6 +52,10 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 !> 常见问题
 
-`[1]` `无法翻墙`或打不开`部分特定`网站？
+`[1]` 如何`更新订阅？`
 
-配合`SwitchyOmega`使用，具体请参考 [浏览器扩展](switchyomega)
+不支持在线更新，只能删掉节点重新添加！[具体参考](delete?id=macos)
+
+`[2]` `无法翻墙`或打不开`部分特定`网站？
+
+推荐配合`SwitchyOmega`使用，具体请参考 [浏览器扩展](switchyomega)
