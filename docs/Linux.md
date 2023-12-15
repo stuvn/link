@@ -61,7 +61,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 * 登入您购买`SS`服务的`机场网站`-->左侧`使用文档`-->`第三方App订阅地址(及ss://链接)`-->`复制ss://链接`
 
-![linux](media/linux/linux_1.jpg ':size=720')
+![linux](media/linux/libev_1.jpg ':size=720')
 
 * 打开`终端`，安装`ss://链接`解释和执行脚本 (保持前台运行，可`最小化`窗口，但`不能关闭`)
 
