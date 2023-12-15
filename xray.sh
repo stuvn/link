@@ -203,9 +203,9 @@ else
     sleep 1
     sed -i "s/443/${port}/g" /etc/nginx/nginx.conf
     sleep 1
-    sed -i "s%xx.com.cer;%/root/.acme.sh/${domain}_ecc/fullchain.cer;%" /etc/nginx/nginx.conf
+    sed -i "s%xxx.com.cer;%/root/.acme.sh/${domain}_ecc/fullchain.cer;%" /etc/nginx/nginx.conf
     sleep 1
-    sed -i "s%xx.com.key;%/root/.acme.sh/${domain}_ecc/${domain}.key;%" /etc/nginx/nginx.conf
+    sed -i "s%xxx.com.key;%/root/.acme.sh/${domain}_ecc/${domain}.key;%" /etc/nginx/nginx.conf
     sleep 1
     apt-get install socat && curl -L get.acme.sh | bash -
     systemctl stop nginx 
