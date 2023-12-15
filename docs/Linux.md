@@ -72,11 +72,11 @@ wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh
 bash ss.sh
 ```
 
-![linux](media/linux/linux_2.jpg ':size=720')
+![linux](media/linux/libev_2.jpg ':size=720')
 
 * 执行`脚本命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
 
-![linux](media/linux/linux_3.jpg ':size=720')
+![linux](media/linux/libev_3.jpg ':size=720')
 
 !> 常见问题
 
