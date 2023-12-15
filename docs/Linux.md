@@ -47,13 +47,13 @@ echo 'export https_proxy=http://127.0.0.1:7890'>> ~/.profile && \
 
 ## Shadowsocks-libev 
 
-`Ubuntu/Debian`-安装`Shadowsocks-libev`
+**Ubuntu/Debian** - 安装`Shadowsocks-libev`
 
 ```
 sudo apt update && sudo apt install shadowsocks-libev simple-obfs -y
 ```
 
-`ArchLinux/Manjaro`-安装`Shadowsocks-libev`
+**ArchLinux/Manjaro** - 安装`Shadowsocks-libev`
 
 ```
 sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
@@ -66,12 +66,15 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 * 打开`终端`，安装`ss://链接`解释和执行脚本 (保持前台运行，可`最小化`窗口，但`不能关闭`)
 
 ```
-wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh && bash ss.sh
+# 下载脚本，只需首次安装即可
+wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh 
+# 每次连接，都要重新执行脚本
+bash ss.sh
 ```
 
 ![linux](media/linux/linux_2.jpg ':size=720')
 
-* 执行`Linux命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
+* 执行`脚本命令`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
 
 ![linux](media/linux/linux_3.jpg ':size=720')
 
@@ -83,8 +86,8 @@ wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh
 
 `[2]` 如何切换至不同的`路线/节点`？
 
-关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`Linux命令`，重新执行！
+关闭`终端`窗口后重新打开，然后复制您要使用的`SS节点`对应的`ss://链接`，重新`bash ss.sh`
 
 `[3]` 如何设置开机后`自动开启`代理？
 
-把其中一个`SS节点`对应的`Linux命令`添加到系统的`启动项`里。<a href="./media/linux/ubuntu_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="./media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
+把其中一个`SS节点`对应的`连接命令`添加到系统的`启动项`里。<a href="./media/linux/ubuntu_auto.jpg" target="_blank">Ubuntu 参考</a> 或 <a href="./media/linux/arch_auto.jpg" target="_blank">ArchLinux 参考</a>
