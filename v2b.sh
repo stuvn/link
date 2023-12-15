@@ -251,13 +251,19 @@ if [ -f /var/lib/dpkg/lock ]; then
   rm -f /var/lib/dpkg/lock
 fi
 
+echo ""
+read -p "输入SSL证书邮箱:" email
+echo ""
+
 apt-get install socat && curl -L get.acme.sh | bash -
 
 systemctl stop nginx 
 
 /root/.acme.sh/acme.sh --set-default-ca  --server  zerossl
-/root/.acme.sh/acme.sh  --register-account  -m hi@berk.top --server zerossl
+/root/.acme.sh/acme.sh  --register-account  -m ${email} --server zerossl
 /root/.acme.sh/acme.sh --issue --standalone -d ${domain}
+sleep 10
+/root/.acme.sh/acme.sh --issue --standalone -d www.${domain}
 
 systemctl start nginx
 
