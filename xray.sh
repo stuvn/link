@@ -137,9 +137,12 @@ install_XrayR() {
     cd /usr/local/XrayR/
 
     last_version=$(curl -Ls "https://api.github.com/repos/XrayR-project/XrayR/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-    echo -e "检测到 XrayR 最新版本：${last_version}，开始安装\n"
+    echo -e "检测到 XrayR 最新版本：${last_version}，开始安装v0.9.0\n"
     wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://github.com/XrayR-project/XrayR/releases/download/v0.9.0/XrayR-linux-64.zip
-
+    sleep 5
+    if [ ! -f "XrayR-linux-64.zip" ]; then
+        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://raw.githubusercontent.com/stuvn/link/master/XrayR-linux-64.zip
+    fi
     unzip XrayR-linux.zip
     rm XrayR-linux.zip -f
     chmod +x XrayR
