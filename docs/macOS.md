@@ -10,7 +10,7 @@
 
 ![ClashX](media/mac/clx_2.jpg ':size=720')
 
-* 点击右上角 <img src="./clasx.png" />，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后开启`设置为系统代理`
+* 点击右上角 <img src="./clashx.png" />，将`出站模式`设置为`规则`-->根据需要手动`选择节点`-->然后开启`设置为系统代理`
 
 ![ClashX](media/mac/clx_3.jpg ':size=720')
 
@@ -18,7 +18,7 @@
 
 `[1]` 如何`更新订阅？`
 
-点击右上角 <img src="./clasx.png" />-->关掉`设置为系统代理`-->`配置`(选择订阅)-->`托管配置`-->`更新`
+点击右上角 <img src="./clashx.png" />-->关掉`设置为系统代理`-->`配置`(选择订阅)-->`托管配置`-->`更新`
 
 `[2]` 按教程设置后却不能用？
 
@@ -54,7 +54,7 @@ sudo find /Library/Preferences/SystemConfiguration/ -type f ! -name "com.apple.B
 
 `[1]` 如何`更新订阅？`
 
-不支持在线更新，只能删掉节点重新添加！[具体参考](delete?id=macos)
+不支持在线更新，请删掉节点重新添加！[具体参考](delete?id=macos)
 
 `[2]` `无法翻墙`或打不开`部分特定`网站？
 
