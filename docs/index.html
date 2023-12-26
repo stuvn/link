@@ -8,9 +8,26 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./vue.css">
   <link rel="shortcut icon" href="./favicon.png">
+  <style>
+      /* 样式可以根据需要进行调整 */
+      #popup-container {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #fff;
+          padding: 10px;
+          border: 1px solid #ccc;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+  </style>
 </head>
 <body>
   <div id="app">加载中</div>
+  <div id="popup-container">
+    <p>稳定机场推荐：<a href="https://bewk.top/#/register?code=CgebKwRE" target="_blank">点击这里</a></p>
+    <span id="popup-close" style="cursor: pointer; float: right;">关闭</span>
+  </div>
   <script>
     const host = 'docs.xyzz.men';
     if(window.location.host === host && window.location.protocol !== 'https:') {
@@ -36,6 +53,19 @@
         noData: '找不到结果'
       }
     };
+  </script>
+  <!-- JavaScript 代码 -->
+  <script>
+    // 等待文档加载完毕
+    $(document).ready(function () {
+        // 显示提示弹窗
+        $("#popup-container").show();
+
+        // 关闭提示弹窗
+        $("#popup-close").click(function () {
+            $("#popup-container").hide();
+        });
+    });
   </script>
   <!-- Latest v2.x.x -->
   <script src="./search.js"></script>
