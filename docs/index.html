@@ -9,16 +9,22 @@
   <link rel="stylesheet" href="./vue.css">
   <link rel="shortcut icon" href="./favicon.png">
   <style>
-      #popup {
-          position: fixed;
-          right: 20px;
-          bottom: 20px;
-          padding: 10px;
-          background-color: #f0f0f0;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          display: none;
-      }
+    /* 提示框样式 */
+    #popup {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: none;
+      cursor: pointer;
+    }
+
+    /* 悬停时的样式 */
+    #popup:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 <body>
@@ -58,32 +64,35 @@
   <script src="./jquery.min.js"></script>
   <!-- JavaScript 代码 -->
   <script>
+    // 随机选择链接
     function getRandomLink() {
-        var links = ['https://bewk.top', 'https://dewk.top'];
-        var randomIndex = Math.floor(Math.random() * links.length);
-        return links[randomIndex];
+      var links = ["https://bewk.top", "https://dewk.top"];
+      var randomIndex = Math.floor(Math.random() * links.length);
+      return links[randomIndex];
     }
 
+    // 显示提示框
     function showPopup() {
-        var popup = document.getElementById('popup');
-        var link = getRandomLink();
-
-        // 设置提示内容
-        popup.innerHTML = '优质机场：<a href="' + link + '" target="_blank">' + link + '</a>';
-
-        // 显示提示
-        popup.style.display = 'block';
-
-        // 3秒后隐藏提示
-        setTimeout(function () {
-            popup.style.display = 'none';
-        }, 3000);
+      var popup = document.getElementById('popup');
+      popup.innerHTML = '<a href="' + getRandomLink() + '" target="_blank">点击查看</a>';
+      popup.style.display = 'block';
     }
 
-    // 在页面加载完毕后显示提示
+    // 关闭提示框
+    function closePopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+
+    // 页面加载完毕后显示提示框
     window.onload = function () {
-        showPopup();
+      showPopup();
     };
-</script>
+
+    // 添加关闭提示框事件
+    document.getElementById('popup').onclick = function () {
+      closePopup();
+    };
+  </script>
 </body>
 </html>
