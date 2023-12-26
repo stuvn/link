@@ -68,7 +68,7 @@
   <script>
     // 随机选择链接
     function getRandomLink() {
-      var links = ["https://bewk.top", "https://dewk.top"];
+      var links = ["https://bewk.top/#/register?code=CgebKwRE", "https://dewk.top/#/register?code=fvCKL5Ts"];
       var randomIndex = Math.floor(Math.random() * links.length);
       return links[randomIndex];
     }
@@ -76,7 +76,7 @@
     // 显示提示框
     function showPopup() {
       var popup = document.getElementById('popup');
-      popup.innerHTML = '优质机场：<a href="' + getRandomLink() + '" target="_blank">' + getRandomLink() + '</a>';
+      popup.innerHTML = '优质机场：<a href="' + getRandomLink() + '" target="_blank">' + getRandomLink().substring(0,16) + '</a>';
       popup.style.display = 'block';
     }
 
