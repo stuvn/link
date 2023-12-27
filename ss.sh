@@ -23,7 +23,7 @@ echo "密码: $password"
 echo "服务器地址: $server"
 echo "端口: $port"
 
-# 构建simple-obfs 插件参数
+# 构建simple-obfs插件参数
 opts='--plugin obfs-local --plugin-opts obfs=http;obfs-host=www.apple.com'
 
 # 构建Shadowsocks客户端连接命令
