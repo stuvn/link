@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export PATH="/usr/bin:/usr/local/bin:$PATH"
+
 read -p "请输入ss://协议的链接: " input
 
 # 提取ss://之后的字符串
@@ -21,10 +23,14 @@ echo "密码: $password"
 echo "服务器地址: $server"
 echo "端口: $port"
 
+# 构建simple-obfs 插件参数
+opts='--plugin obfs-local --plugin-opts obfs=http;obfs-host=www.apple.com'
+
 # 构建Shadowsocks客户端连接命令
-ss_command="ss-local -s $server -p $port -k $password -m $encryption -l 1080 --plugin obfs-local --plugin-opts 'obfs=http;obfs-host=www.apple.com'"
+ss_command="ss-local -s $server -p $port -k $password -m $encryption -l 1080 $opts"
 
 # 输出命令
 echo "连接命令: $ss_command"
 echo "正在连接: $server ..."
+sleep 1
 $ss_command
