@@ -4,6 +4,11 @@
 
 * [更换美区账号](https://app.derk.top) 后点击下载 [Shadowrocket](https://apps.apple.com/us/app/shadowrocket/id932747118)
 
+<video controls width="500">
+  <source src="media/apple/id.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 一、登入您购买`SS`服务的`机场网站`-->点击`一键订阅`-->导入到`Shadowrocket`
 
 ![apple](media/apple/srk_1.jpg ':size=360')
