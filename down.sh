@@ -10,9 +10,9 @@ rm -f /home/wwwroot/public/images/win/v2rayN.zip
 
 echo "downloading windows apps"
 
-wget https://github.com/itonky/tools-box/releases/download/2023/win.zip
-wget https://github.com/itonky/tools-box/releases/download/2023/clash.exe
-wget https://github.com/itonky/tools-box/releases/download/2023/v2rayN.zip
+wget https://github.com/stuvn/link/releases/download/v0.20.21/win.zip
+wget https://github.com/stuvn/link/releases/download/v0.20.21/clash.exe
+wget https://github.com/stuvn/link/releases/download/v0.20.21/v2rayN.zip
 
 echo "download finish ..."
 
@@ -27,8 +27,8 @@ rm -f /home/wwwroot/public/images/mac/ShadowsocksX-NG.dmg
 
 echo "downloading macos apps"
 
-wget https://github.com/itonky/tools-box/releases/download/2023/ClashX.dmg
-wget https://github.com/itonky/tools-box/releases/download/2023/ShadowsocksX-NG.dmg
+wget https://github.com/stuvn/link/releases/download/v0.20.21/ClashX.dmg
+wget https://github.com/stuvn/link/releases/download/v0.20.21/ShadowsocksX-NG.dmg
 
 echo "download finish ..."
 
@@ -54,8 +54,8 @@ rm -f /home/wwwroot/public/images/android/sfb.apk
 
 echo "downloading android apps"
 
-wget https://github.com/itonky/tools-box/releases/download/2023/cfa.apk
-wget https://github.com/itonky/tools-box/releases/download/2023/sfb.apk
+wget https://github.com/stuvn/link/releases/download/v0.20.21/cfa.apk
+wget https://github.com/stuvn/link/releases/download/v0.20.21/sfb.apk
 
 echo "download finish ..."
 
