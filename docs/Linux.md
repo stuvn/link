@@ -1,5 +1,7 @@
 ## Clash for Windows
 
+**Clash for Windows 是跨平台的`Clash`代理工具，支持`Windows`、`Mac`和`Linux`图形平台**
+
 * 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />`主页`-->`开机启动！`
 
 ```
@@ -63,7 +65,7 @@ sudo pacman -Sy && yes | sudo pacman -S shadowsocks-libev simple-obfs
 
 ![linux](media/linux/libev_1.jpg ':size=720')
 
-* 打开`终端`，下载`解释脚本`，执行后按提示粘贴`ss://链接` (保持前台运行，可`最小化`窗口，但`不能关闭`)
+* 打开`终端`，下载`解释脚本`，执行后按提示粘贴`ss://链接` (保持前台运行，`可最小化窗口，但不能关闭`)
 
 ```
 # 下载脚本，只需首次安装即可
