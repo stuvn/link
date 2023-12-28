@@ -1,6 +1,6 @@
 ## Clash for Windows
 
-**Clash for Windows 是跨平台的`Clash`代理工具，支持`Windows`、`Mac`和`Linux`图形平台**
+**简称'CFW'是跨平台的`Clash`代理工具，支持`Windows`、`Mac`和`Linux`图形平台**
 
 * 打开`终端`，复制下面的命令到`终端`里执行！完成后会自动打开<img src="./clash.png" />`主页`-->`开机启动！`
 
