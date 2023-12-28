@@ -74,7 +74,7 @@ bash ss.sh
 
 ![linux](media/linux/libev_2.jpg ':size=720')
 
-* 执行`解释脚本`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体参考 [浏览器扩展](switchyomega)
+* 执行`解释脚本`会创建一个本地`sock5代理`服务，然后配合`SwitchyOmega`使用。具体请参考 [浏览器扩展](switchyomega)
 
 ![linux](media/linux/libev_3.jpg ':size=720')
 
