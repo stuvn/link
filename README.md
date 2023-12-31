@@ -1,11 +1,11 @@
 
 ## 贝壳加速器
 
-https://bewk.top
+https://6bk.site
 
 ## 达克加速器
 
-https://dewk.top
+https://6dk.site
 
 ## 套餐说明：
 
