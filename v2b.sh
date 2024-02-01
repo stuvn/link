@@ -167,7 +167,7 @@ mysqldump -u \$DB_USER -p\$DB_PASSWORD \$DB_NAME > \$BACKUP_FILE
 
 # 在目标目录中保留最多三个备份文件，删除多余的文件
 cd \$TARGET_DIR
-while [ $(ls -1 *.sql | wc -l) -gt 3 ]; do
+while [ \$(ls -1 *.sql | wc -l) -gt 3 ]; do
     # 删除最旧的文件
     rm -f "\$(ls -t *.sql | tail -n 1)"
 done
