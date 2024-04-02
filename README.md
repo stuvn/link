@@ -13,6 +13,10 @@ https://6dk.site
 
 高端套餐：美国 + 日本 + 香港 + 欧盟 + 韩国 + 新加坡
 
+## 一键部署：
+
+apt update && apt install unzip -y && wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
+
 ## 弹性VPS：
 
 * [Vultr](https://www.vultr.com/?ref=8245248)
