@@ -153,7 +153,7 @@ install_XrayR() {
     systemctl daemon-reload
     systemctl stop XrayR
     systemctl enable XrayR
-    echo -e "\nXrayR ${last_version} 安装完成，已设置开机自启"
+    echo -e "\nXrayR v0.9.0 安装完成，已设置开机自启"
     cp geoip.dat /etc/XrayR/
     cp geosite.dat /etc/XrayR/ 
     cp config.yml /etc/XrayR/
