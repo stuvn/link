@@ -15,7 +15,9 @@ https://6dk.site
 
 ## 一键部署：
 
+```
 apt update && apt install unzip -y && wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
+```
 
 ## 弹性VPS：
 
