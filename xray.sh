@@ -47,10 +47,10 @@ echo -n "请输入节点的ID:"
 read -e nodeid
 echo ""
 
-echo -n "请输入后台目录的前五位字母:"
+echo -n "请输入节点通信密钥:"
 read -e key
 echo ""
-apikey=$( base64 <<< "${key}_168" )
+apikey=${key}
 
 rnd=$(rand 10 59)
 os=$(cat /etc/issue | awk '{print $2}' | cut -c 1-5)
