@@ -29,8 +29,6 @@ apt update && apt install unzip -y && wget https://raw.githubusercontent.com/stu
 
 * [wiki](https://idc.wiki/aff.php?aff=2538)
 
-* [DMIT](https://www.dmit.io/aff.php?aff=3149)
-
 * [iON Cloud](https://ion.krypt.com/aff.php?aff=1646)
 
 * [Kdatacenter](https://www.kdatacenter.com/myportal/?affid=832)
