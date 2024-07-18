@@ -1,15 +1,15 @@
 
 ## 🐚贝壳加速器
 
-[https://beke.men](https://beke.men)
+[https://beke.men](https://beke.men/index.php#/register?code=CgebKwRE)
 
 ## ☁️达克加速器
 
-[https://daky.men](https://daky.men)
+[https://daky.men](https://daky.men/index.php#/register?code=fvCKL5Ts)
 
 ## ⚡️小可加速器
 
-[https://xiok.men](https://xiok.men)
+[https://xiok.men](https://xiok.men/index.php#/register?code=VqpfsQJb)
 
 ## 🐚贝壳、☁️达克、⚡️小可是三个互相独立的网站，请不要搞混！
 
