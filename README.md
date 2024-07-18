@@ -18,6 +18,9 @@
 ```
 apt update && apt install unzip -y && wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
 ```
+## 第三方教程网：
+
+[https://stuvn.github.io/link/#/](https://stuvn.github.io/link/#/)
 
 ## 弹性VPS：
 
