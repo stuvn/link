@@ -1,11 +1,15 @@
 
 ## 贝壳加速器
 
-https://6bk.site
+[https://6bk.site](https://beke.men)
 
 ## 达克加速器
 
-https://6dk.site
+[https://6dk.site](https://daky.men)
+
+## 小可加速器
+
+[https://xiok.men](https://xiok.men)
 
 ## 套餐说明：
 
