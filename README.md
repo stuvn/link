@@ -1,15 +1,15 @@
 
 ## 🐚贝壳加速器
 
-[https://berk.men](http://jd.com.vpsc.men/index.php#/register?code=CgebKwRE)
+[https://berk.men](https://berk.men/index.php#/register?code=CgebKwRE) [备用地址](http://jd.com.vpsc.men/index.php#/register?code=fvCKL5Ts)
 
 ## ☁️达克加速器
 
-[https://derk.men](http://jd.com.vpsa.men/index.php#/register?code=fvCKL5Ts)
+[https://derk.men](https://derk.men/index.php#/register?code=fvCKL5Ts) [备用地址](http://jd.com.vpsa.men/index.php#/register?code=fvCKL5Ts)
 
 ## ⚡️小可加速器
 
-[https://xker.men](http://jd.com.sofu.men/index.php#/register?code=VqpfsQJb)
+[https://xker.men](https://xker.men/index.php#/register?code=VqpfsQJb) [备用地址](http://jd.com.sofu.men/index.php#/register?code=fvCKL5Ts)
 
 ## 🐚贝壳、☁️达克、⚡️小可是三个互相独立的网站，请不要搞混！
 
