@@ -1,11 +1,11 @@
 
 ## 🐚贝壳加速器
 
-[https://berk.men](https://jd.com.vpsc.men/index.php#/register?code=CgebKwRE)
+[https://berk.men](http://jd.com.vpsc.men/index.php#/register?code=CgebKwRE)
 
 ## ☁️达克加速器
 
-[https://derk.men](https://jd.com.vpsa.men/index.php#/register?code=fvCKL5Ts)
+[https://derk.men](http://jd.com.vpsa.men/index.php#/register?code=fvCKL5Ts)
 
 ## ⚡️小可加速器
 
