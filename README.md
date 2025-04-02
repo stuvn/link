@@ -18,6 +18,15 @@
 ```
 wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
 ```
+## 如果DNS 不可用先执行以下命令
+
+```
+CONFIG_FILE="/etc/systemd/resolved.conf"
+DNS_SETTING="DNS=8.8.8.8"
+sudo sed -i "/^\[Resolve\]/a $DNS_SETTING" "$CONFIG_FILE"
+sudo systemctl restart systemd-resolved
+```
+
 ## 第三方教程网：
 
 [https://stuvn.github.io/link/#/](https://stuvn.github.io/link/#/)
