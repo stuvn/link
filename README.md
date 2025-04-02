@@ -16,7 +16,7 @@
 ## 一键部署命令：
 
 ```
-apt update && apt install unzip -y && wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
+wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
 ```
 ## 第三方教程网：
 
