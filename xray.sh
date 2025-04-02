@@ -25,6 +25,8 @@ sudo systemctl restart systemd-resolved
 
 echo "DNS 设置已更新并应用。"
 
+apt update && apt install unzip -y
+
 function rand(){
     min=$1
     max=$(($2-$min+1))
