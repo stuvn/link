@@ -7,7 +7,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-apt update && apt install unzip curl -y
+apt update && apt install vim unzip curl -y
 
 red='\033[31m'
 green='\033[32m'
@@ -79,9 +79,9 @@ if [[ "$KEY_MODE" == "1" ]]; then
     PRIVATE_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Private key: //p')
     PUBLIC_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Public key: //p')
     echo "生成 PrivateKey: $PRIVATE_KEY"
-    SHORT_ID1=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
-    SHORT_ID2=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
-    SHORT_ID3=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
+    SHORT_ID1=$(openssl rand -hex 8)
+    SHORT_ID2=$(openssl rand -hex 8)
+    SHORT_ID3=$(openssl rand -hex 8)
 else
     read -p "请输入已有 PrivateKey: " PRIVATE_KEY
     read -p "请输入第1个短ID (12位): " SHORT_ID1
@@ -114,7 +114,6 @@ Nodes:
       NodeID: $NODE_ID
       NodeType: Vless
       Timeout: 30
-      EnableVless: true
       VlessFlow: "xtls-rprx-vision"
       SpeedLimit: 0
       DeviceLimit: 0
@@ -127,6 +126,7 @@ Nodes:
       EnableREALITY: true
       REALITYConfigs:
         Show: false
+        MaxTimeDiff: 0
         Dest: www.apple.com:443
         ServerNames:
           - www.apple.com
