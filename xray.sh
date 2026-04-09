@@ -112,7 +112,6 @@ Nodes:
       NodeID: $NODE_ID
       NodeType: Vless
       Timeout: 30
-      EnableVless: true
       VlessFlow: "xtls-rprx-vision"
       SpeedLimit: 0
       DeviceLimit: 0
@@ -190,6 +189,4 @@ echo -e "${green}OS : $OS_NAME $OS_VERSION ${cclear}"
 history -c && history -w
 echo -e "{red}`date`${cclear}\n"
 systemctl restart XrayR
-nginx -t
-systemctl restart nginx
 curl https://raw.githubusercontent.com/zhanghanyun/backtrace/main/install.sh -sSf | sh
