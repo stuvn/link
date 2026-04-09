@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
+# ==========================================
+# XrayR Reality 一键部署脚本（Debian12 / Ubuntu20.04+）
+# 支持 VLESS+Reality，多短ID、多SNI，自动生成 PrivateKey
+# ==========================================
+
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-apt update && apt install unzip -y
+apt update && apt install unzip curl -y
 
 red='\033[31m'
 green='\033[32m'
 cclear='\033[0m'
 
-echo "setting timezone ..."
+echo "设置时区为香港..."
 rm -f /etc/localtime
 ln -s /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
 
@@ -17,7 +22,6 @@ ln -s /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
 # ===============================
 check_os() {
     echo "检测操作系统..."
-    
     if [ -f /etc/os-release ]; then
         . /etc/os-release
         OS_NAME=$NAME
@@ -26,66 +30,53 @@ check_os() {
         OS_NAME=$(uname -s)
         OS_VERSION=$(uname -r)
     fi
-
     echo "操作系统: $OS_NAME"
     echo "版本: $OS_VERSION"
 
-    # 校验系统
+    # 校验系统版本
     if [[ "$OS_NAME" =~ "Debian" ]] && [[ "$(echo $OS_VERSION | cut -d'.' -f1)" -ge 12 ]]; then
-        echo "系统符合安装条件 ✅"
-        read -n1 -r -p "按任意键继续部署脚本..."
+        read -n1 -r -p "系统符合安装条件 ✅，按任意键继续..."
     elif [[ "$OS_NAME" =~ "Ubuntu" ]]; then
         ver_major=$(echo $OS_VERSION | cut -d'.' -f1)
         ver_minor=$(echo $OS_VERSION | cut -d'.' -f2)
         if [[ $ver_major -gt 20 ]] || { [[ $ver_major -eq 20 ]] && [[ $ver_minor -ge 04 ]]; }; then
-            echo "系统符合安装条件 ✅"
-            read -n1 -r -p "按任意键继续部署脚本..."
+            read -n1 -r -p "系统符合安装条件 ✅，按任意键继续..."
         else
-            echo "⚠️ 你的 Ubuntu 版本过低，需要 Ubuntu 20.04 以上"
-            read -n1 -r -p "按任意键退出脚本..."
+            read -n1 -r -p "⚠️ Ubuntu 版本过低，需要 Ubuntu 20.04 以上，按任意键退出脚本..."
             exit 1
         fi
     else
-        echo "⚠️ 不支持的操作系统: $OS_NAME"
-        read -n1 -r -p "按任意键退出脚本..."
+        read -n1 -r -p "⚠️ 不支持的操作系统: $OS_NAME，按任意键退出脚本..."
         exit 1
     fi
 }
-
-# ===============================
-# 调用函数
-# ===============================
 check_os
 
 # =====================================
-# 一键部署 XrayR + VLESS+Reality (多SNI+多短ID)
-# 适用于 Debian 12
+# 安装 XrayR 最新版
 # =====================================
+echo "下载并安装 XrayR 最新版..."
+bash <(curl -sL https://github.com/XrayR-project/XrayR-install/raw/main/install.sh)
 
-set -e
+XRAYR_BIN="/usr/local/XrayR/XrayR"
+chmod +x $XRAYR_BIN
 
-echo "=============================="
-echo "🚀 XrayR Reality 一键部署脚本"
-echo "=============================="
-echo
-
-# -------------------------------
-# 交互输入
-# -------------------------------
+# =====================================
+# 用户交互输入
+# =====================================
 read -p "请输入面板 API Host (例如 https://kochir.com): " API_HOST
 read -p "请输入面板 ApiKey: " API_KEY
 read -p "请输入 NodeID (数字): " NODE_ID
 
 echo
 echo "选择 Reality 节点密钥模式："
-echo "1) 全新生成 PrivateKey + 短ID"
-echo "2) 使用已有节点 PrivateKey + 短ID"
+echo "1) 全新生成 PrivateKey + 三个短ID"
+echo "2) 使用已有节点 PrivateKey + 三个短ID"
 read -p "请输入选项 [1/2]: " KEY_MODE
 
 if [[ "$KEY_MODE" == "1" ]]; then
-    PRIVATE_KEY=$(./XrayR x25519) 2>/dev/null
+    PRIVATE_KEY=$($XRAYR_BIN x25519)
     echo "生成 PrivateKey: $PRIVATE_KEY"
-    # 生成三个随机12位短ID
     SHORT_ID1=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
     SHORT_ID2=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
     SHORT_ID3=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
@@ -96,15 +87,9 @@ else
     read -p "请输入第3个短ID (12位): " SHORT_ID3
 fi
 
-# -------------------------------
-# 安装 XrayR 最新版
-# -------------------------------
-echo "下载并安装 XrayR 最新版..."
-bash <(curl -sL https://github.com/XrayR-project/XrayR-install/raw/main/install.sh)
-
-# -------------------------------
-# 配置文件生成
-# -------------------------------
+# =====================================
+# 生成 XrayR 配置文件
+# =====================================
 CONFIG_FILE="/etc/XrayR/config.yml"
 cat > $CONFIG_FILE <<EOF
 Log:
@@ -127,7 +112,7 @@ Nodes:
       NodeID: $NODE_ID
       NodeType: Vless
       Timeout: 30
-      EnableVless: false
+      EnableVless: true
       VlessFlow: "xtls-rprx-vision"
       SpeedLimit: 0
       DeviceLimit: 0
@@ -155,9 +140,9 @@ Nodes:
         CertMode: none
 EOF
 
-# -------------------------------
-# 内核优化（可选，可整合前面的优化）
-# -------------------------------
+# =====================================
+# 内核网络优化
+# =====================================
 echo "应用内核网络优化参数..."
 cat >> /etc/sysctl.conf <<SYSCTL
 # Reality / XrayR 高性能网络优化
@@ -173,23 +158,23 @@ SYSCTL
 
 sysctl -p
 
-# -------------------------------
-# 重启 XrayR
-# -------------------------------
-echo "启动并启用 XrayR 服务..."
+# =====================================
+# 启动并启用 XrayR 服务
+# =====================================
 systemctl daemon-reload
 systemctl enable XrayR
 systemctl restart XrayR
 
+# =====================================
+# 输出信息
+# =====================================
 echo
-echo "✅ XrayR Reality 多SNI + 多短ID 节点部署完成！"
+echo "✅ XrayR Reality 节点部署完成！"
 echo "PrivateKey: $PRIVATE_KEY"
 echo "ShortIds: $SHORT_ID1, $SHORT_ID2, $SHORT_ID3"
-echo
-echo "请确保面板已正确同步节点信息。"
+echo -e "${green}OS : $OS_NAME $OS_VERSION ${cclear}"
 
 systemctl reload sshd
-systemctl restart nginx
 systemctl disable ufw 
 
 sysctl -p | grep fq
