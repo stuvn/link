@@ -27,6 +27,19 @@ sudo sed -i "/^\[Resolve\]/a $DNS_SETTING" "$CONFIG_FILE"
 sudo systemctl restart systemd-resolved
 ```
 
+## debian 换源
+
+```
+cat > /etc/apt/sources.list <<EOF
+deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+EOF
+
+apt clean
+apt update --allow-releaseinfo-change
+```
+
 ## 第三方教程网：
 
 [https://stuvn.github.io/link/#/](https://stuvn.github.io/link/#/)
