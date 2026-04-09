@@ -125,6 +125,7 @@ Nodes:
       ListenIP: 0.0.0.0
       SendIP: 0.0.0.0
       UpdatePeriodic: 60
+      EnableREALITY: true
       REALITYConfigs:
         Show: false
         MaxTimeDiff: 0
