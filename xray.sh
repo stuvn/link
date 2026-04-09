@@ -7,7 +7,11 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-apt update && apt install vim unzip curl -y
+apt update && apt install vim chrony unzip curl -y
+
+systemctl enable chrony
+systemctl restart chrony
+chronyc makestep
 
 red='\033[31m'
 green='\033[32m'
@@ -64,7 +68,7 @@ chmod +x $XRAYR_BIN
 # =====================================
 # 用户交互输入
 # =====================================
-read -p "请输入面板 API Host (例如 https://kochir.com): " API_HOST
+read -p "请输入面板 API Host (例如 https://aaa.com): " API_HOST
 read -p "请输入面板 ApiKey: " API_KEY
 read -p "请输入 NodeID (数字): " NODE_ID
 
