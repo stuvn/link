@@ -75,7 +75,9 @@ echo "2) 使用已有节点 PrivateKey + 三个短ID"
 read -p "请输入选项 [1/2]: " KEY_MODE
 
 if [[ "$KEY_MODE" == "1" ]]; then
-    PRIVATE_KEY=$($XRAYR_BIN x25519 | sed -n 's/Private key: //p')
+    KEY_OUTPUT=$($XRAYR_BIN x25519)
+    PRIVATE_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Private key: //p')
+    PUBLIC_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Public key: //p')
     echo "生成 PrivateKey: $PRIVATE_KEY"
     SHORT_ID1=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
     SHORT_ID2=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
@@ -171,5 +173,6 @@ systemctl restart XrayR
 echo
 echo "✅ XrayR Reality 节点部署完成！"
 echo "PrivateKey: $PRIVATE_KEY"
+echo "PublicKey:  $PUBLIC_KEY"
 echo "ShortIds: $SHORT_ID1, $SHORT_ID2, $SHORT_ID3"
 echo -e "${green}OS : $OS_NAME $OS_VERSION ${cclear}"
