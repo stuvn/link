@@ -12,15 +12,15 @@ echo "1️⃣ 全新节点（自动生成密钥）"
 echo "2️⃣ 替换旧节点（复用旧密钥）"
 echo ""
 
+# ===== 安装 XrayR =====
+wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
+
 read -p "请输入选项 (1 或 2): " MODE
 
 # ===== 输入面板信息 =====
 read -p "👉 面板地址（如 https://example.com）: " API_HOST
 read -p "👉 ApiKey: " API_KEY
 read -p "👉 NodeID: " NODE_ID
-
-# ===== 安装 XrayR =====
-wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 
 # ===== 处理模式 =====
 if [ "$MODE" == "1" ]; then
