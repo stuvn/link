@@ -201,7 +201,7 @@ echo > /var/log/wtmp
 echo > /var/log/btmp
 echo > /var/log/lastlog
 
-echo -e "${green}OS Ver: $os ${cclear}\n${red}Type: $type ${cclear}\n${green}seckey: ${apikey} ${cclear}"
+echo -e "${green}OS : $OS_NAME $OS_VERSION ${cclear}"
 history -c && history -w
 echo -e "{red}`date`${cclear}\n"
 systemctl restart XrayR
