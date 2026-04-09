@@ -84,9 +84,9 @@ if [[ "$KEY_MODE" == "1" ]]; then
     SHORT_ID3=$(openssl rand -hex 8)
 else
     read -p "请输入已有 PrivateKey: " PRIVATE_KEY
-    read -p "请输入第1个短ID (12位): " SHORT_ID1
-    read -p "请输入第2个短ID (12位): " SHORT_ID2
-    read -p "请输入第3个短ID (12位): " SHORT_ID3
+    read -p "请输入第1个短ID (16位): " SHORT_ID1
+    read -p "请输入第2个短ID (16位): " SHORT_ID2
+    read -p "请输入第3个短ID (16位): " SHORT_ID3
 fi
 
 # =====================================
@@ -96,8 +96,6 @@ CONFIG_FILE="/etc/XrayR/config.yml"
 cat > $CONFIG_FILE <<EOF
 Log:
   Level: warning
-  AccessPath:
-  ErrorPath:
 
 ConnectionConfig:
   Handshake: 4
