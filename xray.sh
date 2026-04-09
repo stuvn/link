@@ -19,6 +19,9 @@ read -p "👉 面板地址（如 https://example.com）: " API_HOST
 read -p "👉 ApiKey: " API_KEY
 read -p "👉 NodeID: " NODE_ID
 
+# ===== 安装 XrayR =====
+wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
+
 # ===== 处理模式 =====
 if [ "$MODE" == "1" ]; then
     echo ""
@@ -41,9 +44,6 @@ else
     echo "❌ 输入错误"
     exit 1
 fi
-
-# ===== 安装 XrayR =====
-wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 
 # ===== 写配置 =====
 cat > /etc/XrayR/config.yml <<EOF2
