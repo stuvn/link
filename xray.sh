@@ -43,7 +43,7 @@ else
 fi
 
 # ===== 安装 XrayR =====
-bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-install/main/install.sh)
+wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 
 # ===== 写配置 =====
 cat > /etc/XrayR/config.yml <<EOF2
