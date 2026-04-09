@@ -75,7 +75,7 @@ echo "2) 使用已有节点 PrivateKey + 三个短ID"
 read -p "请输入选项 [1/2]: " KEY_MODE
 
 if [[ "$KEY_MODE" == "1" ]]; then
-    PRIVATE_KEY=$($XRAYR_BIN x25519)
+    PRIVATE_KEY=$($XRAYR_BIN x25519 | sed -n 's/Private key: //p')
     echo "生成 PrivateKey: $PRIVATE_KEY"
     SHORT_ID1=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
     SHORT_ID2=$(tr -dc A-Za-z0-9 </dev/urandom | head -c12)
