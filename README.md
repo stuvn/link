@@ -1,11 +1,11 @@
 
 ## 🐚贝壳加速器
 
-[https://berk.men](https://berk.men/index.php#/register?code=CgebKwRE) [备用地址](http://jd.com.vpsc.men/index.php#/register?code=fvCKL5Ts)
+[https://kochir.com](https://kochir.com/index.php#/register?code=CgebKwRE) [备用地址](http://jd.com.vpsc.men/index.php#/register?code=fvCKL5Ts)
 
 ## ☁️达克加速器
 
-[https://derk.men](https://derk.men/index.php#/register?code=fvCKL5Ts) [备用地址](http://jd.com.vpsh.men/index.php#/register?code=fvCKL5Ts)
+[https://kyxuan.com](https://kyxuan.com/index.php#/register?code=fvCKL5Ts) [备用地址](http://jd.com.vpsh.men/index.php#/register?code=fvCKL5Ts)
 
 ## 🐚贝壳、☁️达克、两个互相独立的网站，请不要搞混！
 
