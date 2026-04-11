@@ -73,10 +73,10 @@ read -p "请输入 NodeID: " NODE_ID
 
 echo
 echo "请选择伪装站点："
-echo "1) www.microsoft.com"
-echo "2) www.amazon.com"
-echo "3) www.cloudflare.com"
-echo "4) www.tesla.com"
+echo "1) www.microsoft.com - 美国/美洲"
+echo "2) www.amazon.com - 日本/香港"
+echo "3) www.cloudflare.com - 欧盟周边"
+echo "4) www.tesla.com - 新加坡/其他"
 read -p "输入选项 [1-4]: " SITE_CHOICE
 
 case $SITE_CHOICE in
