@@ -72,9 +72,9 @@ sleep 1
 sed -i '/^files =.*/d' /etc/supervisor/supervisord.conf
 echo "files = conf.d/*.conf" >> /etc/supervisor/supervisord.conf
 
-cat > /etc/supervisor/conf.d/v2b.conf<<-EOF
-[program:V2board]
-directory = /home/wwwroot
+cat > /etc/supervisor/conf.d/xboard.conf<<-EOF
+[program:xboard]
+directory = /home/wwwroot/xboard
 command = php artisan horizon
 user = www-data
 autostart = true
