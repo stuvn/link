@@ -1,109 +1,119 @@
 #!/usr/bin/env bash
 # ==========================================
-# XrayR Reality 一键部署脚本（Debian12 / Ubuntu20.04+）
-# 支持 VLESS+Reality，多短ID、多SNI，自动生成 PrivateKey
+# XrayR Reality 一键部署脚本（优化版）
+# 支持 VLESS+Reality（高隐蔽 + 稳定）
+# Debian12 / Ubuntu20.04+
 # ==========================================
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-apt update && apt install vim chrony unzip curl -y
+echo "更新系统并安装依赖..."
+apt update && apt install -y vim chrony unzip curl openssl
 
+# ===============================
+# 时间同步 + 时区优化
+# ===============================
+echo "配置时间同步..."
 systemctl enable chrony
 systemctl restart chrony
 chronyc makestep
 
-red='\033[31m'
-green='\033[32m'
-cclear='\033[0m'
-
-echo "设置时区为香港..."
-rm -f /etc/localtime
-ln -s /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+echo "设置时区为 UTC"
+timedatectl set-timezone UTC
 
 # ===============================
-# OS 检测和版本校验
+# OS 检测
 # ===============================
 check_os() {
-    echo "检测操作系统..."
     if [ -f /etc/os-release ]; then
         . /etc/os-release
         OS_NAME=$NAME
         OS_VERSION=$VERSION_ID
     else
-        OS_NAME=$(uname -s)
-        OS_VERSION=$(uname -r)
+        echo "无法检测系统"
+        exit 1
     fi
-    echo "操作系统: $OS_NAME"
-    echo "版本: $OS_VERSION"
 
-    # 校验系统版本
+    echo "系统: $OS_NAME $OS_VERSION"
+
     if [[ "$OS_NAME" =~ "Debian" ]] && [[ "$(echo $OS_VERSION | cut -d'.' -f1)" -ge 12 ]]; then
-        read -n1 -r -p "系统符合安装条件 ✅，按任意键继续..."
+        echo "✅ Debian 支持"
     elif [[ "$OS_NAME" =~ "Ubuntu" ]]; then
         ver_major=$(echo $OS_VERSION | cut -d'.' -f1)
         ver_minor=$(echo $OS_VERSION | cut -d'.' -f2)
         if [[ $ver_major -gt 20 ]] || { [[ $ver_major -eq 20 ]] && [[ $ver_minor -ge 04 ]]; }; then
-            read -n1 -r -p "系统符合安装条件 ✅，按任意键继续..."
+            echo "✅ Ubuntu 支持"
         else
-            read -n1 -r -p "⚠️ Ubuntu 版本过低，需要 Ubuntu 20.04 以上，按任意键退出脚本..."
+            echo "❌ Ubuntu 版本过低"
             exit 1
         fi
     else
-        read -n1 -r -p "⚠️ 不支持的操作系统: $OS_NAME，按任意键退出脚本..."
+        echo "❌ 不支持系统"
         exit 1
     fi
 }
 check_os
 
-# =====================================
-# 安装 XrayR 最新版
-# =====================================
-echo "下载并安装 XrayR 最新版..."
+# ===============================
+# 安装 XrayR（锁版本）
+# ===============================
+echo "安装 XrayR..."
 bash <(curl -sL https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 
 XRAYR_BIN="/usr/local/XrayR/XrayR"
 chmod +x $XRAYR_BIN
 
-# =====================================
-# 用户交互输入
-# =====================================
+# ===============================
+# 用户输入
+# ===============================
 read -p "请输入面板 API Host (例如 https://aaa.com): " API_HOST
 read -p "请输入面板 ApiKey: " API_KEY
-read -p "请输入 NodeID (数字): " NODE_ID
+read -p "请输入 NodeID: " NODE_ID
 
 echo
-echo "选择 Reality 节点密钥模式："
-echo "1) 全新生成 PrivateKey + 三个短ID"
-echo "2) 使用已有节点 PrivateKey + 三个短ID"
-read -p "请输入选项 [1/2]: " KEY_MODE
+echo "请选择伪装站点："
+echo "1) www.microsoft.com"
+echo "2) www.amazon.com"
+echo "3) www.cloudflare.com"
+echo "4) www.tesla.com"
+read -p "输入选项 [1-4]: " SITE_CHOICE
 
-if [[ "$KEY_MODE" == "1" ]]; then
-    KEY_OUTPUT=$($XRAYR_BIN x25519)
-    PRIVATE_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Private key: //p')
-    PUBLIC_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Public key: //p')
-    echo "生成 PrivateKey: $PRIVATE_KEY"
-    SHORT_ID1=$(openssl rand -hex 8)
-    SHORT_ID2=$(openssl rand -hex 8)
-    SHORT_ID3=$(openssl rand -hex 8)
-else
-    read -p "请输入已有 PrivateKey: " PRIVATE_KEY
-    read -p "请输入第1个短ID (16位): " SHORT_ID1
-    read -p "请输入第2个短ID (16位): " SHORT_ID2
-    read -p "请输入第3个短ID (16位): " SHORT_ID3
-fi
+case $SITE_CHOICE in
+    1) DEST="www.microsoft.com:443"; SNI="www.microsoft.com" ;;
+    2) DEST="www.amazon.com:443"; SNI="www.amazon.com" ;;
+    3) DEST="www.cloudflare.com:443"; SNI="www.cloudflare.com" ;;
+    4) DEST="www.tesla.com:443"; SNI="www.tesla.com" ;;
+    *) echo "无效选项"; exit 1 ;;
+esac
 
-# =====================================
-# 生成 XrayR 配置文件
-# =====================================
+# ===============================
+# 生成 Reality 密钥 + ShortID
+# ===============================
+echo "生成 Reality 密钥..."
+KEY_OUTPUT=$($XRAYR_BIN x25519)
+
+PRIVATE_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Private key: //p')
+PUBLIC_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Public key: //p')
+
+SHORT_ID=$(openssl rand -hex 8)
+
+echo "PrivateKey: $PRIVATE_KEY"
+echo "PublicKey:  $PUBLIC_KEY"
+echo "ShortID:    $SHORT_ID"
+
+# ===============================
+# 写入配置
+# ===============================
 CONFIG_FILE="/etc/XrayR/config.yml"
+
 cat > $CONFIG_FILE <<EOF
 Log:
   Level: warning
 
 ConnectionConfig:
-  Handshake: 4
-  ConnIdle: 30
+  Handshake: 8
+  ConnIdle: 120
   UplinkOnly: 2
   DownlinkOnly: 4
   BufferSize: 64
@@ -125,31 +135,32 @@ Nodes:
       ListenIP: 0.0.0.0
       SendIP: 0.0.0.0
       UpdatePeriodic: 60
+
       EnableREALITY: true
       REALITYConfigs:
         Show: false
-        MaxTimeDiff: 0
-        Dest: www.apple.com:443
+        Dest: $DEST
         ServerNames:
-          - www.apple.com
-          - www.microsoft.com
-          - www.amazon.com
+          - $SNI
+
         PrivateKey: "$PRIVATE_KEY"
         ShortIds:
-          - "$SHORT_ID1"
-          - "$SHORT_ID2"
-          - "$SHORT_ID3"
+          - "$SHORT_ID"
+
+        MinClientVer: ""
+        MaxClientVer: ""
+        MaxTimeDiff: 0
 
       CertConfig:
         CertMode: none
 EOF
 
-# =====================================
-# 内核网络优化
-# =====================================
-echo "应用内核网络优化参数..."
-cat >> /etc/sysctl.conf <<SYSCTL
-# Reality / XrayR 高性能网络优化
+# ===============================
+# BBR + 网络优化（增强版）
+# ===============================
+echo "优化内核参数..."
+
+cat > /etc/sysctl.d/99-xrayr.conf <<SYSCTL
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_fastopen=3
@@ -160,21 +171,39 @@ net.core.somaxconn=65535
 net.core.netdev_max_backlog=65535
 SYSCTL
 
-sysctl -p
+sysctl --system
 
-# =====================================
-# 启动并启用 XrayR 服务
-# =====================================
+# 确保 bbr 加载
+modprobe tcp_bbr 2>/dev/null
+
+echo "BBR 状态:"
+sysctl net.ipv4.tcp_congestion_control
+
+# ===============================
+# 防火墙放行
+# ===============================
+echo "配置防火墙..."
+apt install -y ufw
+ufw allow 443/tcp
+ufw allow 443/udp
+ufw --force enable
+
+# ===============================
+# 启动服务
+# ===============================
 systemctl daemon-reload
 systemctl enable XrayR
 systemctl restart XrayR
 
-# =====================================
-# 输出信息
-# =====================================
+# ===============================
+# 完成
+# ===============================
 echo
-echo "✅ XrayR Reality 节点部署完成！"
+echo "======================================"
+echo "✅ 部署完成"
+echo "======================================"
+echo "节点伪装: $SNI"
 echo "PrivateKey: $PRIVATE_KEY"
 echo "PublicKey:  $PUBLIC_KEY"
-echo "ShortIds: $SHORT_ID1, $SHORT_ID2, $SHORT_ID3"
-echo -e "${green}OS : $OS_NAME $OS_VERSION ${cclear}"
+echo "ShortID:    $SHORT_ID"
+echo "======================================"
