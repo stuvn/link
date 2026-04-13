@@ -1,53 +1,37 @@
 #!/usr/bin/env bash
 # ==========================================
-# XrayR Reality 一键部署脚本（优化版）
-# 支持 VLESS+Reality（高隐蔽 + 稳定）
-# Debian12 / Ubuntu20.04+
+# XrayR Reality 一键部署脚本（增强防错版）
+# VLESS + Reality | Debian12 / Ubuntu20+
 # ==========================================
+
+set -e
 
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 echo "更新系统并安装依赖..."
-apt update && apt install -y vim chrony unzip curl openssl
+apt update && apt install -y vim chrony unzip curl openssl ufw
 
 # ===============================
-# 时间同步 + 时区优化
+# 时间同步
 # ===============================
 echo "配置时间同步..."
 systemctl enable chrony
 systemctl restart chrony
 chronyc makestep
-
-echo "设置时区为 UTC"
 timedatectl set-timezone UTC
 
 # ===============================
 # OS 检测
 # ===============================
 check_os() {
-    if [ -f /etc/os-release ]; then
-        . /etc/os-release
-        OS_NAME=$NAME
-        OS_VERSION=$VERSION_ID
-    else
-        echo "无法检测系统"
-        exit 1
-    fi
+    . /etc/os-release
+    echo "系统: $NAME $VERSION_ID"
 
-    echo "系统: $OS_NAME $OS_VERSION"
-
-    if [[ "$OS_NAME" =~ "Debian" ]] && [[ "$(echo $OS_VERSION | cut -d'.' -f1)" -ge 12 ]]; then
+    if [[ "$NAME" =~ "Debian" ]] && [[ "$(echo $VERSION_ID | cut -d'.' -f1)" -ge 12 ]]; then
         echo "✅ Debian 支持"
-    elif [[ "$OS_NAME" =~ "Ubuntu" ]]; then
-        ver_major=$(echo $OS_VERSION | cut -d'.' -f1)
-        ver_minor=$(echo $OS_VERSION | cut -d'.' -f2)
-        if [[ $ver_major -gt 20 ]] || { [[ $ver_major -eq 20 ]] && [[ $ver_minor -ge 04 ]]; }; then
-            echo "✅ Ubuntu 支持"
-        else
-            echo "❌ Ubuntu 版本过低"
-            exit 1
-        fi
+    elif [[ "$NAME" =~ "Ubuntu" ]]; then
+        echo "✅ Ubuntu 支持"
     else
         echo "❌ 不支持系统"
         exit 1
@@ -56,7 +40,7 @@ check_os() {
 check_os
 
 # ===============================
-# 安装 XrayR（锁版本）
+# 安装 XrayR
 # ===============================
 echo "安装 XrayR..."
 bash <(curl -sL https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
@@ -65,49 +49,79 @@ XRAYR_BIN="/usr/local/XrayR/XrayR"
 chmod +x $XRAYR_BIN
 
 # ===============================
-# 用户输入
+# 输入面板信息
 # ===============================
-read -p "请输入面板 API Host (例如 https://aaa.com): " API_HOST
-read -p "请输入面板 ApiKey: " API_KEY
-read -p "请输入 NodeID: " NODE_ID
+read -p "API Host (https://xxx.com): " API_HOST
+read -p "ApiKey: " API_KEY
+read -p "NodeID: " NODE_ID
 
+[ -z "$API_HOST" ] && echo "❌ API_HOST不能为空" && exit 1
+[ -z "$API_KEY" ] && echo "❌ API_KEY不能为空" && exit 1
+[ -z "$NODE_ID" ] && echo "❌ NODE_ID不能为空" && exit 1
+
+# ===============================
+# 伪装站点
+# ===============================
 echo
-echo "请选择伪装站点："
-echo "1) www.microsoft.com - 美国/美洲"
-echo "2) www.amazon.com - 日本/香港"
-echo "3) www.cloudflare.com - 欧盟周边"
-echo "4) www.tesla.com - 新加坡/其他"
-read -p "输入选项 [1-4]: " SITE_CHOICE
+echo "选择伪装站点："
+echo "1) www.microsoft.com"
+echo "2) www.amazon.com"
+echo "3) www.cloudflare.com"
+echo "4) www.tesla.com"
+read -p "输入 [1-4]: " SITE
 
-case $SITE_CHOICE in
-    1) DEST="www.microsoft.com:443"; SNI="www.microsoft.com" ;;
-    2) DEST="www.amazon.com:443"; SNI="www.amazon.com" ;;
-    3) DEST="www.cloudflare.com:443"; SNI="www.cloudflare.com" ;;
-    4) DEST="www.tesla.com:443"; SNI="www.tesla.com" ;;
-    *) echo "无效选项"; exit 1 ;;
+case $SITE in
+1) DEST="www.microsoft.com:443"; SNI="www.microsoft.com" ;;
+2) DEST="www.amazon.com:443"; SNI="www.amazon.com" ;;
+3) DEST="www.cloudflare.com:443"; SNI="www.cloudflare.com" ;;
+4) DEST="www.tesla.com:443"; SNI="www.tesla.com" ;;
+*) echo "❌ 无效选择"; exit 1 ;;
 esac
 
 # ===============================
-# 生成 Reality 密钥 + ShortID
+# Reality 模式选择
 # ===============================
-echo "生成 Reality 密钥..."
-KEY_OUTPUT=$($XRAYR_BIN x25519)
+echo
+echo "部署模式："
+echo "1) 全新节点（自动生成）"
+echo "2) 替换旧节点（手动输入）"
+read -p "输入 [1-2]: " MODE
 
-PRIVATE_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Private key: //p')
-PUBLIC_KEY=$(echo "$KEY_OUTPUT" | sed -n 's/Public key: //p')
+if [ "$MODE" = "1" ]; then
+    echo "生成密钥..."
+    KEY=$($XRAYR_BIN x25519)
 
-SHORT_ID=$(openssl rand -hex 8)
+    PRIVATE_KEY=$(echo "$KEY" | grep "Private" | awk '{print $3}')
+    PUBLIC_KEY=$(echo "$KEY" | grep "Public" | awk '{print $3}')
+    SHORT_ID=$(openssl rand -hex 8)
 
-echo "PrivateKey: $PRIVATE_KEY"
-echo "PublicKey:  $PUBLIC_KEY"
-echo "ShortID:    $SHORT_ID"
+elif [ "$MODE" = "2" ]; then
+    read -p "PrivateKey: " PRIVATE_KEY
+    read -p "PublicKey: " PUBLIC_KEY
+    read -p "ShortID: " SHORT_ID
+
+else
+    echo "❌ 输入错误"
+    exit 1
+fi
+
+# ===============================
+# 参数校验（关键防翻车）
+# ===============================
+echo "校验参数..."
+
+[[ ${#PRIVATE_KEY} -lt 40 ]] && echo "❌ PrivateKey错误" && exit 1
+[[ ${#PUBLIC_KEY} -lt 40 ]] && echo "❌ PublicKey错误" && exit 1
+
+if ! [[ "$SHORT_ID" =~ ^[0-9a-fA-F]{2,16}$ ]]; then
+    echo "❌ ShortID必须是16进制(2-16位)"
+    exit 1
+fi
 
 # ===============================
 # 写入配置
 # ===============================
-CONFIG_FILE="/etc/XrayR/config.yml"
-
-cat > $CONFIG_FILE <<EOF
+cat > /etc/XrayR/config.yml <<EOF
 Log:
   Level: warning
 
@@ -127,13 +141,9 @@ Nodes:
       NodeType: Vless
       Timeout: 30
       VlessFlow: "xtls-rprx-vision"
-      SpeedLimit: 0
-      DeviceLimit: 0
-      DisableCustomConfig: false
 
     ControllerConfig:
       ListenIP: 0.0.0.0
-      SendIP: 0.0.0.0
       UpdatePeriodic: 60
 
       EnableREALITY: true
@@ -147,63 +157,44 @@ Nodes:
         ShortIds:
           - "$SHORT_ID"
 
-        MinClientVer: ""
-        MaxClientVer: ""
-        MaxTimeDiff: 0
-
       CertConfig:
         CertMode: none
 EOF
 
 # ===============================
-# BBR + 网络优化（增强版）
+# BBR优化
 # ===============================
-echo "优化内核参数..."
-
 cat > /etc/sysctl.d/99-xrayr.conf <<SYSCTL
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
 net.ipv4.tcp_fastopen=3
-net.ipv4.tcp_fin_timeout=15
-net.ipv4.tcp_tw_reuse=1
-net.ipv4.ip_local_port_range=1024 65535
-net.core.somaxconn=65535
-net.core.netdev_max_backlog=65535
 SYSCTL
 
 sysctl --system
 
-# 确保 bbr 加载
-modprobe tcp_bbr 2>/dev/null
-
-echo "BBR 状态:"
-sysctl net.ipv4.tcp_congestion_control
-
 # ===============================
-# 防火墙放行
+# 防火墙
 # ===============================
-echo "配置防火墙..."
-apt install -y ufw
 ufw allow 443/tcp
 ufw allow 443/udp
 ufw --force enable
 
 # ===============================
-# 启动服务
+# 启动
 # ===============================
-systemctl daemon-reload
 systemctl enable XrayR
 systemctl restart XrayR
 
 # ===============================
-# 完成
+# 输出结果
 # ===============================
 echo
 echo "======================================"
 echo "✅ 部署完成"
 echo "======================================"
-echo "节点伪装: $SNI"
+echo "SNI:        $SNI"
 echo "PrivateKey: $PRIVATE_KEY"
 echo "PublicKey:  $PUBLIC_KEY"
 echo "ShortID:    $SHORT_ID"
 echo "======================================"
+echo "⚠ 客户端必须使用以上参数"
