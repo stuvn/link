@@ -1,36 +1,155 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# ==========================================
+# XrayR Shadowsocks 一键部署脚本
+# Debian12 / Ubuntu20+
+# ==========================================
 
-export PATH="/usr/bin:/usr/local/bin:$PATH"
+set -e
 
-read -p "请输入ss://协议的链接: " input
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
 
-# 提取ss://之后的字符串
-encoded_data=$(echo "$input" | sed -n 's|^ss://\([^@]*\).*|\1|p')
+echo "更新系统并安装依赖..."
+apt update && apt install -y curl unzip openssl ufw chrony
 
-# 解码base64
-decoded_data=$(echo "$encoded_data" | base64 -d)
+# ===============================
+# 时间同步
+# ===============================
+systemctl enable chrony
+systemctl restart chrony
+chronyc makestep
+timedatectl set-timezone UTC
 
-# 提取加密方式和密码
-IFS=':' read -r encryption password <<< "$decoded_data"
+# ===============================
+# OS 检测
+# ===============================
+. /etc/os-release
+echo "系统: $NAME $VERSION_ID"
 
-# 提取服务器地址和端口
-server_and_port=$(echo "$input" | sed -n 's|^ss://[^@]*@\([^/?]*\).*|\1|p')
-IFS=':' read -r server port <<< "$server_and_port"
+if [[ "$NAME" != *"Ubuntu"* && "$NAME" != *"Debian"* ]]; then
+    echo "❌ 不支持系统"
+    exit 1
+fi
 
-# 输出结果
-echo "加密方式: $encryption"
-echo "密码: $password"
-echo "服务器地址: $server"
-echo "端口: $port"
+# ===============================
+# 安装 XrayR（稳定版）
+# ===============================
+XRAYR_VERSION="v0.9.0"
+INSTALL_DIR="/usr/local/XrayR"
 
-# 构建simple-obfs插件参数
-opts='--plugin obfs-local --plugin-opts obfs=http;obfs-host=www.apple.com'
+echo "安装 XrayR $XRAYR_VERSION ..."
 
-# 构建Shadowsocks客户端连接命令
-ss_command="ss-local -s $server -p $port -k $password -m $encryption -l 1080 $opts"
+cd /tmp
+curl -L -o xrayr.zip \
+https://github.com/XrayR-project/XrayR-release/releases/download/${XRAYR_VERSION}/XrayR-linux-64.zip
 
-# 输出命令
-echo "连接命令: $ss_command"
-echo "正在连接: $server ..."
-sleep 1
-$ss_command
+mkdir -p $INSTALL_DIR
+unzip -o xrayr.zip -d $INSTALL_DIR
+chmod +x $INSTALL_DIR/XrayR
+
+# systemd
+cat > /etc/systemd/system/XrayR.service <<EOF
+[Unit]
+Description=XrayR Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=$INSTALL_DIR/XrayR -config /etc/XrayR/config.yml
+Restart=always
+LimitNOFILE=51200
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+
+# ===============================
+# 面板信息
+# ===============================
+read -p "API Host: " API_HOST
+read -p "ApiKey: " API_KEY
+read -p "NodeID: " NODE_ID
+
+# ===============================
+# Shadowsocks 端口
+# ===============================
+echo
+echo "选择端口："
+echo "1) 443"
+echo "2) 8443"
+echo "3) 自定义(>10000)"
+read -p "选择 [1-3]: " P
+
+case $P in
+1) PORT=443 ;;
+2) PORT=8443 ;;
+3)
+    read -p "输入端口: " PORT
+    if [[ ! "$PORT" =~ ^[0-9]+$ ]] || [ "$PORT" -le 10000 ]; then
+        echo "❌ 端口必须 >10000"
+        exit 1
+    fi
+    ;;
+*) echo "❌ 错误"; exit 1 ;;
+esac
+
+# ===============================
+# SS 密码
+# ===============================
+PASSWORD=$(openssl rand -base64 12)
+
+echo "生成 SS 密码: $PASSWORD"
+
+# ===============================
+# 写入 XrayR 配置
+# ===============================
+mkdir -p /etc/XrayR
+
+cat > /etc/XrayR/config.yml <<EOF
+Log:
+  Level: warning
+
+Nodes:
+  - PanelType: "NewV2board"
+    ApiConfig:
+      ApiHost: "$API_HOST"
+      ApiKey: "$API_KEY"
+      NodeID: $NODE_ID
+      NodeType: Shadowsocks
+
+    ControllerConfig:
+      ListenIP: 0.0.0.0
+      UpdatePeriodic: 60
+
+      SS:
+        Enable: true
+        Method: "aes-256-gcm"
+        Password: "$PASSWORD"
+EOF
+
+# ===============================
+# 防火墙
+# ===============================
+ufw allow $PORT/tcp
+ufw allow $PORT/udp
+ufw --force enable
+
+# ===============================
+# 启动
+# ===============================
+systemctl enable XrayR
+systemctl restart XrayR
+
+# ===============================
+# 输出
+# ===============================
+echo
+echo "======================================"
+echo "✅ Shadowsocks 部署完成"
+echo "======================================"
+echo "Port:     $PORT"
+echo "Method:   aes-256-gcm"
+echo "Password: $PASSWORD"
+echo "======================================"
