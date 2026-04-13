@@ -11,6 +11,14 @@
 
 ## 一键部署命令：
 
+> shadowsocks
+
+```
+wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh && bash ss.sh
+```
+
+> xray (vless)
+
 ```
 wget https://raw.githubusercontent.com/stuvn/link/master/xray.sh && chmod +x xray.sh && bash xray.sh
 ```
