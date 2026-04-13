@@ -73,36 +73,6 @@ read -p "ApiKey: " API_KEY
 read -p "NodeID: " NODE_ID
 
 # ===============================
-# Shadowsocks 端口
-# ===============================
-echo
-echo "选择端口："
-echo "1) 443"
-echo "2) 8443"
-echo "3) 自定义(>10000)"
-read -p "选择 [1-3]: " P
-
-case $P in
-1) PORT=443 ;;
-2) PORT=8443 ;;
-3)
-    read -p "输入端口: " PORT
-    if [[ ! "$PORT" =~ ^[0-9]+$ ]] || [ "$PORT" -le 10000 ]; then
-        echo "❌ 端口必须 >10000"
-        exit 1
-    fi
-    ;;
-*) echo "❌ 错误"; exit 1 ;;
-esac
-
-# ===============================
-# SS 密码
-# ===============================
-PASSWORD=$(openssl rand -base64 12)
-
-echo "生成 SS 密码: $PASSWORD"
-
-# ===============================
 # 写入 XrayR 配置
 # ===============================
 mkdir -p /etc/XrayR
