@@ -14,7 +14,7 @@
 > shadowsocks
 
 ```
-wget https://raw.githubusercontent.com/stuvn/link/master/ss.sh && chmod +x ss.sh && bash ss.sh
+wget https://github.com/stuvn/link/blob/a934fa57b20905d84347798e5d6add5d4d7af7af/xray.sh && chmod +x ss.sh && bash ss.sh
 ```
 
 > xray (vless)
